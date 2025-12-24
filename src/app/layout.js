@@ -1,9 +1,35 @@
+import { Poppins, Urbanist, DM_Sans } from "next/font/google";
 import "@/app/globals.css";
 import "@n8n/chat/style.css";
 
 import Navbar from "@/components/navbar";
 import BookCal from "@/components/book-calcom";
 import SmoothScroll from "./SmoothScroll";
+
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    variable: "--font-poppins",
+    display: "swap",
+});
+
+const urbanist = Urbanist({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    variable: "--font-urbanist",
+    display: "swap",
+});
+
+const dmSans = DM_Sans({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    style: ["normal", "italic"],
+    variable: "--font-dmsans",
+    display: "swap",
+    adjustFontFallback: true,
+});
 
 export const metadata = {
     metadataBase: new URL("https://syenxatech.com"),
@@ -63,7 +89,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body suppressHydrationWarning>
+            <body suppressHydrationWarning className={`${poppins.variable} ${urbanist.variable} ${dmSans.variable}`}>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
