@@ -4,7 +4,6 @@ import "@n8n/chat/style.css";
 
 import Navbar from "@/components/navbar";
 import BookCal from "@/components/book-calcom";
-import SmoothScroll from "./SmoothScroll";
 import PageTransitionProvider from "@/components/page-transition";
 import Script from "next/script";
 import Image from "next/image";
@@ -94,7 +93,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/logo.svg" />
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -155,7 +154,6 @@ export default function RootLayout({ children }) {
         <FacebookPixel />
         <Navbar />
         <BookCal />
-        <SmoothScroll />
         <PageTransitionProvider
           config={{
             // Fast, smooth transitions
@@ -167,7 +165,7 @@ export default function RootLayout({ children }) {
             enabled: true,
           }}
         >
-          {children}
+         {children}
         </PageTransitionProvider>
       </body>
     </html>
