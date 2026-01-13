@@ -2,6 +2,13 @@
 @import "tw-animate-css";
 
 
+@layer base {
+  html,
+  body {
+    height: auto;
+    overscroll-behavior: none;
+  }
+}
 
 :root {
     --primary-color: #ff541f;
