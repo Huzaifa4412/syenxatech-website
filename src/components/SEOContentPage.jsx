@@ -45,7 +45,6 @@ const SEOContentPage = ({ title, subtitle, content, keywords }) => {
                 )}
             </div>
             <Contact />
-            <Footer />
         </div>
     );
 };

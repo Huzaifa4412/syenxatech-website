@@ -30,7 +30,6 @@ export default function ServicesPage() {
             <div className="py-12">
                 <Faqs />
             </div>
-            <Footer />
         </main>
     );
 }

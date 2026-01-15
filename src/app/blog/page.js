@@ -72,7 +72,6 @@ const BlogListing = () => {
                     ))}
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };
