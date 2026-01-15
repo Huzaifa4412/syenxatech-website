@@ -32,7 +32,7 @@ const ChatbotSection = ({
     return (
         <section
             ref={containerRef}
-            className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 last:border-0"
+            className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 last:border-0 py-24 lg:py-0"
         >
             {/* Background Gradient Spot */}
             <div
@@ -163,7 +163,7 @@ export default function AIChatbotsPage() {
             />
 
             {/* Hero Scroll Snap Section */}
-            <section className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5">
+            <section className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 py-24 lg:py-0">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ff541f]/10 rounded-full blur-[128px] pointer-events-none" />
 
                 <div className="container mx-auto px-6 text-center relative z-10">
