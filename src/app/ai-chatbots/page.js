@@ -32,7 +32,7 @@ const ChatbotSection = ({
     return (
         <section
             ref={containerRef}
-            className="h-screen w-full snap-start relative flex items-center justify-center bg-[#020202] border-b border-white/5 last:border-0"
+            className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 last:border-0"
         >
             {/* Background Gradient Spot */}
             <div
@@ -153,7 +153,7 @@ const ChatbotSection = ({
 
 export default function AIChatbotsPage() {
     return (
-        <main className="h-screen w-full overflow-y-scroll snap-y snap-proximity bg-[#020202] text-white scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <main className="min-h-screen w-full overflow-y-auto overflow-x-hidden bg-[#020202] text-white scroll-smooth">
             {/* Global Grain Texture - Fixed */}
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-white z-50 h-screen w-screen"
@@ -163,7 +163,7 @@ export default function AIChatbotsPage() {
             />
 
             {/* Hero Scroll Snap Section */}
-            <section className="h-screen w-full snap-start relative flex items-center justify-center bg-[#020202] border-b border-white/5">
+            <section className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ff541f]/10 rounded-full blur-[128px] pointer-events-none" />
 
                 <div className="container mx-auto px-6 text-center relative z-10">
