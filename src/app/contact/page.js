@@ -207,11 +207,17 @@ export default function ContactPage() {
 
                                 <div className="space-y-2">
                                     <label className="text-xs font-mono uppercase tracking-wider text-white/50">
-                                        Internet
+                                        Services
                                     </label>
                                     <select name="Service" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all appearance-none cursor-pointer">
                                         <option className="bg-[#0a0a0a]">
                                             AI Automation & Agents
+                                        </option>
+                                        <option className="bg-[#0a0a0a]">
+                                            AI Chatbots
+                                        </option>
+                                        <option className="bg-[#0a0a0a]">
+                                            AI Calling agents
                                         </option>
                                         <option className="bg-[#0a0a0a]">
                                             Website Development
