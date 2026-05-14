@@ -4,9 +4,10 @@ export default function robots() {
             {
                 userAgent: "*",
                 allow: "/",
-                disallow: "/private/",
+                disallow: ["/private/", "/api/"],
             },
         ],
         sitemap: "https://syenxatech.com/sitemap.xml",
+        host: "https://syenxatech.com",
     };
 }

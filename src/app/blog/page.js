@@ -1,36 +1,8 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import BlurText from "@/components/blurtext";
 import Link from "next/link";
-
-const blogPosts = [
-    {
-        title: "How AI Calling Agents Are Transforming Sales Worldwide",
-        slug: "how-ai-calling-agents-are-transforming-sales",
-        description:
-            "Discover how intelligent voice AI is revolutionizing the sales landscape and boosting revenue for businesses globally.",
-    },
-    {
-        title: "Top Benefits of AI Chatbots for Customer Support",
-        slug: "top-benefits-of-ai-chatbots",
-        description:
-            "Learn how AI-driven chat automation is helping companies provide 24/7 support while reducing operational costs.",
-    },
-    {
-        title: "AI Automation Solutions That Reduce Costs for Businesses",
-        slug: "ai-automation-solutions-reduce-costs",
-        description:
-            "Explore the most effective AI automation strategies that are saving enterprises time and money in 2025.",
-    },
-    {
-        title: "Syenxa Tech: Leading AI Digital Solutions for Businesses Worldwide",
-        slug: "syenxa-tech-leading-ai-solutions",
-        description:
-            "An in-depth look at how Syenxa Tech is pioneering the next generation of AI-driven digital transformation.",
-    },
-];
+import { blogPosts } from "@/lib/seo";
 
 const BlogListing = () => {
     return (

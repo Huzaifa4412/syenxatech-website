@@ -1,16 +1,19 @@
 import SEOContentPage from "@/components/SEOContentPage";
+import { createMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = createMetadata({
     title: "AI Automation Solutions That Reduce Costs for Businesses | Syenxa Tech",
     description:
         "Discover how AI automation solutions from Syenxa Tech help businesses reduce costs, streamline operations, and scale efficiently with intelligent technology.",
+    path: "/blog/ai-automation-solutions-reduce-costs",
+    type: "article",
     keywords: [
         "AI Automation Solutions",
         "Cost Reduction AI",
         "Syenxa Tech Automation",
         "Business Scalability",
     ],
-};
+});
 
 export default function Blog3() {
     return (

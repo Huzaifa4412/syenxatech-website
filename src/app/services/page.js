@@ -5,11 +5,13 @@ import ProcessSection from "@/components/services/ProcessSection";
 import Contact from "@/components/form";
 import Faqs from "@/components/faqs";
 import Footer from "@/components/footer";
+import { createMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = createMetadata({
     title: "Premium AI & Digital Services | Syenxa Tech",
     description:
         "Explore Syenxa Tech's professional services: AI Calling Agents, Intelligent Chatbots, High-Performance Web Development, and Mobile Apps. Scale your business today.",
+    path: "/services",
     keywords: [
         "AI Calling Agents",
         "AI Chatbots",
@@ -18,7 +20,7 @@ export const metadata = {
         "Syenxa Tech Services",
         "Digital Transformation",
     ],
-};
+});
 
 export default function ServicesPage() {
     return (

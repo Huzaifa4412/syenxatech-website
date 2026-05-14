@@ -1,16 +1,19 @@
 import SEOContentPage from "@/components/SEOContentPage";
+import { createMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = createMetadata({
     title: "Top Benefits of AI Chatbots for Customer Support | Syenxa Tech",
     description:
         "Learn the key benefits of AI Chatbots for your business. Improve support, generate leads, and reduce costs with Syenxa Tech's chatbot solutions.",
+    path: "/blog/top-benefits-of-ai-chatbots",
+    type: "article",
     keywords: [
         "AI Chatbots for Businesses",
         "AI Customer Support",
         "Syenxa Tech Chatbots",
         "Lead Generation",
     ],
-};
+});
 
 export default function Blog2() {
     return (

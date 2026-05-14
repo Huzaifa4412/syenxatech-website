@@ -9,6 +9,7 @@ import PageTransitionProvider from "@/components/page-transition";
 import Script from "next/script";
 import Image from "next/image";
 import FacebookPixel from "@/components/FacebookPixel";
+import { absoluteUrl, createMetadata, siteConfig } from "@/lib/seo";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -36,10 +37,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-    metadataBase: new URL("https://syenxatech.com"),
-    title: "AI Calling Agents & Digital Solutions | Syenxa Tech",
-    description:
-        "Syenxa Tech builds AI Calling Agents, chatbots, websites, apps & automation solutions for businesses worldwide. Boost sales & automate support 24/7.",
+    metadataBase: new URL(siteConfig.url),
+    ...createMetadata({
+        title: siteConfig.title,
+        description: siteConfig.description,
+        path: "/",
+    }),
     keywords: [
         "Syenxa Tech AI Calling Agents",
         "Syenxa Tech AI Chatbots",
@@ -64,29 +67,25 @@ export const metadata = {
         "Online Marketing Solutions",
         "AI Marketing Automation Services",
     ],
-    openGraph: {
-        title: "AI Calling Agents & Digital Solutions | Syenxa Tech",
-        description:
-            "Syenxa Tech builds AI Calling Agents, chatbots, websites, apps & automation solutions for businesses worldwide. Boost sales & automate support 24/7.",
-        url: "https://syenxatech.com",
-        siteName: "Syenxa Tech",
-        images: [
-            {
-                url: "/og-image.png",
-                width: 1200,
-                height: 630,
-                alt: "Syenxa Tech AI Solutions",
-            },
-        ],
-        locale: "en_US",
-        type: "website",
+    applicationName: siteConfig.name,
+    authors: [{ name: siteConfig.name, url: siteConfig.url }],
+    creator: siteConfig.name,
+    publisher: siteConfig.name,
+    category: "technology",
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
-    twitter: {
-        card: "summary_large_image",
-        title: "AI Calling Agents & Digital Solutions | Syenxa Tech",
-        description:
-            "Syenxa Tech builds AI Calling Agents, chatbots, websites, apps & automation solutions for businesses worldwide.",
-        images: ["/og-image.png"],
+    icons: {
+        icon: "/logo.svg",
+        apple: "/Logo.png",
     },
 };
 
@@ -129,15 +128,17 @@ export default function RootLayout({ children }) {
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
-                            "@type": "Organization",
-                            name: "Syenxa Tech",
-                            url: "https://syenxatech.com",
-                            logo: "https://syenxatech.com/logo.svg",
+                            "@type": "ProfessionalService",
+                            "@id": absoluteUrl("/#organization"),
+                            name: siteConfig.name,
+                            url: siteConfig.url,
+                            logo: absoluteUrl("/logo.svg"),
+                            image: absoluteUrl(siteConfig.ogImage),
                             contactPoint: {
                                 "@type": "ContactPoint",
-                                telephone: "+1-737-307-6969",
+                                telephone: siteConfig.phone,
                                 contactType: "customer service",
-                                email: "info@syenxatech.com",
+                                email: siteConfig.email,
                                 areaServed: "Worldwide",
                                 availableLanguage: "en",
                             },
@@ -147,7 +148,30 @@ export default function RootLayout({ children }) {
                                 "https://www.facebook.com/people/SyenxaTech/61584113090992/#",
                             ],
                             description:
-                                "Syenxa Tech provides cutting-edge AI Calling Agents and automation solutions to help businesses worldwide scale effortlessly.",
+                                siteConfig.description,
+                            knowsAbout: [
+                                "AI calling agents",
+                                "AI chatbots",
+                                "AI automation",
+                                "website development",
+                                "digital marketing",
+                            ],
+                        }),
+                    }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "@id": absoluteUrl("/#website"),
+                            name: siteConfig.name,
+                            url: siteConfig.url,
+                            publisher: {
+                                "@id": absoluteUrl("/#organization"),
+                            },
+                            inLanguage: "en",
                         }),
                     }}
                 />

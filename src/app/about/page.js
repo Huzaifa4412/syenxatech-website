@@ -1,9 +1,11 @@
 import SEOContentPage from "@/components/SEOContentPage";
+import { createMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = createMetadata({
     title: "About Us | Syenxa Tech – AI Calling Agents & Digital Solutions",
     description:
         "Learn how Syenxa Tech is revolutionizing sales and customer support with AI Calling Agents. We empower businesses worldwide with intelligent, 24/7 digital solutions.",
+    path: "/about",
     keywords: [
         "AI Calling Agents",
         "AI Voice Agents for Sales",
@@ -12,7 +14,7 @@ export const metadata = {
         "AI Automation Solutions",
         "Syenxa Tech AI solutions",
     ],
-};
+});
 
 export default function AboutUs() {
     return (

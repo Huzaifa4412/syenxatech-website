@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
-Dsiallow: /private/
+Disallow: /private/
+Disallow: /api/
 
 Sitemap: https://syenxatech.com/sitemap.xml
