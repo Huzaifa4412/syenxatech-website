@@ -61,19 +61,19 @@ const Story = () => {
                     <p className="text-sm dark:text-gray-400">
                         Email:{" "}
                         <a
-                            href="mailto:info@syenxatech.com"
+                            href="mailto:syenxatech@gmail.com"
                             className="hover:text-(--primary-color) transition-colors"
                         >
-                            info@syenxatech.com
+                            syenxatech@gmail.com
                         </a>
                     </p>
                     <p className="text-sm dark:text-gray-400">
                         Phone:{" "}
                         <a
-                            href="tel:+17373076969"
+                            href="tel:+12897963492"
                             className="hover:text-(--primary-color) transition-colors"
                         >
-                            +1 (737) 307-6969
+                            +1 289 796-3492
                         </a>
                     </p>
                 </div>

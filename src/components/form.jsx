@@ -1,6 +1,52 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+
+function normalizeWhatsAppNumber(value) {
+  return value.replace(/\D/g, "");
+}
+
+function buildWhatsAppUrl(number, message) {
+  const digits = normalizeWhatsAppNumber(number);
+  if (digits.length < 8 || digits.length > 15) return null;
+  return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+}
 
 const Contact = () => {
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+
+  const handleChange = (e) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+    if (!whatsappNumber) {
+      alert("WhatsApp is not configured. Please contact us directly.");
+      return;
+    }
+
+    const lines = [
+      "New inquiry from Syenxa Tech website",
+      "",
+      `Name: ${form.name.trim()}`,
+      `Email: ${form.email.trim()}`,
+      `Phone: ${form.phone.trim() || "Not provided"}`,
+      "",
+      "Message:",
+      form.message.trim() || "No message provided",
+    ];
+
+    const url = buildWhatsAppUrl(whatsappNumber, lines.join("\n"));
+    if (!url) {
+      alert("Invalid WhatsApp number. Please contact us directly.");
+      return;
+    }
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <section id="contact" className="relative z-10 overflow-hidden session py-20 lg:py-[120px]">
@@ -77,7 +123,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      +1 (737) 307-6969
+                      +1 289 796-3492
                     </p>
                   </div>
                 </div>
@@ -102,7 +148,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@syenxatech.com
+                      syenxatech@gmail.com
                     </p>
                   </div>
                 </div>
@@ -110,27 +156,34 @@ const Contact = () => {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg  p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form action={"https://formspree.io/f/mjkjzeja"} method="POST">
+                <form onSubmit={handleSubmit}>
                   <ContactInputBox
                     type="text"
                     name="name"
                     placeholder="Your Name"
+                    value={form.name}
+                    onChange={handleChange}
                   />
                   <ContactInputBox
                     type="text"
                     name="email"
                     placeholder="Your Email"
+                    value={form.email}
+                    onChange={handleChange}
                   />
                   <ContactInputBox
                     type="text"
                     name="phone"
                     placeholder="Your Phone"
+                    value={form.phone}
+                    onChange={handleChange}
                   />
                   <ContactTextArea
                     row="6"
                     placeholder="Your Message"
                     name="message"
-                    defaultValue=""
+                    value={form.message}
+                    onChange={handleChange}
                   />
                   <div>
                     <button
@@ -960,7 +1013,7 @@ const Contact = () => {
 
 export default Contact;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+const ContactTextArea = ({ row, placeholder, name, value, onChange }) => {
   return (
     <>
       <div className="mb-6">
@@ -968,15 +1021,16 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
+          value={value}
+          onChange={onChange}
           className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-          defaultValue={defaultValue}
         />
       </div>
     </>
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
   return (
     <>
       <div className="mb-6">
@@ -984,6 +1038,8 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
+          value={value}
+          onChange={onChange}
           className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
         />
       </div>

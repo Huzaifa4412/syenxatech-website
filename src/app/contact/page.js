@@ -21,11 +21,26 @@ const iconMap = {
     Linkedin: Linkedin,
     Twitter: Twitter,
 };
-import {useForm} from "@formspree/react"
+
+function normalizeWhatsAppNumber(value) {
+    return value.replace(/\D/g, "");
+}
+
+function buildWhatsAppUrl(number, message) {
+    const digits = normalizeWhatsAppNumber(number);
+    if (digits.length < 8 || digits.length > 15) return null;
+    return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`;
+}
 
 export default function ContactPage() {
     const [formState, setFormState] = useState("idle"); // idle, submitting, success
-    const [state, handleSubmit] = useForm("mjkjzeja")
+    const [form, setForm] = useState({
+        Name: "",
+        Email: "",
+        Service: "AI Automation & Agents",
+        Message: "",
+    });
+
     const socialMedia = [
         {
             name: "facebook",
@@ -43,14 +58,43 @@ export default function ContactPage() {
         },
     ]
 
+    const handleChange = (e) => {
+        setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+
     const HandleFormSubmit = (e) => {
         e.preventDefault();
         setFormState("submitting");
-        // Simulate sending
+
+        const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+        if (!whatsappNumber) {
+            alert("WhatsApp is not configured. Please contact us directly.");
+            setFormState("idle");
+            return;
+        }
+
+        const lines = [
+            "New inquiry from Syenxa Tech website",
+            "",
+            `Name: ${form.Name.trim()}`,
+            `Email: ${form.Email.trim()}`,
+            `Service: ${form.Service}`,
+            "",
+            "Message:",
+            form.Message.trim() || "No message provided",
+        ];
+
+        const url = buildWhatsAppUrl(whatsappNumber, lines.join("\n"));
+        if (!url) {
+            alert("Invalid WhatsApp number. Please contact us directly.");
+            setFormState("idle");
+            return;
+        }
+
         setTimeout(() => {
             setFormState("success");
-        }, 1500);
-        handleSubmit(e);
+            window.open(url, "_blank", "noopener,noreferrer");
+        }, 800);
     };
 
     return (
@@ -173,8 +217,6 @@ export default function ContactPage() {
                             </div>
                         ) : (
                             <form
-                                action="https://formspree.io/f/mjkjzeja"
-                                method="POST"
                                 onSubmit={HandleFormSubmit}
                                 className="space-y-6"
                             >
@@ -187,6 +229,8 @@ export default function ContactPage() {
                                             type="text"
                                             name="Name"
                                             required
+                                            value={form.Name}
+                                            onChange={handleChange}
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20"
                                             placeholder="John Doe"
                                         />
@@ -199,6 +243,8 @@ export default function ContactPage() {
                                             type="email"
                                             name="Email"
                                             required
+                                            value={form.Email}
+                                            onChange={handleChange}
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20"
                                             placeholder="john@example.com"
                                         />
@@ -209,7 +255,7 @@ export default function ContactPage() {
                                     <label className="text-xs font-mono uppercase tracking-wider text-white/50">
                                         Services
                                     </label>
-                                    <select name="Service" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all appearance-none cursor-pointer">
+                                    <select name="Service" value={form.Service} onChange={handleChange} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all appearance-none cursor-pointer">
                                         <option className="bg-[#0a0a0a]">
                                             AI Automation & Agents
                                         </option>
@@ -242,6 +288,8 @@ export default function ContactPage() {
                                     name="Message"
                                         required
                                         rows={4}
+                                        value={form.Message}
+                                        onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20 resize-none"
                                         placeholder="Tell us about your project..."
                                     />

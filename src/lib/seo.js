@@ -5,8 +5,8 @@ export const siteConfig = {
     description:
         "Syenxa Tech builds AI calling agents, chatbots, websites, apps, and automation solutions that help businesses capture leads, support customers, and scale operations.",
     ogImage: "/hero-bg.jpg",
-    email: "info@syenxatech.com",
-    phone: "+1-737-307-6969",
+    email: "syenxatech@gmail.com",
+    phone: "+1 289 796-3492",
 };
 
 export const blogPosts = [

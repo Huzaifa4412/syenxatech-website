@@ -125,12 +125,20 @@ const portfolioProjects = [
         link: "https://syenxatech.vercel.app/",
     },
     {
-        title: "Apni Vibe",
-        category: "E-Commerce Website",
+        title: "Home Services",
+        category: "Home Services Website",
         description:
-            "A modern e-commerce store designed with a clean, engaging interface and seamless shopping experience, optimized for performance, conversions, and brand storytelling.",
-        image: "/website-portfolio/aoni-vibe.png",
-        link: "https://apnivibe.vercel.app/",
+            "A professional website for a home services client, built to highlight service offerings, streamline customer inquiries, and establish a trustworthy online presence with a clean, user-friendly design.",
+        image: "/website-portfolio/home-services1.png",
+        link: "https://home-service-site.vercel.app/",
+    },
+    {
+        title: "Pane Di Dio",
+        category: "Bakery Website",
+        description:
+            "A warm and inviting website for an Italian bakery, crafted to showcase artisan breads and pastries with rich visuals, an appetizing layout, and a delightful browsing experience that mirrors the brand's heritage.",
+        image: "/website-portfolio/pane-di-dio.png",
+        link: "https://pane-di-dio-website.vercel.app/",
     },
     {
         title: "AuraByNs",
@@ -141,6 +149,22 @@ const portfolioProjects = [
         link: "https://aurabyns.netlify.app/",
     },
     {
+        title: "Home Services Pro",
+        category: "Home Services Website",
+        description:
+            "A conversion-focused website for a home services business, featuring service catalogs, booking flows, and trust-building elements designed to turn visitors into loyal customers.",
+        image: "/website-portfolio/home-services.png",
+        link: "https://home-services-virid.vercel.app/",
+    },
+    {
+        title: "Knitty Petit",
+        category: "E-Commerce Website",
+        description:
+            "A charming online store for custom kids' sweaters, blending playful design with a seamless shopping experience — from product browsing to checkout — built to delight parents and grow the brand.",
+        image: "/website-portfolio/knittypetit.png",
+        link: "https://www.knittypetit.shop/",
+    },
+    {
         title: "Syenxa AI Calorie Tracker",
         category: "AI Fitness App",
         description:
@@ -149,12 +173,28 @@ const portfolioProjects = [
         link: "https://syenxa-ai-calorie-app.vercel.app/",
     },
     {
+        title: "Nature Tech",
+        category: "Industrial & Energy Website",
+        description:
+            "A robust website for a timber and clean-energy specialist, presenting their wood-to-fuel pipeline, EN+ graded pellets, and custom burner engineering with authoritative design and clear technical communication.",
+        image: "/website-portfolio/naturetech.png",
+        link: "https://naturetech-website.vercel.app/",
+    },
+    {
         title: "Syenxa GYM",
         category: "Gym Website",
         description:
             "A modern and dynamic website for a fitness center, designed to showcase classes, trainers, and membership plans with an engaging user experience and responsive design.",
         image: "/website-portfolio/syenxa-gym.png",
         link: "https://syenxa-gym.vercel.app/",
+    },
+    {
+        title: "Neon Craft",
+        category: "Custom Products Website",
+        description:
+            "A bold and eye-catching website for a custom neon sign studio, designed to showcase vibrant creations, streamline custom orders, and capture the brand's creative energy with striking visuals.",
+        image: "/website-portfolio/neon-craft.png",
+        link: "https://website-codex-ivory.vercel.app/",
     },
     {
         title: "Aurora Beauty Salon",
