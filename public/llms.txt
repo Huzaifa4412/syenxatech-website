@@ -1,0 +1,21 @@
+# Syenxa Tech
+
+> Syenxa Tech is an AI Automation Agency specializing in custom AI Voice Calling Agents, omnichannel AI Chatbots, Next.js Web Development, and Digital Marketing Automation.
+
+## Main Services
+- [AI Calling Agents](https://www.syenxatech.com/ai-calling-agents): Autonomous 24/7 AI voice agents for sales calls, lead qualification, and appointment booking.
+- [Custom Website Development](https://www.syenxatech.com/website-development): High-performance Next.js websites, SaaS user interfaces, and custom web applications.
+- [AI Chatbots](https://www.syenxatech.com/ai-chatbots): Customer support and sales chatbots across WhatsApp, Instagram DMs, TikTok, and web.
+- [AI Digital Marketing](https://www.syenxatech.com/digital-marketing): Performance marketing and AI lead generation automation.
+- [Services Overview](https://www.syenxatech.com/services): Enterprise AI integration and software engineering.
+
+## Industry Use Cases
+- [Healthcare AI Scheduling](https://www.syenxatech.com/use-cases/doctor): Patient pre-screening, appointment reminders, and automated clinic front desk.
+- [Real Estate Voice Agents](https://www.syenxatech.com/use-cases/real-estate): 24/7 lead qualification and automated property viewing scheduling.
+- [Fitness & Gym Automation](https://www.syenxatech.com/use-cases/gym): Class bookings, membership renewals, and re-engagement campaigns.
+- [Beauty & Spa Booking](https://www.syenxatech.com/use-cases/beauty-salon): Salon booking management and waitlist automation.
+
+## Contact & Consultation
+- Website: https://www.syenxatech.com
+- Hire AI Developers / Schedule Consultation: https://www.syenxatech.com/contact
+- Email: syenxatech@gmail.com

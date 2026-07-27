@@ -1,92 +1,67 @@
 import SEOContentPage from "@/components/SEOContentPage";
-import { createMetadata } from "@/lib/seo";
+import { createMetadata, generateServiceSchema } from "@/lib/seo";
 
 export const metadata = createMetadata({
-    title: "Digital Marketing & SEO Services | Syenxa Tech | AI Solutions",
+    title: "AI Marketing Automation Agency & SEO Services | Syenxa Tech",
     description:
-        "Grow your online presence with Syenxa Tech's SEO services and digital marketing solutions. We leverage AI marketing automation to drive targeted traffic.",
+        "Accelerate business growth with Syenxa Tech's AI marketing automation agency, SEO services, performance marketing, and conversion optimization.",
     path: "/digital-marketing",
     keywords: [
-        "SEO Services",
-        "Digital Marketing Agency",
-        "Online Marketing Solutions",
-        "AI Marketing Automation Services",
+        "AI Marketing Automation Agency",
+        "AI Digital Marketing Agency",
+        "Marketing Automation Agency",
+        "SEO Services Company",
+        "AI Business Growth Agency",
+        "Digital Marketing Agency"
     ],
 });
 
 export default function DigitalMarketing() {
+    const serviceSchema = generateServiceSchema({
+        name: "AI Digital Marketing & SEO Services",
+        description: "AI marketing automation, technical SEO, and conversion optimization services.",
+        serviceType: "Digital Marketing Agency",
+        url: "/digital-marketing",
+    });
+
     return (
-        <SEOContentPage
-            title="Digital Marketing & SEO Services"
-            subtitle="AI-Driven Marketing Strategy for Growth"
-            content={
-                <div className="space-y-8">
-                    <section>
-                        <h2 className="text-2xl font-bold text-white">
-                            Drive Targeted Traffic with Strategic SEO
-                        </h2>
-                        <p>
-                            Syenxa Tech is a digital marketing agency
-                            dedicated to helping businesses dominate the search
-                            results. Our SEO services focus on high-conversion
-                            keywords and sustainable growth.
-                        </p>
-                    </section>
-                    <section>
-                        <h3 className="text-xl font-semibold text-(--primary-color)">
-                            SEO Services
-                        </h3>
-                        <p>
-                            Our comprehensive SEO strategy includes on-page
-                            optimization, technical SEO, and authority building.
-                            We target both brand-specific and service-focused
-                            keywords to ensure your business is found by the
-                            right audience at the right time.
-                        </p>
-                    </section>
-                    <section>
-                        <h3 className="text-xl font-semibold text-(--primary-color)">
-                            AI Marketing Automation Services
-                        </h3>
-                        <p>
-                            Leverage the power of AI to automate your marketing
-                            workflows. From automated lead nurturing to
-                            AI-driven content strategy, we help you save time
-                            and increase ROI by working smarter.
-                        </p>
-                    </section>
-                    <section>
-                        <h3 className="text-xl font-semibold text-(--primary-color)">
-                            Comprehensive Online Marketing Solutions
-                        </h3>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>
-                                <strong>Keyword Research:</strong> Identifying
-                                high-conversion long-tail keywords for your
-                                niche.
-                            </li>
-                            <li>
-                                <strong>Content Optimization:</strong> Ensuring
-                                every page is engaging and SEO-friendly.
-                            </li>
-                            <li>
-                                <strong>Analytics & Reporting:</strong>{" "}
-                                Data-driven decisions based on real performance
-                                metrics.
-                            </li>
-                            <li>
-                                <strong>Social Media Automation:</strong>{" "}
-                                Streamlining your social presence with AI.
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            }
-            keywords={[
-                "SEO",
-                "Digital Marketing Agency",
-                "AI Marketing Automation",
-            ]}
-        />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <SEOContentPage
+                title="Digital Marketing & SEO Services"
+                subtitle="AI-Driven Marketing Strategy for Growth"
+                content={
+                    <div className="space-y-8">
+                        <section>
+                            <h2 className="text-2xl font-bold text-white mb-4">
+                                Drive Targeted Traffic with Strategic SEO & AI Marketing
+                            </h2>
+                            <p className="text-white/70 leading-relaxed">
+                                Syenxa Tech is an AI digital marketing agency dedicated to helping businesses dominate search engine results. Our SEO and AI marketing automation services focus on high-conversion keywords, technical optimizations, and scalable customer acquisition.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 className="text-xl font-semibold text-[#ff541f] mb-3">
+                                Comprehensive Technical SEO Services
+                            </h3>
+                            <p className="text-white/70 leading-relaxed">
+                                Our technical SEO strategy includes on-page optimization, site architecture, Core Web Vitals speed optimization, JSON-LD schema markup, and authority building to ensure your business ranks for commercial search terms.
+                            </p>
+                        </section>
+                        <section>
+                            <h3 className="text-xl font-semibold text-[#ff541f] mb-3">
+                                AI Marketing Automation Services
+                            </h3>
+                            <p className="text-white/70 leading-relaxed">
+                                We implement automated lead capture, email workflows, and omnichannel marketing bots across social channels, maximizing customer retention while scaling sales operations effortlessly.
+                            </p>
+                        </section>
+                    </div>
+                }
+            />
+        </>
     );
 }

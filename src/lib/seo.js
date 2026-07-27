@@ -94,3 +94,51 @@ export function createMetadata({
         },
     };
 }
+
+export function generateFaqSchema(faqs = []) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer,
+            },
+        })),
+    };
+}
+
+export function generateServiceSchema({ name, description, serviceType, url }) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": name,
+        "description": description,
+        "serviceType": serviceType,
+        "provider": {
+            "@type": "Organization",
+            "name": siteConfig.name,
+            "url": siteConfig.url,
+        },
+        "url": absoluteUrl(url),
+    };
+}
+
+export function generateOrganizationSchema() {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": siteConfig.name,
+        "url": siteConfig.url,
+        "logo": absoluteUrl("/logo.png"),
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": siteConfig.email,
+            "telephone": siteConfig.phone,
+            "contactType": "customer service",
+        },
+    };
+}
+

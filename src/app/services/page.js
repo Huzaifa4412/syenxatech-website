@@ -4,21 +4,20 @@ import ServiceList from "@/components/services/ServiceList";
 import ProcessSection from "@/components/services/ProcessSection";
 import Contact from "@/components/form";
 import Faqs from "@/components/faqs";
-import Footer from "@/components/footer";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-    title: "Premium AI & Digital Services | Syenxa Tech",
+    title: "AI Automation Services & Digital Solutions | Syenxa Tech",
     description:
-        "Explore Syenxa Tech's professional services: AI Calling Agents, Intelligent Chatbots, High-Performance Web Development, and Mobile Apps. Scale your business today.",
+        "Explore Syenxa Tech's AI automation services: custom AI voice agents, intelligent chatbots, Next.js web application development, and mobile apps.",
     path: "/services",
     keywords: [
-        "AI Calling Agents",
-        "AI Chatbots",
-        "Web Development",
-        "Mobile App Development",
-        "Syenxa Tech Services",
-        "Digital Transformation",
+        "AI Automation Services",
+        "Artificial Intelligence Automation Agency",
+        "AI Integration Services",
+        "AI Business Automation",
+        "AI Voice Calling Agents",
+        "Custom Web Development Agency"
     ],
 });
 

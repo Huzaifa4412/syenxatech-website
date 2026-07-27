@@ -2,17 +2,17 @@ import SEOContentPage from "@/components/SEOContentPage";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-    title: "About Us | Syenxa Tech – AI Calling Agents & Digital Solutions",
+    title: "About Syenxa Tech | Leading AI Automation Agency",
     description:
-        "Learn how Syenxa Tech is revolutionizing sales and customer support with AI Calling Agents. We empower businesses worldwide with intelligent, 24/7 digital solutions.",
+        "Learn how Syenxa Tech empowers businesses worldwide with custom AI voice agents, intelligent chatbots, Next.js web development, and AI business automation.",
     path: "/about",
     keywords: [
-        "AI Calling Agents",
-        "AI Voice Agents for Sales",
-        "AI Customer Support Agents",
-        "AI Appointment Booking Agents",
-        "AI Automation Solutions",
-        "Syenxa Tech AI solutions",
+        "AI Automation Agency",
+        "Artificial Intelligence Automation Agency",
+        "AI Calling Agents Developer",
+        "Custom AI Solutions Company",
+        "Syenxa Tech About Us",
+        "AI Business Automation Team",
     ],
 });
 
