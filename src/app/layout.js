@@ -1,4 +1,5 @@
 import { Poppins, Urbanist, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "@/app/globals.css";
 import "@n8n/chat/style.css";
 
