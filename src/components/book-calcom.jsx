@@ -9,7 +9,7 @@ export default function BookCal() {
                 calLink: "syenxa-tech/30min",
                 config: { layout: "month_view" },
             });
-            cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+            cal("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view" });
         })();
     }, []);
 }

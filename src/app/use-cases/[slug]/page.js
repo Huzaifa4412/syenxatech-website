@@ -37,7 +37,7 @@ const DetailPage = ({ params }) => {
     }
 
     return (
-        <div className="min-h-screen bg-[#020202] text-white selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
+        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
             {/* Global Grain */}
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-white"
@@ -50,7 +50,7 @@ const DetailPage = ({ params }) => {
             <div className="absolute top-24 left-6 md:left-12 z-50">
                 <Link
                     href="/use-cases"
-                    className="flex items-center gap-2 text-white/50 hover:text-[#ff541f] transition-colors group"
+                    className="flex items-center gap-2 text-zinc-600 hover:text-[#ff541f] transition-colors group"
                 >
                     <ArrowLeft
                         size={18}
@@ -70,7 +70,7 @@ const DetailPage = ({ params }) => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="font-display text-4xl md:text-7xl font-bold leading-[1.1] text-white mb-6"
+                    className="font-display text-4xl md:text-7xl font-bold leading-[1.1] text-zinc-900 mb-6"
                 >
                     {data.hero.title}
                 </motion.h1>
@@ -78,7 +78,7 @@ const DetailPage = ({ params }) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="font-body text-lg md:text-2xl text-white/60 max-w-3xl mx-auto leading-relaxed"
+                    className="font-body text-lg md:text-2xl text-zinc-600 max-w-3xl mx-auto leading-relaxed"
                 >
                     {data.hero.subtitle}
                 </motion.p>
@@ -101,12 +101,12 @@ const DetailPage = ({ params }) => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-[#ff541f]/50 transition-colors duration-300"
+                            className="p-6 rounded-2xl bg-zinc-900/5 border border-zinc-900/10 hover:border-[#ff541f]/50 transition-colors duration-300"
                         >
                             <div className="mb-4 text-[#ff541f] opacity-80">
                                 <Check size={24} />
                             </div>
-                            <p className="font-body text-white/80 leading-relaxed">
+                            <p className="font-body text-zinc-800 leading-relaxed">
                                 {challenge}
                             </p>
                         </motion.div>
@@ -115,7 +115,7 @@ const DetailPage = ({ params }) => {
             </section>
 
             {/* Solutions Section */}
-            <section className="py-20 bg-white/5 border-y border-white/5 relative overflow-hidden">
+            <section className="py-20 bg-zinc-900/5 border-y border-zinc-900/5 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                     <div className="mb-16">
                         <span className="text-[#ff541f] font-mono uppercase tracking-widest text-sm mb-2 block">
@@ -130,19 +130,19 @@ const DetailPage = ({ params }) => {
                         {data.solutions.map((solution, index) => (
                             <div key={index} className="group">
                                 <div className="flex items-start gap-4 mb-4">
-                                    <span className="font-display text-4xl text-white/10 group-hover:text-[#ff541f] transition-colors duration-500 font-bold">
+                                    <span className="font-display text-4xl text-zinc-200 group-hover:text-[#ff541f] transition-colors duration-500 font-bold">
                                         0{index + 1}
                                     </span>
                                     <div>
-                                        <h3 className="font-display text-2xl font-bold text-white mb-2 group-hover:text-[#ff541f] transition-colors">
+                                        <h3 className="font-display text-2xl font-bold text-zinc-900 mb-2 group-hover:text-[#ff541f] transition-colors">
                                             {solution.title}
                                         </h3>
-                                        <p className="font-body text-white/60 leading-relaxed">
+                                        <p className="font-body text-zinc-600 leading-relaxed">
                                             {solution.description}
                                         </p>
                                     </div>
                                 </div>
-                                <div className="w-full h-[1px] bg-white/10 group-hover:bg-[#ff541f]/30 transition-colors" />
+                                <div className="w-full h-[1px] bg-zinc-900/10 group-hover:bg-[#ff541f]/30 transition-colors" />
                             </div>
                         ))}
                     </div>
@@ -150,21 +150,21 @@ const DetailPage = ({ params }) => {
             </section>
 
             {/* Stats Section */}
-            <section className="py-24 bg-black relative">
+            <section className="py-24 bg-[#faf9f7] relative">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center relative z-10">
                     {data.stats.map((stat, index) => (
                         <div key={index} className="space-y-2">
-                            <div className="flex items-baseline justify-center font-display font-bold text-6xl md:text-7xl text-white">
+                            <div className="flex items-baseline justify-center font-display font-bold text-6xl md:text-7xl text-zinc-900">
                                 <CountUp
                                     to={stat.value}
                                     duration={2.5}
-                                    className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50"
+                                    className="bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-900/50"
                                 />
                                 <span className="text-[#ff541f] text-4xl ml-1">
                                     {stat.suffix}
                                 </span>
                             </div>
-                            <p className="font-mono text-sm text-white/40 uppercase tracking-widest px-8">
+                            <p className="font-mono text-sm text-zinc-500 uppercase tracking-widest px-8">
                                 {stat.label}
                             </p>
                         </div>
@@ -174,7 +174,7 @@ const DetailPage = ({ params }) => {
 
             {/* Case Study Section */}
             <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-                <div className="rounded-3xl bg-[#0a0a0a] border border-white/10 p-8 md:p-16 relative overflow-hidden">
+                <div className="rounded-3xl bg-white border border-zinc-900/10 p-8 md:p-16 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#ff541f]/5 rounded-full blur-[100px] pointer-events-none" />
 
                     <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -182,49 +182,49 @@ const DetailPage = ({ params }) => {
                             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff541f]/10 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6">
                                 Success Story
                             </span>
-                            <h2 className="font-display text-3xl md:text-5xl font-bold mb-8 text-white">
+                            <h2 className="font-display text-3xl md:text-5xl font-bold mb-8 text-zinc-900">
                                 {data.caseStudy.title}
                             </h2>
 
                             <div className="space-y-8">
                                 <div>
-                                    <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                                    <h4 className="text-zinc-900 font-bold mb-2 flex items-center gap-2">
                                         <Phone
                                             size={18}
                                             className="text-[#ff541f]"
                                         />{" "}
                                         The Challenge
                                     </h4>
-                                    <p className="text-white/60 text-sm leading-relaxed">
+                                    <p className="text-zinc-600 text-sm leading-relaxed">
                                         {data.caseStudy.challenge}
                                     </p>
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold mb-2 flex items-center gap-2">
+                                    <h4 className="text-zinc-900 font-bold mb-2 flex items-center gap-2">
                                         <MessageCircle
                                             size={18}
                                             className="text-[#ff541f]"
                                         />{" "}
                                         The Solution
                                     </h4>
-                                    <p className="text-white/60 text-sm leading-relaxed">
+                                    <p className="text-zinc-600 text-sm leading-relaxed">
                                         {data.caseStudy.solution}
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white/5 rounded-2xl p-8 border border-white/5 flex flex-col justify-center relative">
+                        <div className="bg-zinc-900/5 rounded-2xl p-8 border border-zinc-900/5 flex flex-col justify-center relative">
                             {/* Quote Icon */}
                             <div className="absolute top-8 left-8 text-[#ff541f]/20 font-serif text-8xl leading-none">
                                 "
                             </div>
 
-                            <blockquote className="relative z-10 text-xl font-body italic text-white/80 leading-relaxed mb-6">
+                            <blockquote className="relative z-10 text-xl font-body italic text-zinc-800 leading-relaxed mb-6">
                                 {data.caseStudy.result}
                             </blockquote>
                             <div className="h-[1px] w-12 bg-[#ff541f] mb-4" />
-                            <cite className="not-italic text-sm text-white/40 block">
+                            <cite className="not-italic text-sm text-zinc-500 block">
                                 — {data.caseStudy.title}
                             </cite>
                         </div>
@@ -234,12 +234,12 @@ const DetailPage = ({ params }) => {
 
             {/* CTA Section */}
             <section className="py-20 text-center">
-                <h2 className="font-display text-4xl font-bold text-white mb-8">
+                <h2 className="font-display text-4xl font-bold text-zinc-900 mb-8">
                     Ready to transform your business?
                 </h2>
                 <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-white hover:text-black transition-all duration-300 group"
+                    className="inline-flex items-center gap-2 px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-zinc-900 hover:text-white transition-all duration-300 group"
                 >
                     Get Started Now
                     <ArrowRight

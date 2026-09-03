@@ -1,85 +1,96 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "motion/react";
+import { PhoneCall, PenTool, Rocket } from "lucide-react";
+
+const steps = [
+    {
+        icon: PhoneCall,
+        title: "Discovery call",
+        description:
+            "A free consultation where we map your current workflow and pick the automation with the fastest payback.",
+        detail: "You leave with a fixed quote and a delivery date.",
+    },
+    {
+        icon: PenTool,
+        title: "Build and review",
+        description:
+            "We design and build in short cycles, and you review working versions instead of slide decks.",
+        detail: "Chatbots ship in 3 days, websites in 5 to 7.",
+    },
+    {
+        icon: Rocket,
+        title: "Launch and support",
+        description:
+            "We deploy, connect your channels and CRM, and stay on for tuning once real customers hit the system.",
+        detail: "Support is included, not an upsell.",
+    },
+];
 
 const ProcessSection = () => {
-    const steps = [
-        {
-            number: "01",
-            title: "Discovery & Strategy",
-            description:
-                "We dive deep into your business needs to define the perfect AI or digital strategy for your goals.",
-        },
-        {
-            number: "02",
-            title: "Design & Development",
-            description:
-                "Our experts craft high-end user experiences and integrate cutting-edge AI technologies into your workflow.",
-        },
-        {
-            number: "03",
-            title: "Optimization & Launch",
-            description:
-                "We rigorously test and optimize every aspect to ensure a flawless launch and immediate impact.",
-        },
-    ];
+    const reduce = useReducedMotion();
 
     return (
-        <section className="w-full py-24 bg-black border-y border-white/5 relative overflow-hidden">
-            {/* Subtle Grid Background */}
-            <div
-                className="absolute inset-0 opacity-[0.03] pointer-events-none"
-                style={{
-                    backgroundImage:
-                        "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
-                    size: "40px 40px",
-                }}
-            />
-
-            <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="text-center mb-24">
-                    <motion.span
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-[#ff541f] text-sm font-bold tracking-[0.2em] uppercase block mb-4"
-                    >
-                        Our Process
-                    </motion.span>
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-4xl lg:text-6xl font-bold text-white tracking-tighter"
-                    >
-                        How We Bring{" "}
-                        <span className="text-[#ff541f]">Vision</span> to Life.
-                    </motion.h2>
+        <section
+            id="process"
+            className="w-full py-20 md:py-28 bg-[#faf9f7] border-y border-zinc-900/5"
+        >
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-8">
+                {/* Sticky intro column */}
+                <div className="lg:col-span-5">
+                    <div className="lg:sticky lg:top-32">
+                        <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tighter max-w-[12ch]">
+                            From first call to launch
+                        </h2>
+                        <p className="mt-5 text-lg text-zinc-600 font-light leading-relaxed max-w-[40ch]">
+                            No long contracts and no surprise scope. Three
+                            steps, each with a clear deliverable.
+                        </p>
+                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    {steps.map((step, idx) => (
-                        <motion.div
-                            key={idx}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: idx * 0.2 }}
-                            className="relative p-12 rounded-3xl bg-zinc-950/40 border border-white/5 hover:border-[#ff541f]/20 transition-colors group"
-                        >
-                            <span className="text-8xl font-bold text-white/5 absolute -top-4 -right-4 select-none group-hover:text-[#ff541f]/10 transition-colors">
-                                {step.number}
-                            </span>
-                            <div className="relative z-10">
-                                <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">
-                                    {step.title}
-                                </h3>
-                                <p className="text-white/40 text-sm leading-relaxed font-light">
-                                    {step.description}
-                                </p>
-                            </div>
-                        </motion.div>
-                    ))}
+                {/* Steps rail */}
+                <div className="lg:col-span-7">
+                    <ol className="relative">
+                        {steps.map((step, idx) => (
+                            <motion.li
+                                key={step.title}
+                                initial={reduce ? false : { opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.4 }}
+                                transition={{
+                                    duration: 0.6,
+                                    delay: idx * 0.08,
+                                    ease: [0.16, 1, 0.3, 1],
+                                }}
+                                className="relative flex gap-6 md:gap-8 pb-12 last:pb-0"
+                            >
+                                {/* Rail line */}
+                                {idx < steps.length - 1 && (
+                                    <span
+                                        aria-hidden
+                                        className="absolute left-6 top-14 bottom-0 w-px bg-zinc-900/10"
+                                    />
+                                )}
+
+                                <span className="relative z-10 flex items-center justify-center size-12 shrink-0 rounded-2xl bg-white border border-zinc-900/10 text-[#ff541f] shadow-sm shadow-zinc-900/5">
+                                    <step.icon className="w-5 h-5" strokeWidth={1.8} />
+                                </span>
+
+                                <div className="pt-1.5">
+                                    <h3 className="text-xl md:text-2xl font-bold text-zinc-900 tracking-tight">
+                                        {step.title}
+                                    </h3>
+                                    <p className="mt-2.5 text-zinc-600 font-light leading-relaxed max-w-[52ch]">
+                                        {step.description}
+                                    </p>
+                                    <p className="mt-3 text-sm font-medium text-[#ff541f]">
+                                        {step.detail}
+                                    </p>
+                                </div>
+                            </motion.li>
+                        ))}
+                    </ol>
                 </div>
             </div>
         </section>

@@ -65,7 +65,7 @@ const itemVariants = {
 
 export default function UseCasesClient() {
     return (
-        <div className="min-h-screen bg-[#020202] text-white selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
+        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-white"
                 style={{
@@ -82,18 +82,18 @@ export default function UseCasesClient() {
                 >
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#ff541f]/10 rounded-full blur-[128px] pointer-events-none" />
 
-                    <span className="inline-block py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
+                    <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
                         Industry Solutions & Use Cases
                     </span>
 
-                    <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-white mb-8">
+                    <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-zinc-900 mb-8">
                         AI Voice & Chatbot <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900/40">
                             Industry Use Cases.
                         </span>
                     </h1>
 
-                    <p className="font-body text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed">
+                    <p className="font-body text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
                         Explore how Syenxa Tech AI voice agents and custom chatbots transform sales, appointment booking, and customer support for real estate, healthcare, fitness, and e-commerce businesses.
                     </p>
                 </motion.div>

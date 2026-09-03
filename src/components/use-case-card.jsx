@@ -32,7 +32,7 @@ const UseCaseCard = ({
             onMouseMove={handleMouseMove}
         >
             <div
-                className={`relative h-full overflow-hidden rounded-3xl border border-white/5 bg-[#0a0a0a] transition-all duration-500 group-hover:border-white/10`}
+                className={`relative h-full overflow-hidden rounded-3xl border border-zinc-900/5 bg-white transition-all duration-500 group-hover:border-zinc-900/10`}
             >
                 {/* Spotlight Effect */}
                 <motion.div
@@ -56,14 +56,14 @@ const UseCaseCard = ({
                         {/* Changed mb-8 to mb-auto to push content down if needed, but flex-col justify-between handles spacing */}
                         <div
                             className={`
-                        rounded-2xl border border-white/5 bg-white/5 text-[#ff541f]
+                        rounded-2xl border border-zinc-900/5 bg-zinc-900/5 text-[#ff541f]
                         transition-transform duration-500 group-hover:scale-110 group-hover:border-[#ff541f]/20
                         ${isLarge ? "p-6" : "p-4"}
                     `}
                         >
                             {icon}
                         </div>
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/5 bg-white/5 text-white/40 transition-colors duration-300 group-hover:border-white/20 group-hover:text-white">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-900/5 bg-zinc-900/5 text-zinc-500 transition-colors duration-300 group-hover:border-zinc-900/20 group-hover:text-zinc-900">
                             <ArrowUpRight size={24} />
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const UseCaseCard = ({
                         {/* Added explicitly margin top ensuring separation */}
                         <h3
                             className={`
-                        font-display font-bold text-white leading-none
+                        font-display font-bold text-zinc-900 leading-none
                         transition-colors duration-300 group-hover:text-[#ff541f]
                         ${isLarge ? "text-5xl mb-6" : "text-3xl mb-4"} 
                     `}
@@ -83,8 +83,8 @@ const UseCaseCard = ({
                         </h3>
                         <p
                             className={`
-                        font-body text-white/50 leading-relaxed
-                        transition-colors duration-300 group-hover:text-white/70
+                        font-body text-zinc-600 leading-relaxed
+                        transition-colors duration-300 group-hover:text-zinc-700
                         ${isLarge ? "text-xl max-w-2xl" : "text-base"}
                     `}
                         >

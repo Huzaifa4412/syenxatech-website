@@ -71,7 +71,7 @@ const Navbar = () => {
                     w-full max-w-6xl flex items-center justify-between px-6 py-3 rounded-full pointer-events-auto transition-all duration-500
                     ${
                         scrolled
-                            ? "bg-black/60 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
+                            ? "bg-white/70 backdrop-blur-2xl border border-zinc-900/10 shadow-[0_8px_32px_rgba(24,24,27,0.08)]"
                             : "bg-transparent border border-transparent"
                     }
                 `}
@@ -86,7 +86,7 @@ const Navbar = () => {
                         alt="Syenxa Tech Logo"
                         className="h-8 sm:h-9 w-auto"
                     />
-                    <span className="hidden sm:block ml-3 font-bold text-white tracking-tighter text-lg">
+                    <span className="hidden sm:block ml-3 font-bold text-zinc-900 tracking-tighter text-lg">
                         SYENXATECH
                     </span>
                 </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
                             <li key={i}>
                                 <Link
                                     href={link.href}
-                                    className="text-white/60 hover:text-white transition-colors text-sm font-medium"
+                                    className="text-zinc-600 hover:text-zinc-900 transition-colors text-sm font-medium"
                                 >
                                     {link.name}
                                 </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
                             onMouseLeave={() => setServicesOpen(false)}
                         >
                             <Link href="/services">
-                                <button className="flex items-center gap-1 text-white/60 hover:text-white transition-colors text-sm font-medium cursor-pointer py-2 group">
+                                <button className="flex items-center gap-1 text-zinc-600 hover:text-zinc-900 transition-colors text-sm font-medium cursor-pointer py-2 group">
                                     Services
                                     <ChevronDown
                                         className={`w-4 h-4 transition-transform duration-300 ${
@@ -137,30 +137,30 @@ const Navbar = () => {
                                             scale: 0.95,
                                         }}
                                         transition={{ duration: 0.2 }}
-                                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-zinc-950/90 backdrop-blur-3xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl p-6"
+                                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white/95 backdrop-blur-3xl border border-zinc-900/10 rounded-3xl overflow-hidden shadow-2xl p-6"
                                     >
                                         <div className="grid grid-cols-2 gap-4">
                                             {services.map((service, idx) => (
                                                 <Link
                                                     key={idx}
                                                     href={service.href}
-                                                    className="flex flex-col gap-2 p-4 rounded-2xl hover:bg-white/5 group transition-all"
+                                                    className="flex flex-col gap-2 p-4 rounded-2xl hover:bg-zinc-900/5 group transition-all"
                                                 >
                                                     <div className="flex items-center gap-3">
                                                         <div className="p-2 rounded-lg bg-[#ff541f]/10 text-[#ff541f] group-hover:bg-[#ff541f] group-hover:text-white transition-colors">
                                                             <service.icon className="w-5 h-5" />
                                                         </div>
-                                                        <span className="font-semibold text-white group-hover:translate-x-1 transition-transform">
+                                                        <span className="font-semibold text-zinc-900 group-hover:translate-x-1 transition-transform">
                                                             {service.name}
                                                         </span>
                                                     </div>
-                                                    <p className="text-xs text-white/40 leading-relaxed">
+                                                    <p className="text-xs text-zinc-500 leading-relaxed">
                                                         {service.description}
                                                     </p>
                                                 </Link>
                                             ))}
                                         </div>
-                                        <div className="mt-6 pt-6 border-t border-white/5 flex justify-between items-center text-xs text-white/30">
+                                        <div className="mt-6 pt-6 border-t border-zinc-900/10 flex justify-between items-center text-xs text-zinc-400">
                                             <span>
                                                 All services include 24/7
                                                 support worldwide.
@@ -182,7 +182,7 @@ const Navbar = () => {
                             <li key={i}>
                                 <Link
                                     href={link.href}
-                                    className="text-white/60 hover:text-white transition-colors text-sm font-medium"
+                                    className="text-zinc-600 hover:text-zinc-900 transition-colors text-sm font-medium"
                                 >
                                     {link.name}
                                 </Link>
@@ -200,7 +200,7 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setOpen(!open)}
-                    className="md:hidden text-white p-2 hover:bg-white/10 rounded-full transition-colors"
+                    className="md:hidden text-zinc-900 p-2 hover:bg-zinc-900/10 rounded-full transition-colors"
                 >
                     {open ? (
                         <X className="w-6 h-6" />
@@ -218,7 +218,7 @@ const Navbar = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[-1] pointer-events-auto top-0 left-0 h-screen w-screen"
+                            className="fixed inset-0 bg-zinc-900/40 backdrop-blur-sm z-[-1] pointer-events-auto top-0 left-0 h-screen w-screen"
                             onClick={() => setOpen(false)}
                         />
                         <motion.div
@@ -230,7 +230,7 @@ const Navbar = () => {
                                 damping: 25,
                                 stiffness: 200,
                             }}
-                            className="absolute top-0 right-0 h-screen w-[300px] bg-zinc-950 border-l border-white/10 p-8 shadow-2xl pointer-events-auto overflow-y-auto"
+                            className="absolute top-0 right-0 h-screen w-[300px] bg-white border-l border-zinc-900/10 p-8 shadow-2xl pointer-events-auto overflow-y-auto"
                         >
                             <div className="flex flex-col h-full relative">
                                 <div className="flex justify-between items-center mb-12">
@@ -246,7 +246,7 @@ const Navbar = () => {
                                     </Link>
                                     <button
                                         onClick={() => setOpen(false)}
-                                        className="p-2 bg-white/5 rounded-full text-white hover:bg-white/20 transition-colors"
+                                        className="p-2 bg-zinc-900/5 rounded-full text-zinc-900 hover:bg-zinc-900/15 transition-colors"
                                     >
                                         <X size={20} />
                                     </button>
@@ -258,14 +258,14 @@ const Navbar = () => {
                                             <Link
                                                 href={link.href}
                                                 onClick={() => setOpen(false)}
-                                                className="text-2xl font-bold text-white tracking-tighter"
+                                                className="text-2xl font-bold text-zinc-900 tracking-tighter"
                                             >
                                                 {link.name}
                                             </Link>
                                         </li>
                                     ))}
-                                    <li className="mt-4 pt-4 border-t border-white/10">
-                                        <span className="text-xs text-white/30 uppercase tracking-widest block mb-4">
+                                    <li className="mt-4 pt-4 border-t border-zinc-900/10">
+                                        <span className="text-xs text-zinc-400 uppercase tracking-widest block mb-4">
                                             Our Services
                                         </span>
                                         <div className="grid gap-4">
@@ -276,7 +276,7 @@ const Navbar = () => {
                                                     onClick={() =>
                                                         setOpen(false)
                                                     }
-                                                    className="text-white/60 hover:text-[#ff541f] transition-colors font-medium"
+                                                    className="text-zinc-600 hover:text-[#ff541f] transition-colors font-medium"
                                                 >
                                                     {s.name}
                                                 </Link>

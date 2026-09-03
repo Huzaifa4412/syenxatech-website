@@ -54,17 +54,17 @@ const Contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold text-primary">
+                <span className="mb-4 block text-base font-semibold text-[#ff541f]">
                   Contact Us
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-zinc-900 sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-9 text-base leading-relaxed text-zinc-600">
                   Have a question or want to discuss a project? Fill out the form below and our team will get back to you within one business day.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#ff541f]/5 text-[#ff541f] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -79,17 +79,17 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-zinc-900">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-zinc-600">
                       Texas, United States
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#ff541f]/5 text-[#ff541f] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -97,7 +97,7 @@ const Contact = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_941_17577)">
+                      <g clipPath="url(#clip0_941_17577)">
                         <path
                           d="M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z"
                           fill="currentColor"
@@ -119,17 +119,17 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-zinc-900">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-zinc-600">
                       +1 289 796-3492
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#ff541f]/5 text-[#ff541f] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -144,10 +144,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-zinc-900">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-zinc-600">
                       syenxatech@gmail.com
                     </p>
                   </div>
@@ -155,7 +155,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg  p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+              <div className="relative rounded-lg bg-white p-8 shadow-lg shadow-zinc-900/5 border border-zinc-900/5 sm:p-12">
                 <form onSubmit={handleSubmit}>
                   <ContactInputBox
                     type="text"
@@ -188,7 +188,7 @@ const Contact = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full rounded border border-[#ff541f] bg-[#ff541f] p-3 text-white transition hover:opacity-90"
                     >
                       Send Message
                     </button>
@@ -207,7 +207,7 @@ const Contact = () => {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
-                        fill="#3056D3"
+                        fill="#ff541f"
                       />
                     </svg>
                   </span>
@@ -1023,7 +1023,7 @@ const ContactTextArea = ({ row, placeholder, name, value, onChange }) => {
           name={name}
           value={value}
           onChange={onChange}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full resize-none rounded border border-zinc-300 bg-white px-[14px] py-3 text-base text-zinc-800 outline-none focus:border-[#ff541f]"
         />
       </div>
     </>
@@ -1040,7 +1040,7 @@ const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
           name={name}
           value={value}
           onChange={onChange}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full rounded border border-zinc-300 bg-white px-[14px] py-3 text-base text-zinc-800 outline-none focus:border-[#ff541f]"
         />
       </div>
     </>

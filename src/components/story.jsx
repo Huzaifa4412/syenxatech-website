@@ -58,7 +58,7 @@ const Story = () => {
                 </a>
 
                 <div className="contact-info mt-6 space-y-2">
-                    <p className="text-sm dark:text-gray-400">
+                    <p className="text-sm text-zinc-600">
                         Email:{" "}
                         <a
                             href="mailto:syenxatech@gmail.com"
@@ -67,7 +67,7 @@ const Story = () => {
                             syenxatech@gmail.com
                         </a>
                     </p>
-                    <p className="text-sm dark:text-gray-400">
+                    <p className="text-sm text-zinc-600">
                         Phone:{" "}
                         <a
                             href="tel:+12897963492"
@@ -78,7 +78,7 @@ const Story = () => {
                     </p>
                 </div>
 
-                <p className="text-sm dark:text-gray-400 mt-5">
+                <p className="text-sm text-zinc-600 mt-5">
                     © {new Date().getFullYear()} Syenxa Tech. All rights
                     reserved.
                 </p>

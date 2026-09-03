@@ -24,7 +24,7 @@ export default function AboutUs() {
             content={
                 <div className="space-y-12">
                     <section>
-                        <h2 className="text-3xl font-bold text-white mb-6">
+                        <h2 className="text-3xl font-bold text-zinc-900 mb-6">
                             Revolutionizing Sales & Customer Support with AI
                             Calling Agents
                         </h2>
@@ -39,7 +39,7 @@ export default function AboutUs() {
                     </section>
 
                     <section>
-                        <h2 className="text-3xl font-bold text-white mb-6">
+                        <h2 className="text-3xl font-bold text-zinc-900 mb-6">
                             Who We Are
                         </h2>
                         <p>
@@ -55,15 +55,15 @@ export default function AboutUs() {
                     </section>
 
                     <section>
-                        <h2 className="text-3xl font-bold text-white mb-8">
+                        <h2 className="text-3xl font-bold text-zinc-900 mb-8">
                             Why Choose Our AI Calling Agents?
                         </h2>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <div className="bg-white p-6 rounded-2xl border border-zinc-900/10">
                                 <h3 className="text-xl font-semibold text-(--primary-color) mb-3">
                                     Boost Sales Effortlessly
                                 </h3>
-                                <p className="text-white/70">
+                                <p className="text-zinc-700">
                                     Our AI Calling Agents are designed to
                                     qualify leads, schedule appointments, and
                                     follow up with potential customers
@@ -71,33 +71,33 @@ export default function AboutUs() {
                                     focus on closing deals.
                                 </p>
                             </div>
-                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <div className="bg-white p-6 rounded-2xl border border-zinc-900/10">
                                 <h3 className="text-xl font-semibold text-(--primary-color) mb-3">
                                     Enhance Customer Support 24/7
                                 </h3>
-                                <p className="text-white/70">
+                                <p className="text-zinc-700">
                                     Never miss a call again. Our AI voice agents
                                     handle customer inquiries, provide accurate
                                     information, and ensure your clients feel
                                     valued—anytime, anywhere.
                                 </p>
                             </div>
-                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <div className="bg-white p-6 rounded-2xl border border-zinc-900/10">
                                 <h3 className="text-xl font-semibold text-(--primary-color) mb-3">
                                     Cut Costs & Increase Efficiency
                                 </h3>
-                                <p className="text-white/70">
+                                <p className="text-zinc-700">
                                     Why pay for a full sales team when an AI
                                     Calling Agent can handle multiple calls
                                     simultaneously? Reduce operational costs
                                     while increasing productivity.
                                 </p>
                             </div>
-                            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <div className="bg-white p-6 rounded-2xl border border-zinc-900/10">
                                 <h3 className="text-xl font-semibold text-(--primary-color) mb-3">
                                     Customizable for Your Business
                                 </h3>
-                                <p className="text-white/70">
+                                <p className="text-zinc-700">
                                     Every business is unique, and so is every AI
                                     Calling Agent we create. Tailor voice
                                     scripts, scheduling, and sales workflows to
@@ -108,7 +108,7 @@ export default function AboutUs() {
                     </section>
 
                     <section>
-                        <h2 className="text-3xl font-bold text-white mb-6">
+                        <h2 className="text-3xl font-bold text-zinc-900 mb-6">
                             Our Mission
                         </h2>
                         <p>
@@ -122,7 +122,7 @@ export default function AboutUs() {
                     </section>
 
                     <section className="bg-(--primary-color)/10 p-10 rounded-3xl border border-(--primary-color)/20 text-center">
-                        <h2 className="text-3xl font-bold text-white mb-6">
+                        <h2 className="text-3xl font-bold text-zinc-900 mb-6">
                             Ready to Transform Your Business?
                         </h2>
                         <p className="text-xl mb-8">

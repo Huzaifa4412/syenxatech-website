@@ -1,8 +1,7 @@
 "use client";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { NumberTicker } from "@/components/ui/counter";
-import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -25,19 +24,13 @@ const StatItem = ({
 }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.3 });
-    const { resolvedTheme } = useTheme();
     return (
         <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: delay, ease: "easeOut" }}
-            className={cn(
-                "group border-border/30 bg-card relative overflow-hidden rounded-xl border p-6",
-                resolvedTheme === "dark"
-                    ? "shadow-xl shadow-black/5"
-                    : "shadow-lg shadow-black/[0.03]"
-            )}
+            className="group border-border/30 bg-white relative overflow-hidden rounded-xl border p-6 shadow-lg shadow-black/[0.03]"
         >
             <div
                 className={cn(
@@ -118,7 +111,7 @@ export default function AboutUs2() {
     return (
         <section className="relative w-full overflow-hidden py-16 md:py-24">
             {/* Background pattern */}
-            <div className="absolute inset-0 -z-10 opacity-[0.02] dark:opacity-[0.05]">
+            <div className="absolute inset-0 -z-10 opacity-[0.02]">
                 <svg
                     className="h-full w-full"
                     xmlns="http://www.w3.org/2000/svg"

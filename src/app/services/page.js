@@ -2,6 +2,7 @@ import React from "react";
 import ServicesHero from "@/components/services/ServicesHero";
 import ServiceList from "@/components/services/ServiceList";
 import ProcessSection from "@/components/services/ProcessSection";
+import StatsBand from "@/components/services/StatsBand";
 import Contact from "@/components/form";
 import Faqs from "@/components/faqs";
 import { createMetadata } from "@/lib/seo";
@@ -23,10 +24,11 @@ export const metadata = createMetadata({
 
 export default function ServicesPage() {
     return (
-        <main className="bg-black">
+        <main className="bg-[#faf9f7]">
             <ServicesHero />
             <ServiceList />
             <ProcessSection />
+            <StatsBand />
             <Contact />
             <div className="py-12">
                 <Faqs />

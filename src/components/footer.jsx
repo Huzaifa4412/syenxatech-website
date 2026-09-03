@@ -22,7 +22,7 @@ export default function Footer() {
                         </a>
 
                         <div className="contact-info mt-6 space-y-2">
-                            <p className="text-sm dark:text-gray-400">
+                            <p className="text-sm text-zinc-600">
                                 Email:{" "}
                                 <a
                                     href="mailto:syenxatech@gmail.com"
@@ -31,7 +31,7 @@ export default function Footer() {
                                     syenxatech@gmail.com
                                 </a>
                             </p>
-                            <p className="text-sm dark:text-gray-400">
+                            <p className="text-sm text-zinc-600">
                                 Phone:{" "}
                                 <a
                                     href="tel:+12897963492"
@@ -42,7 +42,7 @@ export default function Footer() {
                             </p>
                         </div>
 
-                        <p className="text-sm dark:text-gray-400 mt-5">
+                        <p className="text-sm text-zinc-600 mt-5">
                             © {new Date().getFullYear()} Synexa Tech. All rights
                             reserved.
                         </p>
@@ -54,13 +54,13 @@ export default function Footer() {
                                 <li>
                                     <a
                                         href="https://github.com/arihantcodes/spectrum-ui"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     ></a>
                                 </li>
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     >
                                         Linkedin
                                     </a>
@@ -68,7 +68,7 @@ export default function Footer() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     >
                                         Instagram
                                     </a>
@@ -76,7 +76,7 @@ export default function Footer() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     >
                                         Facebook
                                     </a>
@@ -89,7 +89,7 @@ export default function Footer() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     >
                                         Privacy Policy
                                     </a>
@@ -97,7 +97,7 @@ export default function Footer() {
                                 <li>
                                     <a
                                         href="#"
-                                        className="text-gray-600 hover:text-white dark:text-gray-400 dark:hover:text-white"
+                                        className="text-zinc-600 hover:text-zinc-900"
                                     >
                                         Terms of Service
                                     </a>
@@ -107,7 +107,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className=" w-full flex mt-4 items-center justify-center   ">
-                    <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 to-neutral-900 select-none">
+                    <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-200 to-zinc-400 select-none">
                         SYENXA TECH
                     </h1>
                 </div>

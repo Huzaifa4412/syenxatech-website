@@ -31,7 +31,7 @@ export default function Blog1() {
                         exactly is driving this transformation?
                     </p>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             1. Instant Speed to Lead
                         </h2>
                         <p>
@@ -43,7 +43,7 @@ export default function Blog1() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             2. Natural, Human-Like Conversations
                         </h2>
                         <p>
@@ -55,7 +55,7 @@ export default function Blog1() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             3. Significant Cost Reduction
                         </h2>
                         <p>

@@ -36,10 +36,10 @@ export default function DigitalMarketing() {
                 content={
                     <div className="space-y-8">
                         <section>
-                            <h2 className="text-2xl font-bold text-white mb-4">
+                            <h2 className="text-2xl font-bold text-zinc-900 mb-4">
                                 Drive Targeted Traffic with Strategic SEO & AI Marketing
                             </h2>
-                            <p className="text-white/70 leading-relaxed">
+                            <p className="text-zinc-700 leading-relaxed">
                                 Syenxa Tech is an AI digital marketing agency dedicated to helping businesses dominate search engine results. Our SEO and AI marketing automation services focus on high-conversion keywords, technical optimizations, and scalable customer acquisition.
                             </p>
                         </section>
@@ -47,7 +47,7 @@ export default function DigitalMarketing() {
                             <h3 className="text-xl font-semibold text-[#ff541f] mb-3">
                                 Comprehensive Technical SEO Services
                             </h3>
-                            <p className="text-white/70 leading-relaxed">
+                            <p className="text-zinc-700 leading-relaxed">
                                 Our technical SEO strategy includes on-page optimization, site architecture, Core Web Vitals speed optimization, JSON-LD schema markup, and authority building to ensure your business ranks for commercial search terms.
                             </p>
                         </section>
@@ -55,7 +55,7 @@ export default function DigitalMarketing() {
                             <h3 className="text-xl font-semibold text-[#ff541f] mb-3">
                                 AI Marketing Automation Services
                             </h3>
-                            <p className="text-white/70 leading-relaxed">
+                            <p className="text-zinc-700 leading-relaxed">
                                 We implement automated lead capture, email workflows, and omnichannel marketing bots across social channels, maximizing customer retention while scaling sales operations effortlessly.
                             </p>
                         </section>

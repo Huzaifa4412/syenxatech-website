@@ -1,160 +1,190 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "motion/react";
 import {
     Cpu,
     MessageSquare,
     Globe,
     Smartphone,
     ArrowRight,
-    CheckCircle2,
+    Check,
 } from "lucide-react";
 import Link from "next/link";
 
+/*
+ * Asymmetric bento: 7/5 then 5/7. One dark flagship tile, one
+ * orange-tinted tile, two white tiles. Buttons are pills, cards
+ * are rounded-3xl, matching the sitewide shape system.
+ */
+const services = [
+    {
+        title: "AI Calling Agents",
+        description:
+            "Human-sounding voice agents that make and take calls: appointment setting, lead qualification, and support, around the clock.",
+        features: [
+            "Answers and dials 24/7",
+            "Books straight into your calendar",
+            "Syncs with your CRM",
+            "Handles hundreds of calls at once",
+        ],
+        icon: Cpu,
+        href: "/ai-calling-agents",
+        span: "lg:col-span-7",
+        tone: "dark",
+    },
+    {
+        title: "AI Chatbots",
+        description:
+            "One bot that answers customers on WhatsApp, Instagram, Messenger, and your website, and captures every lead.",
+        features: [
+            "Live on all your channels",
+            "Qualifies leads automatically",
+            "Delivered in 3 working days",
+        ],
+        icon: MessageSquare,
+        href: "/ai-chatbots",
+        span: "lg:col-span-5",
+        tone: "light",
+    },
+    {
+        title: "Website Development",
+        description:
+            "Fast, SEO-ready websites built on Next.js that turn visitors into inquiries, not bounce statistics.",
+        features: [
+            "Custom design, no templates",
+            "Optimized for Core Web Vitals",
+            "Delivered in 5 to 7 working days",
+        ],
+        icon: Globe,
+        href: "/website-development",
+        span: "lg:col-span-5",
+        tone: "tinted",
+    },
+    {
+        title: "Mobile App Development",
+        description:
+            "Custom iOS and Android apps with scalable architecture, built to grow with your business instead of against it.",
+        features: [
+            "One codebase, both platforms",
+            "Native-feel performance",
+            "Ongoing maintenance included",
+            "App Store and Play Store launch",
+        ],
+        icon: Smartphone,
+        href: "/digital-marketing",
+        span: "lg:col-span-7",
+        tone: "light",
+    },
+];
+
+const toneStyles = {
+    dark: {
+        card: "bg-zinc-900 border border-zinc-900",
+        title: "text-white",
+        body: "text-zinc-400",
+        feature: "text-zinc-300",
+        chip: "bg-white/10 text-[#ff541f]",
+        link: "text-white",
+    },
+    light: {
+        card: "bg-white border border-zinc-900/10",
+        title: "text-zinc-900",
+        body: "text-zinc-600",
+        feature: "text-zinc-700",
+        chip: "bg-[#ff541f]/10 text-[#ff541f]",
+        link: "text-zinc-900",
+    },
+    tinted: {
+        card: "bg-[#ff541f]/[0.06] border border-[#ff541f]/15",
+        title: "text-zinc-900",
+        body: "text-zinc-600",
+        feature: "text-zinc-700",
+        chip: "bg-[#ff541f] text-white",
+        link: "text-zinc-900",
+    },
+};
+
 const ServiceList = () => {
-    const services = [
-        {
-            title: "AI Calling Agents",
-            subtitle: "Revolutionize Your Outreach",
-            description:
-                "Automate your outbound and inbound calls with human-like AI voice agents. Perfect for appointment setting, lead qualification, and customer support.",
-            features: [
-                "24/7 Availability",
-                "Natural Language Processing",
-                "Seamless CRM Integration",
-                "Scalable Performance",
-            ],
-            icon: Cpu,
-            href: "/ai-calling-agents",
-            color: "#ff541f",
-        },
-        {
-            title: "AI Chatbots",
-            subtitle: "Intelligent Conversations",
-            description:
-                "Deploy smart chatbots that understand and respond to customer queries instantly. Drive engagement and capture leads while you sleep.",
-            features: [
-                "Multi-platform Support",
-                "Real-time Data Sync",
-                "Advanced Personalization",
-                "Automated Workflows",
-            ],
-            icon: MessageSquare,
-            href: "/ai-chatbots",
-            color: "#ff541f",
-        },
-        {
-            title: "Website Development",
-            subtitle: "High-Performance Digital Presence",
-            description:
-                "We build fast, secure, and SEO-optimized websites that convert. Tailored designs that reflect your brand's unique identity.",
-            features: [
-                "Custom UX/UI Design",
-                "Responsive Layouts",
-                "Next.js & React Expertise",
-                "Optimized Performance",
-            ],
-            icon: Globe,
-            href: "/website-development",
-            color: "#ffd700",
-        },
-        {
-            title: "Mobile App Development",
-            subtitle: "Premium Mobile Experiences",
-            description:
-                "Scale your business with custom iOS and Android applications. We focus on scalability, security, and exceptional user experience.",
-            features: [
-                "Cross-platform Solutions",
-                "Native Performance",
-                "Intuitive Interfaces",
-                "Regular Maintenance",
-            ],
-            icon: Smartphone,
-            href: "/digital-marketing",
-            color: "#ffd700",
-        },
-    ];
+    const reduce = useReducedMotion();
 
     return (
-        <section className="w-full py-24 bg-black">
+        <section className="w-full py-20 md:py-28 bg-[#faf9f7]">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid grid-cols-1 gap-24">
-                    {services.map((service, idx) => (
-                        <motion.div
-                            key={idx}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.8, delay: 0.1 }}
-                            className={`flex flex-col ${
-                                idx % 2 === 0
-                                    ? "lg:flex-row"
-                                    : "lg:flex-row-reverse"
-                            } gap-12 lg:gap-24 items-center`}
-                        >
-                            {/* Content Side */}
-                            <div className="flex-1 space-y-8">
-                                <div className="space-y-4">
-                                    <div className="flex items-center gap-3 text-[#ff541f]">
-                                        <service.icon className="w-6 h-6" />
-                                        <span className="uppercase tracking-[0.2em] text-xs font-bold">
-                                            {service.subtitle}
-                                        </span>
-                                    </div>
-                                    <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tighter">
-                                        {service.title}
-                                    </h2>
-                                    <p className="text-white/40 text-lg leading-relaxed font-light max-w-xl">
-                                        {service.description}
-                                    </p>
+                <div className="mb-14 max-w-2xl">
+                    <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 tracking-tighter">
+                        What we build
+                    </h2>
+                    <p className="mt-4 text-lg text-zinc-600 font-light leading-relaxed">
+                        Four services, each one scoped to remove a specific
+                        bottleneck from your business.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                    {services.map((service, idx) => {
+                        const tone = toneStyles[service.tone];
+                        return (
+                            <motion.article
+                                key={service.href}
+                                initial={reduce ? false : { opacity: 0, y: 28 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.25 }}
+                                transition={{
+                                    duration: 0.6,
+                                    delay: (idx % 2) * 0.08,
+                                    ease: [0.16, 1, 0.3, 1],
+                                }}
+                                className={`${service.span} relative group rounded-3xl p-8 md:p-10 flex flex-col overflow-hidden ${tone.card}`}
+                            >
+                                {service.tone === "dark" && (
+                                    <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#ff541f]/20 rounded-full blur-[100px] pointer-events-none" />
+                                )}
+
+                                <div className="relative flex items-start justify-between mb-8">
+                                    <span
+                                        className={`flex items-center justify-center size-12 rounded-2xl ${tone.chip}`}
+                                    >
+                                        <service.icon className="w-6 h-6" strokeWidth={1.8} />
+                                    </span>
                                 </div>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {service.features.map((feature, fIdx) => (
-                                        <div
-                                            key={fIdx}
-                                            className="flex items-center gap-2 text-white/60"
+                                <h3
+                                    className={`relative text-2xl md:text-3xl font-bold tracking-tight mb-3 ${tone.title}`}
+                                >
+                                    {service.title}
+                                </h3>
+                                <p
+                                    className={`relative text-sm md:text-base leading-relaxed font-light max-w-[52ch] ${tone.body}`}
+                                >
+                                    {service.description}
+                                </p>
+
+                                <ul className="relative mt-6 mb-8 space-y-2.5">
+                                    {service.features.map((feature) => (
+                                        <li
+                                            key={feature}
+                                            className={`flex items-center gap-2.5 text-sm ${tone.feature}`}
                                         >
-                                            <CheckCircle2 className="w-4 h-4 text-[#ff541f]" />
-                                            <span className="text-sm">
-                                                {feature}
-                                            </span>
-                                        </div>
+                                            <Check
+                                                className="w-4 h-4 shrink-0 text-[#ff541f]"
+                                                strokeWidth={2.5}
+                                            />
+                                            {feature}
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
 
                                 <Link
                                     href={service.href}
-                                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-black font-bold text-sm hover:scale-105 transition-transform group"
+                                    className={`relative mt-auto inline-flex items-center gap-2 font-semibold text-sm ${tone.link} w-fit`}
                                 >
-                                    Learn More
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    Learn more
+                                    <ArrowRight className="w-4 h-4 text-[#ff541f] group-hover:translate-x-1.5 transition-transform duration-300" />
+                                    <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#ff541f] group-hover:w-full transition-all duration-300" />
                                 </Link>
-                            </div>
-
-                            {/* Visual Side */}
-                            <div className="flex-1 w-full max-w-2xl">
-                                <div className="relative aspect-square rounded-[3rem] bg-zinc-950/50 border border-white/5 overflow-hidden group">
-                                    {/* Abstract Visual Placeholder */}
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <div
-                                            className="w-48 h-48 rounded-full blur-[80px] opacity-20 animate-pulse"
-                                            style={{
-                                                backgroundColor: service.color,
-                                            }}
-                                        />
-                                        <service.icon
-                                            className="w-32 h-32 text-white/10 group-hover:text-[#ff541f]/20 transition-colors duration-700 hover:scale-110"
-                                            strokeWidth={1}
-                                        />
-                                    </div>
-
-                                    {/* Overlay Gradient */}
-                                    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.article>
+                        );
+                    })}
                 </div>
             </div>
         </section>

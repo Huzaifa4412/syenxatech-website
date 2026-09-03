@@ -31,7 +31,7 @@ export default function Blog3() {
                         healthy.
                     </p>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Streamlining Repetitive Tasks
                         </h2>
                         <p>
@@ -43,7 +43,7 @@ export default function Blog3() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Hire an AI Automation Company
                         </h2>
                         <p>
@@ -55,7 +55,7 @@ export default function Blog3() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             The ROI of AI
                         </h2>
                         <p>

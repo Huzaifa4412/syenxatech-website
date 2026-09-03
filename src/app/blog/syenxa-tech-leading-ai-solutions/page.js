@@ -30,7 +30,7 @@ export default function Blog4() {
                         brands lead their industries.
                     </p>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             An American Company Serving Global Clients
                         </h2>
                         <p>
@@ -42,7 +42,7 @@ export default function Blog4() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Comprehensive Service Suite
                         </h2>
                         <ul className="list-disc pl-6 space-y-2">
@@ -65,7 +65,7 @@ export default function Blog4() {
                         </ul>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Why Businesses Trust Syenxa Tech
                         </h2>
                         <p>

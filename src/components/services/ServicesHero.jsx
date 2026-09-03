@@ -1,57 +1,97 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
+import { Cpu, MessageSquare, Globe, Smartphone, ArrowUpRight } from "lucide-react";
+
+const serviceIndex = [
+    { name: "AI Calling Agents", href: "/ai-calling-agents", icon: Cpu },
+    { name: "AI Chatbots", href: "/ai-chatbots", icon: MessageSquare },
+    { name: "Website Development", href: "/website-development", icon: Globe },
+    { name: "Mobile App Development", href: "/digital-marketing", icon: Smartphone },
+];
 
 const ServicesHero = () => {
+    const reduce = useReducedMotion();
+
+    const fadeUp = (delay = 0) => ({
+        initial: reduce ? false : { opacity: 0, y: 24 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] },
+    });
+
     return (
-        <section className="relative w-full pt-48 pb-24 px-6 overflow-hidden bg-black">
-            {/* Background Glows */}
-            <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#ff541f]/10 rounded-full blur-[120px] -translate-y-1/2" />
-            <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] bg-[#ffd700]/5 rounded-full blur-[100px] translate-y-1/2" />
+        <section className="relative w-full overflow-hidden bg-[#faf9f7]">
+            {/* Ambient brand glow, kept off the text column */}
+            <div className="absolute -top-32 right-[-10%] w-[540px] h-[540px] bg-[#ff541f]/[0.07] rounded-full blur-[130px] pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto relative z-10">
-                <div className="flex flex-col items-center text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8"
-                    >
-                        <span className="w-2 h-2 rounded-full bg-[#ff541f]" />
-                        <span className="text-xs font-bold text-white/60 tracking-widest uppercase">
-                            Premium Solutions
-                        </span>
-                    </motion.div>
-
+            <div className="max-w-7xl mx-auto px-6 pt-28 md:pt-32 pb-16 md:pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                {/* Left: message */}
+                <div className="lg:col-span-7">
                     <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        className="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8"
+                        {...fadeUp(0)}
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 tracking-tighter leading-[1.02] max-w-[14ch]"
                     >
-                        Elevating Business <br />
-                        Through{" "}
-                        <span className="text-[#ff541f]">
-                            Digital Excellence
-                        </span>
-                        .
+                        Everything you need to automate and{" "}
+                        <span className="text-[#ff541f]">grow</span>.
                     </motion.h1>
 
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="max-w-2xl text-white/40 text-xl leading-relaxed font-light"
+                        {...fadeUp(0.12)}
+                        className="mt-6 text-lg md:text-xl text-zinc-600 leading-relaxed font-light max-w-[46ch]"
                     >
-                        From AI-driven voice agents to high-performance web
-                        experiences, we provide the tools you need to scale and
-                        dominate your market.
+                        AI calling agents, chatbots, websites, and mobile apps
+                        for businesses that want results without the overhead.
                     </motion.p>
-                </div>
-            </div>
 
-            {/* Subtle bottom gradient */}
-            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black to-transparent" />
+                    <motion.div
+                        {...fadeUp(0.22)}
+                        className="mt-10 flex flex-wrap items-center gap-4"
+                    >
+                        <Link
+                            href="/contact"
+                            className="px-8 py-4 rounded-full bg-[#ff541f] text-white font-bold text-sm hover:bg-zinc-900 active:scale-[0.98] transition-all duration-300 shadow-lg shadow-[#ff541f]/20"
+                        >
+                            Book a Demo
+                        </Link>
+                        <a
+                            href="#process"
+                            className="px-8 py-4 rounded-full border border-zinc-900/15 text-zinc-800 font-medium text-sm hover:border-zinc-900/40 active:scale-[0.98] transition-all duration-300"
+                        >
+                            How we work
+                        </a>
+                    </motion.div>
+                </div>
+
+                {/* Right: live service index */}
+                <motion.nav
+                    {...fadeUp(0.18)}
+                    aria-label="Our services"
+                    className="lg:col-span-5 w-full"
+                >
+                    <ul className="rounded-3xl bg-white border border-zinc-900/10 shadow-xl shadow-zinc-900/5 divide-y divide-zinc-900/5 overflow-hidden">
+                        {serviceIndex.map((service) => (
+                            <li key={service.href}>
+                                <Link
+                                    href={service.href}
+                                    className="group flex items-center gap-4 px-6 py-5 hover:bg-[#ff541f]/[0.04] transition-colors"
+                                >
+                                    <span className="flex items-center justify-center size-10 rounded-xl bg-zinc-900/5 text-zinc-700 group-hover:bg-[#ff541f] group-hover:text-white transition-colors duration-300">
+                                        <service.icon className="w-5 h-5" strokeWidth={1.8} />
+                                    </span>
+                                    <span className="font-semibold text-zinc-900 group-hover:translate-x-1 transition-transform duration-300">
+                                        {service.name}
+                                    </span>
+                                    <ArrowUpRight
+                                        className="w-4 h-4 ml-auto text-zinc-400 group-hover:text-[#ff541f] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+                                        strokeWidth={1.8}
+                                    />
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </motion.nav>
+            </div>
         </section>
     );
 };

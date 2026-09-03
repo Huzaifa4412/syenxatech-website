@@ -1,4 +1,4 @@
-import { Poppins, Urbanist, DM_Sans } from "next/font/google";
+import { Poppins, Urbanist, DM_Sans, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import "@/app/globals.css";
 import "@n8n/chat/style.css";
@@ -25,6 +25,14 @@ const urbanist = Urbanist({
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
     style: ["normal", "italic"],
     variable: "--font-urbanist",
+    display: "swap",
+});
+
+const playfair = Playfair_Display({
+    subsets: ["latin"],
+    weight: ["500", "600"],
+    style: ["normal", "italic"],
+    variable: "--font-playfair",
     display: "swap",
 });
 
@@ -122,7 +130,7 @@ export default function RootLayout({ children }) {
             </head>
             <body
                 suppressHydrationWarning
-                className={`${poppins.variable} ${urbanist.variable} ${dmSans.variable}`}
+                className={`${poppins.variable} ${urbanist.variable} ${dmSans.variable} ${playfair.variable}`}
             >
                 <script
                     type="application/ld+json"

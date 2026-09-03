@@ -40,7 +40,7 @@ const Button = ({ text, variant, onClick, className = "" }) => {
                 ${
                     isPrimary
                         ? "bg-[#ff541f] text-white"
-                        : "bg-transparent text-white border border-white/20 hover:border-white/40"
+                        : "bg-transparent text-zinc-900 border border-zinc-900/20 hover:border-zinc-900/40"
                 }
                 ${className}
             `}
@@ -51,7 +51,7 @@ const Button = ({ text, variant, onClick, className = "" }) => {
             <motion.div
                 className={`
                     absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                    ${isPrimary ? "bg-white/10" : "bg-white/5"}
+                    ${isPrimary ? "bg-white/10" : "bg-zinc-900/5"}
                 `}
                 initial={{ scale: 0, x: "-50%", y: "-50%" }}
                 whileHover={{ scale: 1.5 }}

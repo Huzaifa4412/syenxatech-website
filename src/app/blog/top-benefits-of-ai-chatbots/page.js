@@ -30,7 +30,7 @@ export default function Blog2() {
                         automated answers—they provide a competitive edge.
                     </p>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             High-Level Lead Generation
                         </h2>
                         <p>
@@ -44,7 +44,7 @@ export default function Blog2() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Reducing Support Tickets
                         </h2>
                         <p>
@@ -55,7 +55,7 @@ export default function Blog2() {
                         </p>
                     </section>
                     <section>
-                        <h2 className="text-2xl font-bold text-white">
+                        <h2 className="text-2xl font-bold text-zinc-900">
                             Seamless Global Reach
                         </h2>
                         <p>

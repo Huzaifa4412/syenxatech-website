@@ -32,7 +32,7 @@ const ChatbotSection = ({
   return (
     <section
       ref={containerRef}
-      className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 last:border-0 py-24 lg:py-0"
+      className="min-h-screen w-full relative flex items-center justify-center bg-[#faf9f7] border-b border-zinc-900/5 last:border-0 py-24 lg:py-0"
     >
       <div
         className={`absolute top-1/2 ${
@@ -58,34 +58,34 @@ const ChatbotSection = ({
           >
             <div className="flex items-center gap-3 mb-6">
               <div
-                className="p-3 rounded-xl bg-white/5 border border-white/10 text-white"
+                className="p-3 rounded-xl bg-zinc-900/5 border border-zinc-900/10 text-zinc-900"
                 style={{ color: color }}
               >
                 <Icon size={32} />
               </div>
-              <span className="font-mono text-sm uppercase tracking-widest text-white/60">
+              <span className="font-mono text-sm uppercase tracking-widest text-zinc-600">
                 {platform}
               </span>
             </div>
 
-            <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h2 className="font-display text-4xl md:text-6xl font-bold text-zinc-900 mb-6 leading-tight">
               {title}
             </h2>
 
-            <p className="font-body text-lg text-white/60 mb-8 max-w-lg leading-relaxed">
+            <p className="font-body text-lg text-zinc-600 mb-8 max-w-lg leading-relaxed">
               {description}
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <button className="flex items-center gap-2 px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-[#ff541f] hover:text-white transition-all duration-300">
+                <button className="flex items-center gap-2 px-8 py-4 rounded-full bg-zinc-900 text-white font-bold hover:bg-[#ff541f] hover:text-white transition-all duration-300">
                   Get Started
                 </button>
               </Link>
 
               <Link
                 href="/contact"
-                className="flex items-center gap-2 px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all duration-300"
+                className="flex items-center gap-2 px-8 py-4 rounded-full bg-zinc-900/5 border border-zinc-900/10 text-zinc-900 font-medium hover:bg-zinc-900/10 transition-all duration-300"
               >
                 Book Demo
               </Link>
@@ -108,7 +108,7 @@ const ChatbotSection = ({
               delay: 0.2,
               ease: "easeOut",
             }}
-            className="relative h-full w-auto aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black"
+            className="relative h-full w-auto aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border border-zinc-900/10 bg-black"
           >
             <video
               ref={videoRef}
@@ -132,7 +132,7 @@ const ChatbotSection = ({
         }
         className={`absolute ${
           isEven ? "right-6" : "left-6"
-        } top-1/2 -translate-y-1/2 w-1 bg-white/10 rounded-full hidden lg:block overflow-hidden`}
+        } top-1/2 -translate-y-1/2 w-1 bg-zinc-900/10 rounded-full hidden lg:block overflow-hidden`}
       >
         <motion.div
           layoutId="scroll-indicator"
@@ -153,16 +153,16 @@ export default function AIChatbotsClient() {
     };
 
     return (
-        <main className="min-h-screen w-full overflow-y-auto overflow-x-hidden bg-[#020202] text-white scroll-smooth">
+        <main className="min-h-screen w-full overflow-y-auto overflow-x-hidden bg-[#faf9f7] text-zinc-900 scroll-smooth">
             <div
-                className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-white z-50 h-screen w-screen"
+                className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-multiply z-50 h-screen w-screen"
                 style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
                 }}
             />
 
             {/* Hero Section */}
-            <section className="min-h-screen w-full relative flex items-center justify-center bg-[#020202] border-b border-white/5 py-24 lg:py-0">
+            <section className="min-h-screen w-full relative flex items-center justify-center bg-[#faf9f7] border-b border-zinc-900/5 py-24 lg:py-0">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#ff541f]/10 rounded-full blur-[128px] pointer-events-none" />
 
                 <div className="container mx-auto px-6 text-center relative z-10">
@@ -171,21 +171,21 @@ export default function AIChatbotsClient() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className="inline-block py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
+                        <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
                             Custom AI Chatbot Development
                         </span>
-                        <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-white mb-8">
+                        <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-zinc-900 mb-8">
                             AI Chatbots <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900/40">
                                 For Omnichannel Sales & Support.
                             </span>
                         </h1>
-                        <p className="font-body text-lg md:text-xl text-white/50 max-w-2xl mx-auto leading-relaxed mb-10">
+                        <p className="font-body text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed mb-10">
                             Automate 24/7 customer service and lead capture across WhatsApp, Instagram DMs, Facebook Messenger, and custom web applications.
                         </p>
 
                         <div className="flex justify-center">
-                            <div className="animate-bounce text-white/20">
+                            <div className="animate-bounce text-zinc-300">
                                 <ArrowRight className="rotate-90" size={32} />
                             </div>
                         </div>
@@ -234,15 +234,15 @@ export default function AIChatbotsClient() {
             />
 
             {/* Chatbot FAQ Section */}
-            <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto relative z-10 border-t border-white/10 bg-[#020202]">
+            <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto relative z-10 border-t border-zinc-900/10 bg-[#faf9f7]">
                 <div className="text-center mb-16">
-                    <span className="inline-flex items-center gap-2 py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-4">
+                    <span className="inline-flex items-center gap-2 py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-4">
                         <HelpCircle size={14} /> AI Chatbot FAQs
                     </span>
-                    <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="font-display text-3xl md:text-5xl font-bold text-zinc-900 mb-4">
                         Frequently Asked Questions About AI Chatbots
                     </h2>
-                    <p className="text-white/50 text-base md:text-lg">
+                    <p className="text-zinc-600 text-base md:text-lg">
                         Learn how AI chatbot solutions automate customer support and boost lead conversion.
                     </p>
                 </div>
@@ -251,13 +251,13 @@ export default function AIChatbotsClient() {
                     {aiChatbotFaqs.map((faq, idx) => (
                         <div
                             key={idx}
-                            className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden transition-colors hover:border-white/20"
+                            className="rounded-2xl border border-zinc-900/10 bg-zinc-900/5 overflow-hidden transition-colors hover:border-zinc-900/20"
                         >
                             <button
                                 onClick={() => toggleFaq(idx)}
                                 className="w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none"
                             >
-                                <span className="font-display font-semibold text-lg text-white">
+                                <span className="font-display font-semibold text-lg text-zinc-900">
                                     {faq.question}
                                 </span>
                                 <ChevronDown
@@ -274,7 +274,7 @@ export default function AIChatbotsClient() {
                                         animate={{ height: "auto", opacity: 1 }}
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
-                                        className="px-6 pb-6 text-white/70 leading-relaxed font-body"
+                                        className="px-6 pb-6 text-zinc-700 leading-relaxed font-body"
                                     >
                                         {faq.answer}
                                     </motion.div>

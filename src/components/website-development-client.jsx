@@ -26,15 +26,15 @@ const ServiceCard = ({ icon: Icon, title, description, delay }) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay, duration: 0.5 }}
-        className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-[#ff541f]/50 hover:bg-white/10 transition-all duration-300 group"
+        className="p-8 rounded-3xl bg-zinc-900/5 border border-zinc-900/10 hover:border-[#ff541f]/50 hover:bg-zinc-900/10 transition-all duration-300 group"
     >
         <div className="w-12 h-12 rounded-xl bg-[#ff541f]/10 text-[#ff541f] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <Icon size={24} />
         </div>
-        <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-[#ff541f] transition-colors">
+        <h3 className="font-display text-xl font-bold text-zinc-900 mb-3 group-hover:text-[#ff541f] transition-colors">
             {title}
         </h3>
-        <p className="font-body text-white/50 leading-relaxed group-hover:text-white/70 transition-colors">
+        <p className="font-body text-zinc-600 leading-relaxed group-hover:text-zinc-700 transition-colors">
             {description}
         </p>
     </motion.div>
@@ -46,7 +46,7 @@ const ProjectCard = ({ title, category, description, image, link, delay }) => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay, duration: 0.5 }}
-        className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#0a0a0a]"
+        className="group relative overflow-hidden rounded-3xl border border-zinc-900/10 bg-white"
     >
         {(() => {
             const hasLink = link && link !== "#";
@@ -81,20 +81,20 @@ const ProjectCard = ({ title, category, description, image, link, delay }) => (
                 {category}
             </span>
             <div className="flex justify-between items-start gap-4 mb-3">
-                <h3 className="text-2xl font-display font-bold text-white group-hover:text-[#ff541f] transition-colors">
+                <h3 className="text-2xl font-display font-bold text-zinc-900 group-hover:text-[#ff541f] transition-colors">
                     {title}
                 </h3>
             </div>
-            <p className="text-white/50 text-sm leading-relaxed mb-6">
+            <p className="text-zinc-600 text-sm leading-relaxed mb-6">
                 {description}
             </p>
 
             <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 text-white/40 text-xs font-mono">
-                    <span className="px-2 py-1 rounded bg-white/5 border border-white/5">
+                <div className="flex items-center gap-2 text-zinc-500 text-xs font-mono">
+                    <span className="px-2 py-1 rounded bg-zinc-900/5 border border-zinc-900/5">
                         Next.js
                     </span>
-                    <span className="px-2 py-1 rounded bg-white/5 border border-white/5">
+                    <span className="px-2 py-1 rounded bg-zinc-900/5 border border-zinc-900/5">
                         Tailwind
                     </span>
                 </div>
@@ -103,7 +103,7 @@ const ProjectCard = ({ title, category, description, image, link, delay }) => (
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:text-[#ff541f] transition-colors"
+                        className="text-zinc-900 text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:text-[#ff541f] transition-colors"
                     >
                         Visit Site <ArrowRight size={14} />
                     </a>
@@ -212,7 +212,7 @@ export default function WebsiteDevelopmentClient() {
     };
 
     return (
-        <div className="min-h-screen bg-[#020202] text-white selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
+        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
             {/* Global Grain Texture */}
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-white"
@@ -230,29 +230,29 @@ export default function WebsiteDevelopmentClient() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="inline-block py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
+                    <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
                         Custom Web Development Services
                     </span>
-                    <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-white mb-8">
+                    <h1 className="font-display text-5xl md:text-8xl font-bold leading-[0.9] tracking-tight text-zinc-900 mb-8">
                         Custom Website <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900/40">
                             Development Agency.
                         </span>
                     </h1>
-                    <p className="font-body text-lg md:text-2xl text-white/50 max-w-3xl mx-auto leading-relaxed mb-10">
+                    <p className="font-body text-lg md:text-2xl text-zinc-600 max-w-3xl mx-auto leading-relaxed mb-10">
                         We build high-performance Next.js websites, custom web apps, and modern digital platforms engineered for lightning speed, technical SEO, and business growth.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                         <Link
                             href="/contact"
-                            className="px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#ff541f]/20"
+                            className="px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-zinc-900 hover:text-white transition-all duration-300 shadow-lg shadow-[#ff541f]/20"
                         >
                             Start Your Website Project
                         </Link>
                         <Link
                             href="#portfolio"
-                            className="flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300 group"
+                            className="flex items-center gap-2 px-8 py-4 bg-zinc-900/5 border border-zinc-900/10 text-zinc-900 font-medium rounded-full hover:bg-zinc-900/10 transition-all duration-300 group"
                         >
                             View Our Portfolio
                             <ArrowRight
@@ -297,21 +297,21 @@ export default function WebsiteDevelopmentClient() {
             {/* Portfolio */}
             <section
                 id="portfolio"
-                className="py-24 bg-white/[0.02] border-y border-white/5 relative"
+                className="py-24 bg-zinc-900/[0.02] border-y border-zinc-900/5 relative"
             >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                         <div>
-                            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+                            <h2 className="font-display text-4xl md:text-5xl font-bold text-zinc-900 mb-4">
                                 Featured Web Development Projects
                             </h2>
-                            <p className="text-white/50 max-w-xl">
+                            <p className="text-zinc-600 max-w-xl">
                                 Explore a curated selection of our custom Next.js websites and web applications built for clients worldwide.
                             </p>
                         </div>
                         <Link
                             href="/contact"
-                            className="text-[#ff541f] hover:text-white transition-colors flex items-center gap-2 font-mono text-sm uppercase tracking-widest"
+                            className="text-[#ff541f] hover:text-zinc-900 transition-colors flex items-center gap-2 font-mono text-sm uppercase tracking-widest"
                         >
                             Start Yours <ArrowRight size={16} />
                         </Link>
@@ -330,9 +330,9 @@ export default function WebsiteDevelopmentClient() {
             </section>
 
             {/* Tech Stack */}
-            <section className="py-20 border-b border-white/5 overflow-hidden">
+            <section className="py-20 border-b border-zinc-900/5 overflow-hidden">
                 <div className="text-center mb-10">
-                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-white/30">
+                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-400">
                         Powered by Enterprise Web Stack
                     </span>
                 </div>
@@ -357,15 +357,15 @@ export default function WebsiteDevelopmentClient() {
             </section>
 
             {/* Web Dev FAQ */}
-            <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto relative z-10 border-t border-white/10">
+            <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto relative z-10 border-t border-zinc-900/10">
                 <div className="text-center mb-16">
-                    <span className="inline-flex items-center gap-2 py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-4">
+                    <span className="inline-flex items-center gap-2 py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-4">
                         <HelpCircle size={14} /> Web Development FAQs
                     </span>
-                    <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-4">
+                    <h2 className="font-display text-3xl md:text-5xl font-bold text-zinc-900 mb-4">
                         Custom Website Development Questions
                     </h2>
-                    <p className="text-white/50 text-base md:text-lg">
+                    <p className="text-zinc-600 text-base md:text-lg">
                         Learn how our web development process delivers unmatched performance, speed, and organic search ranking.
                     </p>
                 </div>
@@ -374,13 +374,13 @@ export default function WebsiteDevelopmentClient() {
                     {webDevFaqs.map((faq, idx) => (
                         <div
                             key={idx}
-                            className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden transition-colors hover:border-white/20"
+                            className="rounded-2xl border border-zinc-900/10 bg-zinc-900/5 overflow-hidden transition-colors hover:border-zinc-900/20"
                         >
                             <button
                                 onClick={() => toggleFaq(idx)}
                                 className="w-full p-6 text-left flex justify-between items-center gap-4 focus:outline-none"
                             >
-                                <span className="font-display font-semibold text-lg text-white">
+                                <span className="font-display font-semibold text-lg text-zinc-900">
                                     {faq.question}
                                 </span>
                                 <ChevronDown
@@ -397,7 +397,7 @@ export default function WebsiteDevelopmentClient() {
                                         animate={{ height: "auto", opacity: 1 }}
                                         exit={{ height: 0, opacity: 0 }}
                                         transition={{ duration: 0.3 }}
-                                        className="px-6 pb-6 text-white/70 leading-relaxed font-body"
+                                        className="px-6 pb-6 text-zinc-700 leading-relaxed font-body"
                                     >
                                         {faq.answer}
                                     </motion.div>
@@ -410,12 +410,12 @@ export default function WebsiteDevelopmentClient() {
 
             {/* CTA */}
             <section className="py-24 px-6 text-center">
-                <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-8">
+                <h2 className="font-display text-4xl md:text-5xl font-bold text-zinc-900 mb-8">
                     Ready to Build Your Custom Website?
                 </h2>
                 <Link
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-10 py-5 bg-[#ff541f] text-white font-bold rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-xl shadow-[#ff541f]/20"
+                    className="inline-flex items-center gap-2 px-10 py-5 bg-[#ff541f] text-white font-bold rounded-full hover:bg-zinc-900 hover:text-white transition-all duration-300 shadow-xl shadow-[#ff541f]/20"
                 >
                     Get a Custom Website Proposal
                     <ArrowRight size={20} />

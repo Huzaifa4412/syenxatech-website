@@ -5,7 +5,7 @@ export const FluidHeader = ({ text, className = "" }) => {
     const words = text.split(" ");
     return (
         <h1
-            className={`text-[clamp(2.5rem,6vw,4rem)] font-light tracking-tighter text-white leading-[1] ${className}`}
+            className={`text-[clamp(2.5rem,6vw,4rem)] font-light tracking-tighter text-zinc-900 leading-[1] ${className}`}
         >
             {words.map((word, i) => (
                 <span

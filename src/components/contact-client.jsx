@@ -96,7 +96,7 @@ export default function ContactClient() {
     };
 
     return (
-        <div className="min-h-screen bg-[#020202] text-white selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
+        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
             <div
                 className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-white"
                 style={{
@@ -114,31 +114,31 @@ export default function ContactClient() {
                     transition={{ duration: 0.8 }}
                     className="flex flex-col justify-center"
                 >
-                    <span className="inline-block py-1 px-3 rounded-full border border-white/10 bg-white/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 w-fit backdrop-blur-md">
+                    <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 w-fit backdrop-blur-md">
                         Get In Touch
                     </span>
-                    <h1 className="font-display text-5xl md:text-7xl font-bold leading-[0.9] tracking-tight text-white mb-8">
+                    <h1 className="font-display text-5xl md:text-7xl font-bold leading-[0.9] tracking-tight text-zinc-900 mb-8">
                         Let's Start a <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/40">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900/40">
                             Conversation.
                         </span>
                     </h1>
-                    <p className="font-body text-lg text-white/50 max-w-lg leading-relaxed mb-12">
+                    <p className="font-body text-lg text-zinc-600 max-w-lg leading-relaxed mb-12">
                         Ready to scale your business with AI voice agents or build your next digital website platform? Reach out to us directly or schedule a consultation.
                     </p>
 
                     <div className="space-y-8 mb-12">
                         <div className="flex items-start gap-4 group">
-                            <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-white group-hover:text-[#ff541f] group-hover:border-[#ff541f]/30 transition-all duration-300">
+                            <div className="p-3 rounded-xl bg-zinc-900/5 border border-zinc-900/10 text-zinc-900 group-hover:text-[#ff541f] group-hover:border-[#ff541f]/30 transition-all duration-300">
                                 <Mail size={24} />
                             </div>
                             <div>
-                                <h3 className="text-sm font-mono uppercase tracking-wider text-white/40 mb-1">
+                                <h3 className="text-sm font-mono uppercase tracking-wider text-zinc-500 mb-1">
                                     Email
                                 </h3>
                                 <a
                                     href="mailto:syenxatech@gmail.com"
-                                    className="text-xl font-display font-medium text-white hover:text-[#ff541f] transition-colors"
+                                    className="text-xl font-display font-medium text-zinc-900 hover:text-[#ff541f] transition-colors"
                                 >
                                     syenxatech@gmail.com
                                 </a>
@@ -155,7 +155,7 @@ export default function ContactClient() {
                                     href={social.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="p-3 rounded-full bg-white/5 border border-white/10 text-white hover:bg-white hover:text-black transition-all duration-300"
+                                    className="p-3 rounded-full bg-zinc-900/5 border border-zinc-900/10 text-zinc-900 hover:bg-zinc-900 hover:text-white transition-all duration-300"
                                 >
                                     <Icon size={20} />
                                 </a>
@@ -171,7 +171,7 @@ export default function ContactClient() {
                     className="relative"
                 >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#ff541f]/20 to-transparent rounded-3xl blur-2xl opacity-20 pointer-events-none" />
-                    <div className="relative bg-[#0a0a0a]/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <div className="relative bg-white/80 backdrop-blur-xl border border-zinc-900/10 rounded-3xl p-8 md:p-12 shadow-2xl">
                         {formState === "success" ? (
                             <div className="h-[400px] flex flex-col items-center justify-center text-center">
                                 <motion.div
@@ -181,15 +181,15 @@ export default function ContactClient() {
                                 >
                                     <CheckCircle2 size={40} />
                                 </motion.div>
-                                <h3 className="text-3xl font-display font-bold text-white mb-2">
+                                <h3 className="text-3xl font-display font-bold text-zinc-900 mb-2">
                                     Message Sent!
                                 </h3>
-                                <p className="text-white/50 mb-8">
+                                <p className="text-zinc-600 mb-8">
                                     We'll get back to you within 24 hours.
                                 </p>
                                 <button
                                     onClick={() => setFormState("idle")}
-                                    className="text-[#ff541f] font-bold hover:text-white transition-colors"
+                                    className="text-[#ff541f] font-bold hover:text-zinc-900 transition-colors"
                                 >
                                     Send another message
                                 </button>
@@ -201,7 +201,7 @@ export default function ContactClient() {
                             >
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-xs font-mono uppercase tracking-wider text-white/50">
+                                        <label className="text-xs font-mono uppercase tracking-wider text-zinc-600">
                                             Name
                                         </label>
                                         <input
@@ -210,12 +210,12 @@ export default function ContactClient() {
                                             required
                                             value={form.Name}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20"
+                                            className="w-full bg-zinc-900/5 border border-zinc-900/10 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:border-[#ff541f] focus:bg-zinc-900/10 transition-all placeholder:text-zinc-400"
                                             placeholder="John Doe"
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-xs font-mono uppercase tracking-wider text-white/50">
+                                        <label className="text-xs font-mono uppercase tracking-wider text-zinc-600">
                                             Email
                                         </label>
                                         <input
@@ -224,43 +224,43 @@ export default function ContactClient() {
                                             required
                                             value={form.Email}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20"
+                                            className="w-full bg-zinc-900/5 border border-zinc-900/10 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:border-[#ff541f] focus:bg-zinc-900/10 transition-all placeholder:text-zinc-400"
                                             placeholder="john@example.com"
                                         />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-mono uppercase tracking-wider text-white/50">
+                                    <label className="text-xs font-mono uppercase tracking-wider text-zinc-600">
                                         Services
                                     </label>
-                                    <select name="Service" value={form.Service} onChange={handleChange} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all appearance-none cursor-pointer">
-                                        <option className="bg-[#0a0a0a]">
+                                    <select name="Service" value={form.Service} onChange={handleChange} className="w-full bg-zinc-900/5 border border-zinc-900/10 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:border-[#ff541f] focus:bg-zinc-900/10 transition-all appearance-none cursor-pointer">
+                                        <option className="bg-white">
                                             AI Automation & Agents
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             AI Chatbots
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             AI Calling agents
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             Website Development
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             Mobile App Development
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             Strategic Consulting
                                         </option>
-                                        <option className="bg-[#0a0a0a]">
+                                        <option className="bg-white">
                                             Other
                                         </option>
                                     </select>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-mono uppercase tracking-wider text-white/50">
+                                    <label className="text-xs font-mono uppercase tracking-wider text-zinc-600">
                                         Message
                                     </label>
                                     <textarea
@@ -269,7 +269,7 @@ export default function ContactClient() {
                                         rows={4}
                                         value={form.Message}
                                         onChange={handleChange}
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-[#ff541f] focus:bg-white/10 transition-all placeholder:text-white/20 resize-none"
+                                        className="w-full bg-zinc-900/5 border border-zinc-900/10 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:border-[#ff541f] focus:bg-zinc-900/10 transition-all placeholder:text-zinc-400 resize-none"
                                         placeholder="Tell us about your project..."
                                     />
                                 </div>
@@ -277,7 +277,7 @@ export default function ContactClient() {
                                 <button
                                     type="submit"
                                     disabled={formState === "submitting"}
-                                    className="w-full py-4 bg-[#ff541f] text-white font-bold rounded-xl hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed group"
+                                    className="w-full py-4 bg-[#ff541f] text-white font-bold rounded-xl hover:bg-zinc-900 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed group"
                                 >
                                     {formState === "submitting" ? (
                                         "Sending..."

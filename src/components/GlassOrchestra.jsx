@@ -33,8 +33,8 @@ export const GlassOrchestra = () => {
             />
 
             {/* Floating Glass Blobs */}
-            <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/5 border border-white/10 backdrop-blur-3xl rounded-3xl rotate-12 animate-pulse" />
-            <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[3rem] -rotate-12 animate-bounce [animation-duration:10s]" />
+            <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-zinc-900/[0.03] border border-zinc-900/[0.06] backdrop-blur-3xl rounded-3xl rotate-12 animate-pulse" />
+            <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-zinc-900/[0.03] border border-zinc-900/[0.06] backdrop-blur-2xl rounded-[3rem] -rotate-12 animate-bounce [animation-duration:10s]" />
 
             {/* Subtle Noise Texture */}
             <div
