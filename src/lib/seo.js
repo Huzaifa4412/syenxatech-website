@@ -15,24 +15,28 @@ export const blogPosts = [
         slug: "how-ai-calling-agents-are-transforming-sales",
         description:
             "Discover how intelligent voice AI is revolutionizing the sales landscape and boosting revenue for businesses globally.",
+        keywords: ["AI Calling Agents", "Sales Transformation"],
     },
     {
         title: "Top Benefits of AI Chatbots for Customer Support",
         slug: "top-benefits-of-ai-chatbots",
         description:
             "Learn how AI-driven chat automation is helping companies provide 24/7 support while reducing operational costs.",
+        keywords: ["AI Chatbots", "Customer Support Automation"],
     },
     {
         title: "AI Automation Solutions That Reduce Costs for Businesses",
         slug: "ai-automation-solutions-reduce-costs",
         description:
             "Explore effective AI automation strategies that save businesses time, reduce manual work, and lower operating costs.",
+        keywords: ["AI Automation", "Business Efficiency"],
     },
     {
         title: "Syenxa Tech: Leading AI Digital Solutions for Businesses Worldwide",
         slug: "syenxa-tech-leading-ai-solutions",
         description:
             "See how Syenxa Tech delivers AI-driven digital transformation through voice agents, chatbots, web platforms, and automation.",
+        keywords: ["Digital Transformation", "AI Solutions"],
     },
 ];
 
@@ -59,9 +63,13 @@ export function createMetadata({
     path = "/",
     keywords = [],
     type = "website",
+    image,
+    imageAlt,
 } = {}) {
     const resolvedTitle = title || siteConfig.title;
     const canonical = absoluteUrl(path);
+    const ogImage = image || siteConfig.ogImage;
+    const ogImageAlt = imageAlt || `${siteConfig.name} AI and digital solutions`;
 
     return {
         title: resolvedTitle,
@@ -77,10 +85,10 @@ export function createMetadata({
             siteName: siteConfig.name,
             images: [
                 {
-                    url: siteConfig.ogImage,
+                    url: ogImage,
                     width: 1200,
                     height: 630,
-                    alt: `${siteConfig.name} AI and digital solutions`,
+                    alt: ogImageAlt,
                 },
             ],
             locale: "en_US",
@@ -90,7 +98,7 @@ export function createMetadata({
             card: "summary_large_image",
             title: resolvedTitle,
             description,
-            images: [siteConfig.ogImage],
+            images: [ogImage],
         },
     };
 }
