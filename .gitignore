@@ -27,3 +27,5 @@ dist-ssr
 .vscode
 .next
 linkedin/
+# local verification builds
+.next-build/

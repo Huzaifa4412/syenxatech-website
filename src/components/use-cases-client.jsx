@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const useCases = [
     {
-        title: "Healthcare Provider",
+        title: "Healthcare & Dental Clinics",
         description:
             "Revolutionize patient care. Automate scheduling, pre-visit screening, and medication reminders. Cut no-shows by 40% with intelligent follow-ups.",
         icon: <Stethoscope size={48} strokeWidth={1.5} />,
@@ -16,14 +16,14 @@ const useCases = [
         className: "md:col-span-2 md:row-span-1",
     },
     {
-        title: "Real Estate Inc.",
+        title: "Real Estate Agencies",
         description: "Qualify leads and schedule viewings 24/7 on autopilot with AI voice agents.",
         icon: <Building2 size={32} strokeWidth={1.5} />,
         href: "/use-cases/real-estate",
         className: "md:col-span-1 md:row-span-1",
     },
     {
-        title: "Fitness & Gyms",
+        title: "Gyms & Fitness Studios",
         description:
             "Boost retention with automated booking & renewal campaigns.",
         icon: <Dumbbell size={32} strokeWidth={1.5} />,
@@ -31,7 +31,7 @@ const useCases = [
         className: "md:col-span-1 md:row-span-1",
     },
     {
-        title: "Beauty & Spa",
+        title: "Beauty Salons & Spas",
         description:
             "Seamless booking management for high-end salons. Handle confirmations, rescheduling, and waitlists without lifting a finger.",
         icon: <Scissors size={48} strokeWidth={1.5} />,
@@ -94,7 +94,7 @@ export default function UseCasesClient() {
                     </h1>
 
                     <p className="font-body text-lg md:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
-                        Explore how Syenxa Tech AI voice agents and custom chatbots transform sales, appointment booking, and customer support for real estate, healthcare, fitness, and e-commerce businesses.
+                        See how Syenxa Tech AI calling agents and custom chatbots handle appointment booking, lead qualification and customer support for healthcare clinics, real estate agencies, gyms and salons.
                     </p>
                 </motion.div>
 

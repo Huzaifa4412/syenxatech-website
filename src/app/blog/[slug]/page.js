@@ -1,13 +1,17 @@
 import { notFound } from "next/navigation";
 import SEOContentPage from "@/components/SEOContentPage";
+import JsonLd from "@/components/JsonLd";
 import PortableText from "@/components/portable-text";
 import VideoEmbed from "@/components/video-embed";
 import { extractHeadings } from "@/lib/portable-text-utils";
 import { formatPostDate, minutesFromWords } from "@/lib/reading-time";
 import {
     absoluteUrl,
+    canonicalUrl,
     createMetadata,
+    generateBreadcrumbSchema,
     generateFaqSchema,
+    ORGANIZATION_ID,
     siteConfig,
 } from "@/lib/seo";
 import { client, sanityFetch } from "@/sanity/client";
@@ -70,6 +74,8 @@ export async function generateMetadata({ params }) {
         keywords: post.keywords || [],
         image,
         imageAlt: post.mainImage?.alt,
+        publishedTime: post.publishedAt,
+        modifiedTime: post._updatedAt || post.publishedAt,
     });
 }
 
@@ -127,11 +133,13 @@ export default async function BlogPostPage({ params }) {
           }
         : null;
 
-    const pageUrl = absoluteUrl(`/blog/${post.slug}`);
+    const pageUrl = canonicalUrl(`/blog/${post.slug}`);
 
     const articleLd = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
+        "@id": `${pageUrl}#article`,
+        inLanguage: "en",
         headline: post.title,
         description: post.seo?.metaDescription || post.excerpt,
         image: coverImage?.src || absoluteUrl(siteConfig.ogImage),
@@ -143,27 +151,20 @@ export default async function BlogPostPage({ params }) {
         author: author
             ? { "@type": "Person", name: author.name, jobTitle: author.role, url: author.linkedin }
             : { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
-        publisher: {
-            "@type": "Organization",
-            name: siteConfig.name,
-            logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
-        },
+        publisher: { "@id": ORGANIZATION_ID },
     };
+
+    const breadcrumbLd = generateBreadcrumbSchema([
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${post.slug}` },
+    ]);
 
     const faq = (post.faq || []).filter((item) => item?.question && item?.answer);
 
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
-            />
-            {faq.length > 0 && (
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faq)) }}
-                />
-            )}
+            <JsonLd data={[articleLd, breadcrumbLd]} />
+            {faq.length > 0 && <JsonLd data={generateFaqSchema(faq)} />}
             <SEOContentPage
                 title={post.title}
                 subtitle={post.subtitle}

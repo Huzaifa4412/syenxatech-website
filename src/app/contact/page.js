@@ -1,22 +1,45 @@
 import React from "react";
 import ContactClient from "@/components/contact-client";
-import { createMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import {
+    createMetadata,
+    generateBreadcrumbSchema,
+    generateWebPageSchema,
+} from "@/lib/seo";
+
+const title = "Contact Syenxa Tech | Book an AI Strategy Call";
+const description =
+    "Contact Syenxa Tech to hire AI developers, deploy custom AI calling agents and chatbots, build a Next.js website, or book a free AI automation consultation.";
 
 export const metadata = createMetadata({
-    title: "Hire AI Developers & Contact Syenxa Tech | AI Agency",
-    description:
-        "Get in touch with Syenxa Tech to hire AI developers, deploy custom AI voice agents, build Next.js web applications, or consult on AI business automation.",
+    title,
+    description,
     path: "/contact",
     keywords: [
+        "Contact Syenxa Tech",
         "Hire AI Developers",
         "AI Automation Agency Contact",
-        "Custom AI Developer Consultation",
+        "Book AI Consultation",
         "AI Calling Agent Development Agency",
-        "Syenxa Tech Contact",
-        "Hire Next.js Developers"
+        "Hire Next.js Developers",
     ],
 });
 
 export default function ContactPage() {
-    return <ContactClient />;
+    return (
+        <>
+            <JsonLd
+                data={[
+                    generateWebPageSchema({
+                        name: title,
+                        description,
+                        path: "/contact",
+                        type: "ContactPage",
+                    }),
+                    generateBreadcrumbSchema([{ name: "Contact", path: "/contact" }]),
+                ]}
+            />
+            <ContactClient />
+        </>
+    );
 }

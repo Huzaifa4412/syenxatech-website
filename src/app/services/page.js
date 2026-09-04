@@ -5,12 +5,23 @@ import ProcessSection from "@/components/services/ProcessSection";
 import StatsBand from "@/components/services/StatsBand";
 import Contact from "@/components/form";
 import Faqs from "@/components/faqs";
-import { createMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { homeFaqs } from "@/lib/faqs";
+import {
+    canonicalUrl,
+    createMetadata,
+    generateBreadcrumbSchema,
+    generateFaqSchema,
+    generateWebPageSchema,
+} from "@/lib/seo";
+
+const title = "AI Automation Services & Digital Solutions | Syenxa Tech";
+const description =
+    "Explore Syenxa Tech's AI automation services: custom AI voice agents, intelligent chatbots, Next.js web application development, and digital marketing with SEO.";
 
 export const metadata = createMetadata({
-    title: "AI Automation Services & Digital Solutions | Syenxa Tech",
-    description:
-        "Explore Syenxa Tech's AI automation services: custom AI voice agents, intelligent chatbots, Next.js web application development, and mobile apps.",
+    title,
+    description,
     path: "/services",
     keywords: [
         "AI Automation Services",
@@ -18,13 +29,43 @@ export const metadata = createMetadata({
         "AI Integration Services",
         "AI Business Automation",
         "AI Voice Calling Agents",
-        "Custom Web Development Agency"
+        "Custom Web Development Agency",
     ],
 });
 
+const serviceItems = [
+    { name: "AI Calling Agents", path: "/ai-calling-agents" },
+    { name: "AI Chatbots", path: "/ai-chatbots" },
+    { name: "Website Development", path: "/website-development" },
+    { name: "Digital Marketing & SEO", path: "/digital-marketing" },
+];
+
 export default function ServicesPage() {
+    const schemas = [
+        generateWebPageSchema({
+            name: title,
+            description,
+            path: "/services",
+            type: "CollectionPage",
+        }),
+        generateBreadcrumbSchema([{ name: "Services", path: "/services" }]),
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Syenxa Tech services",
+            itemListElement: serviceItems.map((item, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: item.name,
+                url: canonicalUrl(item.path),
+            })),
+        },
+        generateFaqSchema(homeFaqs),
+    ];
+
     return (
         <main className="bg-[#faf9f7]">
+            <JsonLd data={schemas} />
             <ServicesHero />
             <ServiceList />
             <ProcessSection />

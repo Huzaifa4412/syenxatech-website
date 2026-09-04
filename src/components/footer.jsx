@@ -1,116 +1,142 @@
-"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { siteConfig } from "@/lib/seo";
+
+const serviceLinks = [
+    { name: "AI Calling Agents", href: "/ai-calling-agents" },
+    { name: "AI Chatbots", href: "/ai-chatbots" },
+    { name: "Website Development", href: "/website-development" },
+    { name: "Digital Marketing & SEO", href: "/digital-marketing" },
+    { name: "All Services", href: "/services" },
+];
+
+const useCaseLinks = [
+    { name: "Healthcare & Dental Clinics", href: "/use-cases/doctor" },
+    { name: "Real Estate Agencies", href: "/use-cases/real-estate" },
+    { name: "Gyms & Fitness Studios", href: "/use-cases/gym" },
+    { name: "Beauty Salons & Spas", href: "/use-cases/beauty-salon" },
+    { name: "All Use Cases", href: "/use-cases" },
+];
+
+const companyLinks = [
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms-of-service" },
+];
+
+const socialLinks = [
+    { name: "LinkedIn", href: siteConfig.socials.linkedin },
+    { name: "Instagram", href: siteConfig.socials.instagram },
+    { name: "Facebook", href: siteConfig.socials.facebook },
+];
+
+function FooterColumn({ title, links, external = false }) {
+    return (
+        <nav aria-label={title}>
+            <h3 className="font-semibold text-zinc-900 mb-4">{title}</h3>
+            <ul className="space-y-2.5">
+                {links.map((link) =>
+                    external ? (
+                        <li key={link.name}>
+                            <a
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm text-zinc-600 hover:text-[#ff541f] transition-colors"
+                            >
+                                {link.name}
+                            </a>
+                        </li>
+                    ) : (
+                        <li key={link.name}>
+                            <Link
+                                href={link.href}
+                                className="text-sm text-zinc-600 hover:text-[#ff541f] transition-colors"
+                            >
+                                {link.name}
+                            </Link>
+                        </li>
+                    )
+                )}
+            </ul>
+        </nav>
+    );
+}
 
 export default function Footer() {
     return (
-        <footer className=" py-12 px-4 md:px-6 z-50">
+        <footer className="border-t border-zinc-900/5 bg-[#faf9f7] py-14 px-4 md:px-6">
             <div className="container mx-auto">
-                <div className="flex flex-col md:flex-row justify-between">
-                    <div className="mb-8 md:mb-0">
-                        <a
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div className="lg:col-span-4">
+                        <Link
                             href="/"
-                            className="mr-4 flex items-center gap-2 lg:mr-6"
+                            className="inline-flex items-center gap-3 hover:opacity-80 transition-opacity"
                         >
-                            <img
-                                src="/logo.svg"
-                                alt="Synexa Tech Logo"
-                                className="size-10 text-black "
+                            <Image
+                                src="/logo-mark.png"
+                                alt="Syenxa Tech logo"
+                                width={40}
+                                height={40}
+                                className="size-10"
                             />
-
-                            <span className=" font-bold lg:inline-block">
-                                Synexa Tech
+                            <span className="font-bold text-zinc-900 tracking-tight">
+                                Syenxa Tech
                             </span>
-                        </a>
+                        </Link>
 
-                        <div className="contact-info mt-6 space-y-2">
-                            <p className="text-sm text-zinc-600">
+                        <p className="mt-5 text-sm text-zinc-600 leading-relaxed max-w-[38ch]">
+                            AI automation agency building AI calling agents,
+                            chatbots and high-performance websites that answer
+                            every lead and book meetings 24/7.
+                        </p>
+
+                        <address className="not-italic mt-6 space-y-2 text-sm text-zinc-600">
+                            <p>
                                 Email:{" "}
                                 <a
-                                    href="mailto:syenxatech@gmail.com"
-                                    className="hover:text-(--primary-color) transition-colors"
+                                    href={`mailto:${siteConfig.email}`}
+                                    className="hover:text-[#ff541f] transition-colors"
                                 >
-                                    syenxatech@gmail.com
+                                    {siteConfig.email}
                                 </a>
                             </p>
-                            <p className="text-sm text-zinc-600">
+                            <p>
                                 Phone:{" "}
                                 <a
-                                    href="tel:+12897963492"
-                                    className="hover:text-(--primary-color) transition-colors"
+                                    href={siteConfig.phoneHref}
+                                    className="hover:text-[#ff541f] transition-colors"
                                 >
-                                    +1 289 796-3492
+                                    {siteConfig.phone}
                                 </a>
                             </p>
-                        </div>
+                        </address>
+                    </div>
 
-                        <p className="text-sm text-zinc-600 mt-5">
-                            © {new Date().getFullYear()} Synexa Tech. All rights
-                            reserved.
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        <div>
-                            <h3 className="font-semibold mb-4">Socials</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="https://github.com/arihantcodes/spectrum-ui"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    >
-                                        Linkedin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    >
-                                        Instagram
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    >
-                                        Facebook
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold mb-4">Legal</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    >
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-zinc-600 hover:text-zinc-900"
-                                    >
-                                        Terms of Service
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <FooterColumn title="Services" links={serviceLinks} />
+                        <FooterColumn title="Use Cases" links={useCaseLinks} />
+                        <FooterColumn title="Company" links={companyLinks} />
+                        <FooterColumn title="Follow" links={socialLinks} external />
                     </div>
                 </div>
-                <div className=" w-full flex mt-4 items-center justify-center   ">
-                    <h1 className="text-center text-3xl md:text-5xl lg:text-[10rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-200 to-zinc-400 select-none">
-                        SYENXA TECH
-                    </h1>
+
+                <div className="mt-12 pt-6 border-t border-zinc-900/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+                    <p>
+                        © {new Date().getFullYear()} {siteConfig.name}. All rights
+                        reserved.
+                    </p>
+                    <p>Serving businesses worldwide since {siteConfig.foundingYear}.</p>
                 </div>
+
+                <p
+                    aria-hidden="true"
+                    className="mt-6 text-center text-3xl md:text-5xl lg:text-[10rem] leading-none font-bold bg-clip-text text-transparent bg-gradient-to-b from-zinc-200 to-zinc-400 select-none"
+                >
+                    SYENXA TECH
+                </p>
             </div>
         </footer>
     );

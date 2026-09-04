@@ -1,9 +1,13 @@
 import { useCasesData } from "@/lib/use-cases-data";
-import { absoluteUrl, blogPosts, staticRoutes } from "@/lib/seo";
+import {
+    blogPosts,
+    canonicalUrl,
+    SITE_LAST_UPDATED,
+    staticRoutes,
+} from "@/lib/seo";
 import { client } from "@/sanity/client";
-import { POST_SLUGS_QUERY } from "@/sanity/queries";
 
-const lastModified = new Date("2026-05-15");
+const siteLastModified = new Date(SITE_LAST_UPDATED);
 
 async function getSanityBlogRoutes() {
     try {
@@ -18,7 +22,9 @@ async function getSanityBlogRoutes() {
             path: `/blog/${post.slug}`,
             priority: 0.65,
             changeFrequency: "monthly",
-            lastModified: post._updatedAt ? new Date(post._updatedAt) : lastModified,
+            lastModified: post._updatedAt
+                ? new Date(post._updatedAt)
+                : siteLastModified,
         }));
     } catch (error) {
         console.error("Failed to load Sanity posts for sitemap", error);
@@ -30,11 +36,12 @@ export default async function sitemap() {
     const sanityBlogRoutes = await getSanityBlogRoutes();
     const sanitySlugs = new Set(sanityBlogRoutes.map((route) => route.path));
 
-    const blogRoutes = blogPosts
+    const legacyBlogRoutes = blogPosts
         .map((post) => ({
             path: `/blog/${post.slug}`,
             priority: 0.65,
             changeFrequency: "monthly",
+            lastModified: new Date(post.dateModified || post.datePublished),
         }))
         .filter((route) => !sanitySlugs.has(route.path));
 
@@ -46,12 +53,12 @@ export default async function sitemap() {
 
     return [
         ...staticRoutes,
-        ...sanityBlogRoutes,
-        ...blogRoutes,
         ...useCaseRoutes,
+        ...sanityBlogRoutes,
+        ...legacyBlogRoutes,
     ].map((route) => ({
-        url: absoluteUrl(route.path),
-        lastModified: route.lastModified || lastModified,
+        url: canonicalUrl(route.path),
+        lastModified: route.lastModified || siteLastModified,
         changeFrequency: route.changeFrequency,
         priority: route.priority,
     }));

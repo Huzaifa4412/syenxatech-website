@@ -1,90 +1,142 @@
+import Link from "next/link";
 import SEOContentPage from "@/components/SEOContentPage";
-import { createMetadata } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { formatPostDate } from "@/lib/reading-time";
+import { getLegacyPost, legacyPostMetadata, legacyPostSchemas } from "@/lib/seo";
 
-export const metadata = createMetadata({
-    title: "Syenxa Tech: Leading AI Digital Solutions for Businesses Worldwide",
-    description:
-        "Learn why Syenxa Tech is the preferred partner for AI digital solutions, offering AI Calling Agents, chatbots, and web development.",
-    path: "/blog/syenxa-tech-leading-ai-solutions",
-    type: "article",
-    keywords: [
-        "Syenxa Tech AI Solutions",
-        "AI Digital Solutions",
-        "American AI Company",
-        "Syenxa Tech Projects",
-    ],
-});
+const SLUG = "syenxa-tech-leading-ai-solutions";
+
+export const metadata = legacyPostMetadata(SLUG);
+
+const headings = [
+    { id: "who-we-serve", text: "Who we serve" },
+    { id: "services", text: "What we build" },
+    { id: "how-we-work", text: "How a project runs" },
+    { id: "why-trust", text: "Why businesses trust Syenxa Tech" },
+];
 
 export default function Blog4() {
+    const post = getLegacyPost(SLUG);
+
     return (
-        <SEOContentPage
-            title="Syenxa Tech: Leading AI Digital Solutions for Businesses Worldwide"
-            subtitle="Your Partner in Digital Transformation"
-            content={
-                <div className="space-y-8">
-                    <p>
-                        As AI becomes the cornerstone of modern commerce,{" "}
-                        <strong>Syenxa Tech</strong> stands at the forefront of
-                        digital transformation. We provide a
-                        comprehensive suite of AI-driven tools designed to help
-                        brands lead their industries.
-                    </p>
-                    <section>
-                        <h2 className="text-2xl font-bold text-zinc-900">
-                            An American Company Serving Global Clients
-                        </h2>
+        <>
+            <JsonLd data={legacyPostSchemas(SLUG)} />
+            <SEOContentPage
+                title={post.title}
+                subtitle="What Syenxa Tech builds, who we build it for, and what working with us actually looks like."
+                category={post.category}
+                date={formatPostDate(post.datePublished)}
+                dateTime={post.datePublished}
+                readingTime={post.readingTime}
+                headings={headings}
+                keywords={post.keywords}
+                coverImage={{ src: post.image, alt: post.imageAlt }}
+                keyTakeaways={[
+                    "Syenxa Tech is a US-based AI automation agency serving small and mid-sized businesses worldwide since 2014.",
+                    "Core services: AI calling agents, AI chatbots, Next.js website development and digital marketing with SEO.",
+                    "Projects run in short cycles with fixed quotes: chatbots in about 3 days, standard websites in 5 to 7.",
+                ]}
+                content={
+                    <div className="space-y-8">
                         <p>
-                            Based in the United States, our team delivers{" "}
-                            <strong>AI Calling Agents</strong>,{" "}
-                            <strong>website development</strong>, and comprehensive digital solutions to clients worldwide.
-                            We understand diverse markets and
-                            tailor our approach accordingly.
+                            As AI becomes part of how customers expect to be
+                            served, <strong>Syenxa Tech</strong> helps businesses
+                            put it to work in the places that matter most: the
+                            phone, the inbox and the website. This overview
+                            explains who we serve, what we build and how a
+                            typical engagement runs.
                         </p>
-                    </section>
-                    <section>
-                        <h2 className="text-2xl font-bold text-zinc-900">
-                            Comprehensive Service Suite
-                        </h2>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>
-                                <strong>AI Calling:</strong> High-conversion
-                                voice agents.
-                            </li>
-                            <li>
-                                <strong>AI Chat:</strong> Intelligent lead
-                                qualification.
-                            </li>
-                            <li>
-                                <strong>Custom Development:</strong> Responsive
-                                sites and apps.
-                            </li>
-                            <li>
-                                <strong>SEO & Marketing:</strong> Data-driven
-                                growth strategies.
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2 className="text-2xl font-bold text-zinc-900">
-                            Why Businesses Trust Syenxa Tech
-                        </h2>
-                        <p>
-                            Our commitment to excellence, innovation, and
-                            measurable results has made us a leading choice for{" "}
-                            <strong>
-                                AI solutions for businesses worldwide
-                            </strong>
-                            . We don't just provide technology; we provide
-                            growth partnerships.
-                        </p>
-                    </section>
-                </div>
-            }
-            keywords={[
-                "Syenxa Tech AI",
-                "Digital Transformation",
-                "Leading AI Company Solutions",
-            ]}
-        />
+
+                        <section>
+                            <h2 id="who-we-serve">Who we serve</h2>
+                            <p>
+                                We are a United States based company delivering to
+                                clients across North America, Europe and the
+                                Middle East. Most of our clients are service
+                                businesses with a high volume of calls and
+                                messages: dental and medical clinics, real estate
+                                agencies, gyms, salons, home-service companies and
+                                e-commerce brands. You can see how deployments
+                                differ by industry on our{" "}
+                                <Link href="/use-cases">use cases</Link> page.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 id="services">What we build</h2>
+                            <ul className="list-disc pl-6 space-y-3">
+                                <li>
+                                    <strong>
+                                        <Link href="/ai-calling-agents">AI calling agents:</Link>
+                                    </strong>{" "}
+                                    voice AI that answers inbound calls, runs
+                                    outbound follow-ups, qualifies leads and books
+                                    appointments into your calendar and CRM.
+                                </li>
+                                <li>
+                                    <strong>
+                                        <Link href="/ai-chatbots">AI chatbots:</Link>
+                                    </strong>{" "}
+                                    one bot for WhatsApp, Instagram, Messenger,
+                                    TikTok and website chat, with lead capture and
+                                    human handoff built in.
+                                </li>
+                                <li>
+                                    <strong>
+                                        <Link href="/website-development">Website development:</Link>
+                                    </strong>{" "}
+                                    fast, SEO-ready Next.js websites, web apps and
+                                    e-commerce stores designed to convert.
+                                </li>
+                                <li>
+                                    <strong>
+                                        <Link href="/digital-marketing">Digital marketing and SEO:</Link>
+                                    </strong>{" "}
+                                    technical SEO, content, paid campaigns and
+                                    marketing automation connected to the agents
+                                    above.
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 id="how-we-work">How a project runs</h2>
+                            <ol className="list-decimal pl-6 space-y-2">
+                                <li>
+                                    A free discovery call to map your workflow and
+                                    pick the automation with the fastest payback.
+                                    You receive a fixed quote and delivery date.
+                                </li>
+                                <li>
+                                    Build and review in short cycles. Chatbots ship
+                                    in about three working days; standard websites
+                                    in five to seven.
+                                </li>
+                                <li>
+                                    Launch, connect channels and CRM, then tune
+                                    with real customer conversations. Support is
+                                    included.
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section>
+                            <h2 id="why-trust">Why businesses trust Syenxa Tech</h2>
+                            <p>
+                                Since 2014 we have delivered more than 300
+                                projects. We publish our pricing signals, offer a
+                                free chatbot trial, and measure success in booked
+                                appointments and hours returned to your team
+                                rather than in demos. If your business depends on
+                                phone calls and messages,{" "}
+                                <Link href="/contact">talk to us</Link> and we
+                                will show you what an AI agent trained on your
+                                scripts sounds like.
+                            </p>
+                        </section>
+                    </div>
+                }
+            />
+        </>
     );
 }

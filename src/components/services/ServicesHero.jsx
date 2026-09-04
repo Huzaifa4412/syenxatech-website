@@ -2,13 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
-import { Cpu, MessageSquare, Globe, Smartphone, ArrowUpRight } from "lucide-react";
+import { Cpu, MessageSquare, Globe, Megaphone, ArrowUpRight } from "lucide-react";
 
 const serviceIndex = [
     { name: "AI Calling Agents", href: "/ai-calling-agents", icon: Cpu },
     { name: "AI Chatbots", href: "/ai-chatbots", icon: MessageSquare },
     { name: "Website Development", href: "/website-development", icon: Globe },
-    { name: "Mobile App Development", href: "/digital-marketing", icon: Smartphone },
+    { name: "Digital Marketing & SEO", href: "/digital-marketing", icon: Megaphone },
 ];
 
 const ServicesHero = () => {
@@ -32,16 +32,17 @@ const ServicesHero = () => {
                         {...fadeUp(0)}
                         className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 tracking-tighter leading-[1.02] max-w-[14ch]"
                     >
-                        Everything you need to automate and{" "}
-                        <span className="text-[#ff541f]">grow</span>.
+                        AI automation services to run and{" "}
+                        <span className="text-[#ff541f]">grow</span> your business.
                     </motion.h1>
 
                     <motion.p
                         {...fadeUp(0.12)}
                         className="mt-6 text-lg md:text-xl text-zinc-600 leading-relaxed font-light max-w-[46ch]"
                     >
-                        AI calling agents, chatbots, websites, and mobile apps
-                        for businesses that want results without the overhead.
+                        AI calling agents, AI chatbots, Next.js websites and
+                        digital marketing for businesses that want results
+                        without the overhead.
                     </motion.p>
 
                     <motion.div

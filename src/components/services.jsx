@@ -6,7 +6,7 @@ import {
     Cpu,
     MessageSquare,
     Globe,
-    Smartphone,
+    Megaphone,
     ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
@@ -14,9 +14,9 @@ import Link from "next/link";
 const Services = () => {
     const services = [
         {
-            title: "AI Calling Agent",
+            title: "AI Calling Agents",
             description:
-                "Boost your customer outreach with automated calling solutions, appointment reminders, and follow-up services powered by smart voice technology. Trusted by businesses worldwide.",
+                "Voice AI agents that answer inbound calls, run outbound follow-ups, qualify leads and book appointments straight into your calendar, 24/7.",
             icon: Cpu,
             href: "/ai-calling-agents",
             color: "#ff541f",
@@ -32,19 +32,19 @@ const Services = () => {
             span: "lg:col-span-2",
         },
         {
-            title: "AI Chatbot",
+            title: "AI Chatbots",
             description:
-                "Intelligent chat automation across social platforms, providing 24/7 support and lead qualification for your growing business.",
+                "One AI chatbot for WhatsApp, Instagram, Messenger, TikTok and your website: 24/7 support, lead capture and qualification for growing businesses.",
             icon: MessageSquare,
             href: "/ai-chatbots",
             color: "#ff541f",
             span: "lg:col-span-2",
         },
         {
-            title: "Digital Marketing & Apps",
+            title: "Digital Marketing & SEO",
             description:
-                "Custom Android and iOS mobile applications with scalable architecture and seamless user experiences for national brands.",
-            icon: Smartphone,
+                "Technical SEO, content, paid acquisition and AI marketing automation that turn your website and chatbots into a steady lead pipeline.",
+            icon: Megaphone,
             href: "/digital-marketing",
             color: "#d4a900",
             span: "lg:col-span-1",
@@ -120,13 +120,16 @@ const Services = () => {
                                         </div>
                                         <Link
                                             href={service.href}
+                                            aria-label={`Learn more about ${service.title}`}
                                             className="size-12 rounded-full border border-zinc-900/10 flex items-center justify-center hover:bg-zinc-900 hover:text-white transition-all group-hover:rotate-45"
                                         >
                                             <ArrowRight className="w-5 h-5" />
                                         </Link>
                                     </div>
                                     <h3 className="text-3xl font-bold text-zinc-900 mb-4 tracking-tighter">
-                                        {service.title}
+                                        <Link href={service.href} className="hover:text-[#ff541f] transition-colors">
+                                            {service.title}
+                                        </Link>
                                     </h3>
                                     <p className="text-zinc-500 text-sm leading-relaxed font-light max-w-[80%]">
                                         {service.description}

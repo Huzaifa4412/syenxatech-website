@@ -1,21 +1,41 @@
 # Syenxa Tech
 
-> Syenxa Tech is an AI Automation Agency specializing in custom AI Voice Calling Agents, omnichannel AI Chatbots, Next.js Web Development, and Digital Marketing Automation.
+> Syenxa Tech is an AI automation agency that builds custom AI calling agents (voice AI), omnichannel AI chatbots, high-performance Next.js websites, and AI-driven digital marketing for small and mid-sized businesses worldwide. Founded 2014. Contact: syenxatech@gmail.com, +1 289 796-3492.
 
-## Main Services
-- [AI Calling Agents](https://www.syenxatech.com/ai-calling-agents): Autonomous 24/7 AI voice agents for sales calls, lead qualification, and appointment booking.
-- [Custom Website Development](https://www.syenxatech.com/website-development): High-performance Next.js websites, SaaS user interfaces, and custom web applications.
-- [AI Chatbots](https://www.syenxatech.com/ai-chatbots): Customer support and sales chatbots across WhatsApp, Instagram DMs, TikTok, and web.
-- [AI Digital Marketing](https://www.syenxatech.com/digital-marketing): Performance marketing and AI lead generation automation.
-- [Services Overview](https://www.syenxatech.com/services): Enterprise AI integration and software engineering.
+## What we do
+- AI Calling Agents: 24/7 inbound and outbound voice agents that answer calls, qualify leads, book appointments into Google Calendar / HubSpot / Salesforce / GoHighLevel, and hand off to humans when needed. Sub-second response latency.
+- AI Chatbots: one bot across WhatsApp, Instagram DMs, Facebook Messenger, TikTok and website chat. One-time setup from $150 to $350 USD, 7-day free trial, delivered in about 3 working days.
+- Website Development: custom Next.js websites, web apps and e-commerce built for Core Web Vitals and technical SEO. Pricing from $200 USD, delivered in 5 to 7 working days for standard sites.
+- Digital Marketing & SEO: technical SEO, content, paid acquisition and AI marketing automation.
 
-## Industry Use Cases
-- [Healthcare AI Scheduling](https://www.syenxatech.com/use-cases/doctor): Patient pre-screening, appointment reminders, and automated clinic front desk.
-- [Real Estate Voice Agents](https://www.syenxatech.com/use-cases/real-estate): 24/7 lead qualification and automated property viewing scheduling.
-- [Fitness & Gym Automation](https://www.syenxatech.com/use-cases/gym): Class bookings, membership renewals, and re-engagement campaigns.
-- [Beauty & Spa Booking](https://www.syenxatech.com/use-cases/beauty-salon): Salon booking management and waitlist automation.
+## Main pages
+- [Home](https://www.syenxatech.com/): AI automation agency overview.
+- [AI Calling Agents](https://www.syenxatech.com/ai-calling-agents): Voice AI for sales, lead qualification and appointment booking.
+- [AI Chatbots](https://www.syenxatech.com/ai-chatbots): WhatsApp, Instagram, TikTok, Messenger and web chatbots.
+- [Website Development](https://www.syenxatech.com/website-development): Next.js websites, web apps, e-commerce, portfolio.
+- [Digital Marketing & SEO](https://www.syenxatech.com/digital-marketing): SEO services and AI marketing automation.
+- [All Services](https://www.syenxatech.com/services): Service overview, process and pricing signals.
+- [About](https://www.syenxatech.com/about): Company background and mission.
+- [Contact](https://www.syenxatech.com/contact): Book a consultation or request a quote.
 
-## Contact & Consultation
-- Website: https://www.syenxatech.com
-- Hire AI Developers / Schedule Consultation: https://www.syenxatech.com/contact
-- Email: syenxatech@gmail.com
+## Industry use cases
+- [Healthcare & Dental Clinics](https://www.syenxatech.com/use-cases/doctor): AI receptionist, appointment booking, reminders, triage.
+- [Real Estate](https://www.syenxatech.com/use-cases/real-estate): 24/7 lead qualification and viewing scheduling.
+- [Gyms & Fitness](https://www.syenxatech.com/use-cases/gym): Class booking, renewals, churn prevention.
+- [Beauty Salons & Spas](https://www.syenxatech.com/use-cases/beauty-salon): Booking, deposits, reminders, reviews.
+
+## Pricing (machine-readable)
+- https://www.syenxatech.com/pricing.md
+
+## Blog
+- [Blog index](https://www.syenxatech.com/blog)
+- [How Much Do AI Calling Agents Cost in 2026? US Pricing Guide](https://www.syenxatech.com/blog/ai-calling-agent-cost-2026)
+- [How Much Does a Small Business Website Cost in the USA? (2026)](https://www.syenxatech.com/blog/small-business-website-cost-usa-2026)
+- [How AI Calling Agents Are Transforming Sales](https://www.syenxatech.com/blog/how-ai-calling-agents-are-transforming-sales)
+- [Top Benefits of AI Chatbots for Customer Support](https://www.syenxatech.com/blog/top-benefits-of-ai-chatbots)
+- [AI Automation Solutions That Reduce Costs](https://www.syenxatech.com/blog/ai-automation-solutions-reduce-costs)
+
+## Policies
+- [Privacy Policy](https://www.syenxatech.com/privacy-policy)
+- [Terms of Service](https://www.syenxatech.com/terms-of-service)
+- Sitemap: https://www.syenxatech.com/sitemap.xml

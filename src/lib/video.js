@@ -12,7 +12,7 @@ export function parseVideoUrl(url) {
 
     let parsed;
     try {
-        parsed = new URL(trimmed, "https://syenxatech.com");
+        parsed = new URL(trimmed, "https://www.syenxatech.com");
     } catch {
         return null;
     }

@@ -82,6 +82,21 @@ const DetailPage = ({ params }) => {
                 >
                     {data.hero.subtitle}
                 </motion.p>
+                <p className="mt-8 text-sm text-zinc-500">
+                    Powered by Syenxa Tech{" "}
+                    <Link href="/ai-calling-agents" className="font-semibold text-[#ff541f] hover:underline">
+                        AI calling agents
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="/ai-chatbots" className="font-semibold text-[#ff541f] hover:underline">
+                        AI chatbots
+                    </Link>
+                    , with a{" "}
+                    <Link href="/website-development" className="font-semibold text-[#ff541f] hover:underline">
+                        conversion-focused website
+                    </Link>{" "}
+                    to match.
+                </p>
             </section>
 
             {/* Challenges Section */}

@@ -5,7 +5,7 @@ import {
     Cpu,
     MessageSquare,
     Globe,
-    Smartphone,
+    Megaphone,
     ArrowRight,
     Check,
 } from "lucide-react";
@@ -61,16 +61,16 @@ const services = [
         tone: "tinted",
     },
     {
-        title: "Mobile App Development",
+        title: "Digital Marketing & SEO",
         description:
-            "Custom iOS and Android apps with scalable architecture, built to grow with your business instead of against it.",
+            "Technical SEO, content and paid acquisition, wired to your chatbots and calling agents so every visitor becomes a tracked lead.",
         features: [
-            "One codebase, both platforms",
-            "Native-feel performance",
-            "Ongoing maintenance included",
-            "App Store and Play Store launch",
+            "Technical SEO and Core Web Vitals",
+            "Keyword research and content plans",
+            "Paid social and search campaigns",
+            "AI marketing automation and CRM sync",
         ],
-        icon: Smartphone,
+        icon: Megaphone,
         href: "/digital-marketing",
         span: "lg:col-span-7",
         tone: "light",
@@ -151,7 +151,9 @@ const ServiceList = () => {
                                 <h3
                                     className={`relative text-2xl md:text-3xl font-bold tracking-tight mb-3 ${tone.title}`}
                                 >
-                                    {service.title}
+                                    <Link href={service.href} className="hover:text-[#ff541f] transition-colors">
+                                        {service.title}
+                                    </Link>
                                 </h3>
                                 <p
                                     className={`relative text-sm md:text-base leading-relaxed font-light max-w-[52ch] ${tone.body}`}
@@ -178,7 +180,7 @@ const ServiceList = () => {
                                     href={service.href}
                                     className={`relative mt-auto inline-flex items-center gap-2 font-semibold text-sm ${tone.link} w-fit`}
                                 >
-                                    Learn more
+                                    Learn more about {service.title}
                                     <ArrowRight className="w-4 h-4 text-[#ff541f] group-hover:translate-x-1.5 transition-transform duration-300" />
                                     <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#ff541f] group-hover:w-full transition-all duration-300" />
                                 </Link>

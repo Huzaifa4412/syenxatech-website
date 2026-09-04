@@ -9,10 +9,11 @@ import {
     Cpu,
     MessageSquare,
     Globe,
-    Smartphone,
+    Megaphone,
     ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -47,18 +48,18 @@ const Navbar = () => {
             description: "High-performance responsive websites.",
         },
         {
-            name: "App Development",
+            name: "Digital Marketing & SEO",
             href: "/digital-marketing",
-            icon: Smartphone,
-            description: "Custom iOS and Android solutions.",
+            icon: Megaphone,
+            description: "SEO, paid ads & AI marketing automation.",
         },
     ];
 
     const navLinks = [
         { name: "Home", href: "/" },
+        { name: "Use Cases", href: "/use-cases" },
         { name: "Blog", href: "/blog" },
         { name: "About", href: "/about" },
-        { name: "FAQ", href: "/#faqs" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -81,9 +82,12 @@ const Navbar = () => {
                     href="/"
                     className="shrink-0 flex items-center hover:opacity-80 transition-opacity"
                 >
-                    <img
-                        src="/logo.svg"
-                        alt="Syenxa Tech Logo"
+                    <Image
+                        src="/logo-mark.png"
+                        alt="Syenxa Tech logo"
+                        width={36}
+                        height={36}
+                        priority
                         className="h-8 sm:h-9 w-auto"
                     />
                     <span className="hidden sm:block ml-3 font-bold text-zinc-900 tracking-tighter text-lg">
@@ -192,6 +196,7 @@ const Navbar = () => {
 
                     <Button
                         text="Get Started"
+                        href="/contact"
                         variant="primary"
                         className="text-xs px-6 py-2.5"
                     />
@@ -200,6 +205,8 @@ const Navbar = () => {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setOpen(!open)}
+                    aria-label={open ? "Close menu" : "Open menu"}
+                    aria-expanded={open}
                     className="md:hidden text-zinc-900 p-2 hover:bg-zinc-900/10 rounded-full transition-colors"
                 >
                     {open ? (
@@ -238,14 +245,17 @@ const Navbar = () => {
                                         href="/"
                                         onClick={() => setOpen(false)}
                                     >
-                                        <img
-                                            src="/logo.svg"
-                                            alt="Syenxa Tech Logo"
+                                        <Image
+                                            src="/logo-mark.png"
+                                            alt="Syenxa Tech logo"
+                                            width={40}
+                                            height={40}
                                             className="h-10 w-auto"
                                         />
                                     </Link>
                                     <button
                                         onClick={() => setOpen(false)}
+                                        aria-label="Close menu"
                                         className="p-2 bg-zinc-900/5 rounded-full text-zinc-900 hover:bg-zinc-900/15 transition-colors"
                                     >
                                         <X size={20} />
@@ -288,6 +298,7 @@ const Navbar = () => {
                                 <div className="mt-auto">
                                     <Button
                                         text="Get Started"
+                                        href="/contact"
                                         variant="primary"
                                         className="w-full"
                                     />

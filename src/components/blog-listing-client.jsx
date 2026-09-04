@@ -386,8 +386,8 @@ export default function BlogListingClient({ posts = [] }) {
                             {...fadeUp(0.08)}
                             className="mt-5 text-4xl md:text-6xl lg:text-7xl font-bold text-zinc-900 tracking-tighter leading-[0.98] max-w-[16ch] text-balance"
                         >
-                            Notes from the machines that{" "}
-                            <span className="text-[#ff541f]">answer</span>.
+                            AI calling agents, chatbots and automation,{" "}
+                            <span className="text-[#ff541f]">explained</span>.
                         </motion.h1>
                     </div>
                     <motion.div {...fadeUp(0.16)} className="lg:col-span-4 lg:pb-3">

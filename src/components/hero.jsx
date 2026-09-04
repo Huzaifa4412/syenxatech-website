@@ -33,7 +33,7 @@ const MARQUEE_LINKS = [
     { name: "AI Calling Agents", href: "/ai-calling-agents" },
     { name: "AI Chatbots", href: "/ai-chatbots" },
     { name: "Website Development", href: "/website-development" },
-    { name: "Mobile Apps", href: "/digital-marketing" },
+    { name: "Digital Marketing", href: "/digital-marketing" },
     { name: "Use Cases", href: "/use-cases" },
 ];
 
@@ -44,16 +44,17 @@ const WAVE_BARS = [
 /* Typewriter isolated so per-character updates re-render only itself */
 const Typewriter = ({ phrases, className, startDelay = 1200 }) => {
     const reduce = useReducedMotion();
-    const [text, setText] = useState(reduce ? phrases[0] : "");
+    const [text, setText] = useState(phrases[0]);
 
     useEffect(() => {
         if (reduce) {
             setText(phrases[0]);
             return;
         }
-        let charIdx = 0;
+        // Start from the fully rendered first phrase and delete it before cycling.
+        let charIdx = phrases[0].length;
         let phraseIdx = 0;
-        let deleting = false;
+        let deleting = true;
         let timer;
 
         const tick = () => {
@@ -229,14 +230,15 @@ const Hero = () => {
                     </motion.div>
 
                     <h1
-                        aria-label="AI agents that never sleep."
-                        className="text-5xl md:text-6xl lg:text-[4.3rem] font-bold text-zinc-900 tracking-tighter leading-[1.05]"
+                        aria-label="AI calling agents that never sleep."
+                        className="text-5xl md:text-6xl lg:text-[4rem] font-bold text-zinc-900 tracking-tighter leading-[1.05]"
                     >
                         <span aria-hidden>
-                            {["AI", "agents", "that"].map((word, i) => (
+                            {["AI", "calling", "agents", "that"].map((word, i) => (
+                                <React.Fragment key={i}>
+                                {i > 0 && " "}
                                 <span
-                                    key={i}
-                                    className="inline-block overflow-hidden mr-[0.24em] pb-[0.09em] align-bottom"
+                                    className="inline-block overflow-hidden pb-[0.09em] align-bottom"
                                 >
                                     <motion.span
                                         initial={
@@ -255,8 +257,8 @@ const Hero = () => {
                                         {word}
                                     </motion.span>
                                 </span>
-                            ))}
-                            <br />
+                                </React.Fragment>
+                            ))}{" "}
                             <Typewriter
                                 phrases={TYPED_PHRASES}
                                 className="font-playfair italic font-medium text-[1.08em] tracking-tight text-[#ff541f] whitespace-nowrap"
@@ -268,7 +270,8 @@ const Hero = () => {
                         {...rise(0.45)}
                         className="mt-7 text-lg lg:text-xl text-zinc-600 leading-relaxed font-light max-w-[44ch]"
                     >
-                        Syenxa Tech builds AI calling agents, chatbots, and
+                        Syenxa Tech is a US-based AI automation agency building
+                        AI calling agents, AI chatbots and high-performance
                         websites that answer every lead and book meetings
                         around the clock.
                     </motion.p>
@@ -305,7 +308,10 @@ const Hero = () => {
                                     key={i}
                                     whileHover={reduce ? undefined : { y: -6, zIndex: 10 }}
                                     src={`/hero-r-${i}.png`}
-                                    alt={`Syenxa Tech client ${i}`}
+                                    alt=""
+                                    width={40}
+                                    height={40}
+                                    loading="lazy"
                                     className="size-10 rounded-full border-2 border-white shadow-md shadow-zinc-900/10 object-cover bg-zinc-200"
                                 />
                             ))}
@@ -321,7 +327,7 @@ const Hero = () => {
                                 ))}
                             </div>
                             <p className="text-sm text-zinc-600 mt-1">
-                                Trusted by 150+ businesses worldwide
+                                Trusted by 180+ businesses worldwide
                             </p>
                         </div>
                     </motion.div>
@@ -470,7 +476,7 @@ const Hero = () => {
                                     <span className="flex items-baseline gap-0.5">
                                         <CountUp
                                             from={0}
-                                            to={150}
+                                            to={180}
                                             duration={2}
                                             className="text-xl font-bold text-zinc-900 tracking-tighter tabular-nums"
                                         />
