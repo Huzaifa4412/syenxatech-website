@@ -9,6 +9,14 @@ export const homeFaqs = [
         answer: "Syenxa Tech provides AI calling agents (voice AI for inbound and outbound calls), AI chatbots for WhatsApp, Instagram, Messenger, TikTok and websites, custom Next.js website development, and digital marketing with SEO. Everything is built to automate customer communication and grow revenue.",
     },
     {
+        question: "What are AI calling agents and how do they work?",
+        answer: "AI calling agents are automated voice systems that talk like humans. They answer inbound calls, run outbound follow-ups, qualify leads, send reminders and book appointments using conversational AI, and they work 24/7 in multiple languages.",
+    },
+    {
+        question: "What is the pricing for AI calling agents?",
+        answer: "AI calling agent pricing is custom and depends on call volume, call duration, languages and region. We start with a free consultation and then propose a package with a fixed setup fee plus usage.",
+    },
+    {
         question: "How much does an AI chatbot cost?",
         answer: "Our AI chatbots are a one-time setup fee of $150 to $350 USD depending on channels and integrations. There are no monthly charges from us, and you get a free 7-day trial to test the bot on your own platform before committing.",
     },
@@ -31,14 +39,6 @@ export const homeFaqs = [
     {
         question: "Is hosting and domain included in the website price?",
         answer: "No. Hosting and domain fees are paid to the provider separately, but we help you choose, set up and connect them at no extra charge.",
-    },
-    {
-        question: "What are AI calling agents and how do they work?",
-        answer: "AI calling agents are automated voice systems that talk like humans. They answer inbound calls, run outbound follow-ups, qualify leads, send reminders and book appointments using conversational AI, and they work 24/7 in multiple languages.",
-    },
-    {
-        question: "What is the pricing for AI calling agents?",
-        answer: "AI calling agent pricing is custom and depends on call volume, call duration, languages and region. We start with a free consultation and then propose a package with a fixed setup fee plus usage.",
     },
 ];
 

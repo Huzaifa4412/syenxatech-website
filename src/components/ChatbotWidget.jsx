@@ -1,6 +1,6 @@
 // src/components/ChatWidget.jsx
 import React, { useEffect } from 'react';
-// import '@n8n/chat/style.css';
+import '@n8n/chat/style.css';
 import { createChat } from '@n8n/chat';
 
 export default function ChatWidget() {

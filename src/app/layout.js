@@ -1,7 +1,6 @@
-import { Poppins, Urbanist, DM_Sans, Playfair_Display } from "next/font/google";
+import { Poppins, Urbanist, DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "@/app/globals.css";
-import "@n8n/chat/style.css";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -33,14 +32,6 @@ const urbanist = Urbanist({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
     variable: "--font-urbanist",
-    display: "swap",
-});
-
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    weight: ["500", "600"],
-    style: ["normal", "italic"],
-    variable: "--font-playfair",
     display: "swap",
 });
 
@@ -95,8 +86,14 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body
                 suppressHydrationWarning
-                className={`${poppins.variable} ${urbanist.variable} ${dmSans.variable} ${playfair.variable}`}
+                className={`${poppins.variable} ${urbanist.variable} ${dmSans.variable}`}
             >
+                <a
+                    href="#content"
+                    className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-zinc-900 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-white"
+                >
+                    Skip to content
+                </a>
                 <JsonLd data={generateOrganizationSchema()} />
                 <JsonLd data={generateWebSiteSchema()} />
 
@@ -142,7 +139,9 @@ fbq('track', 'PageView');
                         enabled: true,
                     }}
                 >
-                    {children}
+                    <div id="content" tabIndex={-1} className="outline-none">
+                        {children}
+                    </div>
                 </PageTransitionProvider>
                 <Footer />
                 <Analytics />

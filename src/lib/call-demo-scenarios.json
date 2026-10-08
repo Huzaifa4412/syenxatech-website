@@ -1,0 +1,158 @@
+[
+  {
+    "id": "dental",
+    "tab": "Dental clinic",
+    "business": "Maplewood Dental",
+    "lines": [
+      {
+        "who": "agent",
+        "text": "Thanks for calling Maplewood Dental, this is Ava. How can I help?"
+      },
+      {
+        "who": "caller",
+        "text": "I chipped a tooth this morning. Can I get in today?"
+      },
+      {
+        "who": "agent",
+        "text": "Sorry to hear that. I have 2:30 or 4:15 open today. Which works better?"
+      },
+      {
+        "who": "caller",
+        "text": "2:30, please."
+      },
+      {
+        "who": "agent",
+        "text": "You're booked for 2:30. I've texted the address and the new-patient form."
+      }
+    ],
+    "outcomes": [
+      {
+        "icon": "calendar",
+        "label": "Appointment booked",
+        "detail": "Today, 2:30 PM"
+      },
+      {
+        "icon": "message",
+        "label": "Confirmation sent",
+        "detail": "SMS with intake form"
+      }
+    ]
+  },
+  {
+    "id": "home-services",
+    "tab": "Home services",
+    "business": "Northside Plumbing",
+    "lines": [
+      {
+        "who": "agent",
+        "text": "Northside Plumbing, this is Ava. What's going on today?"
+      },
+      {
+        "who": "caller",
+        "text": "My water heater is leaking all over the garage."
+      },
+      {
+        "who": "agent",
+        "text": "Let's get that handled. Is the water shut off, and what's the zip code?"
+      },
+      {
+        "who": "caller",
+        "text": "It's off. 78704."
+      },
+      {
+        "who": "agent",
+        "text": "A technician can arrive between 1 and 3 PM. I'm sending the dispatch details now."
+      }
+    ],
+    "outcomes": [
+      {
+        "icon": "calendar",
+        "label": "Job scheduled",
+        "detail": "Today, 1 to 3 PM window"
+      },
+      {
+        "icon": "user",
+        "label": "Dispatcher notified",
+        "detail": "Call summary attached"
+      }
+    ]
+  },
+  {
+    "id": "real-estate",
+    "tab": "Real estate",
+    "business": "Harbor Lane Realty",
+    "lines": [
+      {
+        "who": "agent",
+        "text": "Harbor Lane Realty, Ava speaking. Are you calling about a listing?"
+      },
+      {
+        "who": "caller",
+        "text": "Yes, the three-bedroom on Alder Street. Is it still available?"
+      },
+      {
+        "who": "agent",
+        "text": "It is. Are you pre-approved, and when would you like to see it?"
+      },
+      {
+        "who": "caller",
+        "text": "Pre-approved. Saturday morning if possible."
+      },
+      {
+        "who": "agent",
+        "text": "Saturday at 10 AM is yours. I've let the listing agent know you're pre-approved."
+      }
+    ],
+    "outcomes": [
+      {
+        "icon": "calendar",
+        "label": "Viewing booked",
+        "detail": "Saturday, 10:00 AM"
+      },
+      {
+        "icon": "user",
+        "label": "Lead qualified",
+        "detail": "Pre-approved buyer, logged to CRM"
+      }
+    ]
+  },
+  {
+    "id": "salon",
+    "tab": "Salon",
+    "business": "Juniper Hair Studio",
+    "lines": [
+      {
+        "who": "agent",
+        "text": "Juniper Hair Studio, this is Ava. Booking an appointment?"
+      },
+      {
+        "who": "caller",
+        "text": "A cut and color with Dana, sometime Friday."
+      },
+      {
+        "who": "agent",
+        "text": "Dana has 11:30 or 3:00 on Friday. Color takes about two hours."
+      },
+      {
+        "who": "caller",
+        "text": "11:30 works."
+      },
+      {
+        "who": "agent",
+        "text": "Done. Friday at 11:30 with Dana. You'll get a reminder the day before."
+      }
+    ],
+    "outcomes": [
+      {
+        "icon": "calendar",
+        "label": "Appointment booked",
+        "detail": "Friday, 11:30 AM"
+      },
+      {
+        "icon": "message",
+        "label": "Reminder scheduled",
+        "detail": "Sent 24 hours ahead"
+      }
+    ]
+  }
+]

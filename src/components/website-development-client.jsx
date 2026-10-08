@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
@@ -29,6 +28,7 @@ import {
 } from "lucide-react";
 
 import { webDevFaqs } from "@/lib/faqs";
+import ProjectScreenshot from "@/components/ProjectScreenshot";
 import SearchVisibilityMockup from "@/components/illustrations/SearchVisibilityMockup";
 import BeforeAfterVisual from "@/components/illustrations/BeforeAfterVisual";
 import { DeviceShowcase } from "@/components/illustrations/DeviceMockups";
@@ -71,20 +71,20 @@ const ProjectCard = ({ title, category, description, image, link, delay, feature
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ delay, duration: 0.5 }}
-            className={`group relative overflow-hidden rounded-3xl border border-zinc-900/10 bg-white ${featured ? "md:col-span-2" : ""}`}
+            className={`group relative self-start overflow-hidden rounded-3xl border border-zinc-900/10 bg-white ${featured ? "lg:col-span-2" : ""}`}
         >
-            <div className={`relative w-full overflow-hidden ${featured ? "h-72 md:h-96" : "h-60"}`}>
-                <Image
+            <div className="p-3 bg-[#f2efe9]">
+                <ProjectScreenshot
                     src={image}
+                    title={title}
                     alt={`${title} website homepage, a ${category.toLowerCase()} built by Syenxa Tech`}
-                    fill
                     sizes={featured ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"}
-                    className="object-cover object-top transform group-hover:scale-[1.04] transition-transform duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-5 right-5 flex items-end justify-between gap-3 text-white">
+            </div>
+            <div className="p-6">
+                <div className="flex items-center justify-between gap-3 text-zinc-900">
                     <div>
-                        <span className="text-[10px] font-mono uppercase tracking-widest text-white/70">{category}</span>
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600">{category}</span>
                         <h3 className="font-display text-xl md:text-2xl font-bold leading-tight">{title}</h3>
                     </div>
                     {hasLink && (
@@ -93,15 +93,13 @@ const ProjectCard = ({ title, category, description, image, link, delay, feature
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`Open the live ${title} website`}
-                            className="shrink-0 p-2.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 hover:bg-[#ff541f] hover:border-[#ff541f] transition-colors"
+                            className="shrink-0 p-3 rounded-full bg-[#f2efe9] border border-zinc-900/10 hover:bg-[#ff541f] hover:text-white transition-colors"
                         >
                             <ExternalLink size={16} />
                         </a>
                     )}
                 </div>
-            </div>
-            <div className="p-6">
-                <p className="text-zinc-600 text-sm leading-relaxed">{description}</p>
+                <p className="mt-4 text-zinc-600 text-sm leading-relaxed">{description}</p>
             </div>
         </motion.article>
     );
@@ -476,7 +474,7 @@ export default function WebsiteDevelopmentClient() {
                             Start Yours <ArrowRight size={16} />
                         </Link>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {portfolioProjects.map((project, index) => (
                             <ProjectCard key={project.title} {...project} delay={0.04 * (index % 3)} />
                         ))}

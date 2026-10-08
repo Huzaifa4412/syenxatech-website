@@ -1,0 +1,106 @@
+{
+  "dental": {
+    "src": "/audio/calls/dental-v1.mp3",
+    "duration": 18.834,
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.948
+      },
+      {
+        "start": 4.188,
+        "end": 6.672
+      },
+      {
+        "start": 6.912,
+        "end": 12.398
+      },
+      {
+        "start": 12.638,
+        "end": 14.086
+      },
+      {
+        "start": 14.326,
+        "end": 18.834
+      }
+    ]
+  },
+  "home-services": {
+    "src": "/audio/calls/home-services-v1.mp3",
+    "duration": 20.084,
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.45
+      },
+      {
+        "start": 3.69,
+        "end": 6.566
+      },
+      {
+        "start": 6.806,
+        "end": 10.815
+      },
+      {
+        "start": 11.055,
+        "end": 14.182
+      },
+      {
+        "start": 14.422,
+        "end": 20.084
+      }
+    ]
+  },
+  "real-estate": {
+    "src": "/audio/calls/real-estate-v1.mp3",
+    "duration": 20.095,
+    "cues": [
+      {
+        "start": 0,
+        "end": 4.031
+      },
+      {
+        "start": 4.271,
+        "end": 8.005
+      },
+      {
+        "start": 8.245,
+        "end": 11.742
+      },
+      {
+        "start": 11.982,
+        "end": 14.907
+      },
+      {
+        "start": 15.147,
+        "end": 20.095
+      }
+    ]
+  },
+  "salon": {
+    "src": "/audio/calls/salon-v1.mp3",
+    "duration": 18.964,
+    "cues": [
+      {
+        "start": 0,
+        "end": 3.592
+      },
+      {
+        "start": 3.832,
+        "end": 6.53
+      },
+      {
+        "start": 6.77,
+        "end": 11.754
+      },
+      {
+        "start": 11.994,
+        "end": 13.49
+      },
+      {
+        "start": 13.73,
+        "end": 18.964
+      }
+    ]
+  }
+}

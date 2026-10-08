@@ -31,7 +31,7 @@ npm run lint         # Run ESLint
 src/
 ├── app/                    # Next.js App Router (file-based routing)
 │   ├── layout.js           # Root layout with metadata, SEO schema, global providers
-│   ├── page.js             # Home page
+│   ├── page.js             # Home page (composes src/components/home/*)
 │   ├── globals.css         # Global styles, CSS variables, Tailwind imports
 │   ├── SmoothScroll.jsx    # Lenis smooth scroll provider (client component)
 │   ├── about/             # About page
@@ -43,11 +43,18 @@ src/
 │   └── blog/              # Blog section and posts
 └── components/             # React components
     ├── navbar.jsx          # Navigation with mega menu
-    ├── hero.jsx            # Hero section with animations
-    ├── services.jsx        # Services showcase
-    ├── story.jsx           # Company story section
-    ├── faqs.jsx            # FAQ accordion
-    ├── form.jsx            # Contact form
+    ├── home/               # Home page sections (server components + small client islands)
+    │   ├── HomeHero.jsx / CallDemo.jsx        # Hero and the sample-call demo
+    │   ├── FactStrip.jsx                      # Offer facts (prices, delivery times)
+    │   ├── MissedCallsSection.jsx / MissedCallCalculator.jsx
+    │   ├── CoverageComparison.jsx             # AI agent vs answering service vs receptionist
+    │   ├── ServicesBento.jsx, DemoSection.jsx / DemoVideo.jsx (click-to-load YouTube)
+    │   ├── ProcessTimeline.jsx, IndustriesSection.jsx / IndustryPanels.jsx
+    │   ├── WorkRail.jsx, AboutStatement.jsx
+    │   └── Reveal.jsx                         # Shared scroll-reveal wrapper
+    ├── faqs.jsx            # Site-wide FAQ section (two-column, accordion)
+    ├── form.jsx            # Site-wide contact section (server shell)
+    ├── contact-form.jsx    # Contact form client component (WhatsApp handoff)
     ├── footer.jsx          # Footer component
     ├── button.jsx          # Reusable button
     ├── countup.jsx         # Animated counter
