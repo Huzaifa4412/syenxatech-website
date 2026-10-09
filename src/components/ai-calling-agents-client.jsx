@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import PageHero from "@/components/interior/PageHero";
+import CallDemo from "@/components/home/CallDemo";
+import "@/components/home/home-hero.css";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     ArrowRight,
@@ -22,11 +25,8 @@ import {
 } from "lucide-react";
 
 import { aiCallingFaqs } from "@/lib/faqs";
-import LiveCallMockup from "@/components/illustrations/LiveCallMockup";
 import CallFlowDiagram from "@/components/illustrations/CallFlowDiagram";
 import { CostBarChart, MissedCallsDonut, SpeedToLeadChart } from "@/components/illustrations/Charts";
-
-const LAST_UPDATED = "September 2026";
 
 const sources = {
     mit: {
@@ -100,74 +100,40 @@ export default function AICallingAgentsClient() {
     const toggleFaq = (index) => setOpenFaq(openFaq === index ? null : index);
 
     return (
-        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
-            <div
-                aria-hidden
-                className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-multiply"
-                style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-                }}
-            />
-
-            {/* Hero */}
-            <section className="relative pt-36 md:pt-40 pb-20 px-6 md:px-12 max-w-7xl mx-auto z-10">
-                <div className="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ff541f]/10 rounded-full blur-[128px] pointer-events-none" />
-
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-8 items-center">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="lg:col-span-7"
-                >
-                    <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-zinc-900/5 text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6 backdrop-blur-md">
-                        Voice AI for US businesses
-                    </span>
-                    <h1 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight text-zinc-900 mb-8">
-                        AI Calling Agents <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-900 via-zinc-900 to-zinc-900/40">
-                            For Sales, Support & Booking.
-                        </span>
-                    </h1>
-                    <p className="font-body text-lg md:text-xl text-zinc-600 max-w-2xl leading-relaxed mb-10">
-                        Custom AI calling agents that answer every inbound call,
-                        run outbound follow-ups, qualify leads and book
-                        appointments into your calendar, 24/7. Built and managed
-                        by Syenxa Tech for businesses across the United States.
-                    </p>
-
-                    <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-                        <Link
-                            href="/contact"
-                            className="px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-zinc-900 hover:text-white transition-all duration-300 shadow-lg shadow-[#ff541f]/20"
-                        >
-                            Book a Live Voice AI Demo
-                        </Link>
-                        <a
-                            href="#pricing"
-                            className="flex items-center gap-2 px-8 py-4 bg-zinc-900/5 border border-zinc-900/10 text-zinc-900 font-medium rounded-full hover:bg-zinc-900/10 transition-all duration-300 group"
-                        >
-                            See Pricing
-                            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                        </a>
+        <main className="site-page sp-voice-page">
+            <PageHero eyebrow="AI calling agents" title="A helpful voice." accent="Every time they call."
+                description="Answer questions, qualify leads and book appointments with a natural voice agent that knows your business. Cover inbound calls and outbound follow-ups, including after hours."
+                image={{ src: "/images/home-voice-service-v1.webp", alt: "Orange telephone handset on an ivory stone pedestal" }}
+                primary={{ href: "/contact", label: "Book a live voice demo" }} secondary={{ href: "#sample-calls", label: "Hear a sample call" }}
+                caption="Your greeting, your services and your rules for when a human takes over."
+                facts={[{value:"24/7",label:"Call coverage"},{value:"Your calendar",label:"Booking integration"},{value:"Human handoff",label:"When it matters"}]} />
+            <section id="sample-calls" className="sp-call-samples" aria-labelledby="sample-calls-heading">
+                <div className="sp-container">
+                    <div className="sp-call-stage">
+                        <div className="sp-call-story">
+                            <p className="sp-eyebrow"><Volume2 size={15} aria-hidden="true" /> Put a voice to the idea</p>
+                            <h2 id="sample-calls-heading">A natural hello.<br /><span>A useful next step.</span></h2>
+                            <p>Hear the same sample calls featured on our homepage. Choose a business, press play and follow the conversation as it happens.</p>
+                            <ol className="sp-call-journey">
+                                {[
+                                    { icon: MessageSquare, title: "Answers with context", detail: "A greeting and conversation shaped around the business." },
+                                    { icon: Calendar, title: "Moves the conversation forward", detail: "From an appointment request to a clear next step." },
+                                    { icon: PhoneForwarded, title: "Keeps people in the loop", detail: "Useful details for follow-up and human handoff." },
+                                ].map((item, index) => (
+                                    <li key={item.title}>
+                                        <span className="sp-call-journey-icon"><item.icon size={19} strokeWidth={1.6} aria-hidden="true" /></span>
+                                        <div><span className="sp-call-step">0{index + 1}</span><h3>{item.title}</h3><p>{item.detail}</p></div>
+                                    </li>
+                                ))}
+                            </ol>
+                            <Link href="#pricing" className="sp-link">Find your fit <ArrowRight size={16} /></Link>
+                        </div>
+                        <div className="sp-call-player"><CallDemo /></div>
                     </div>
-                    <p className="mt-6 text-xs font-mono uppercase tracking-widest text-zinc-400">
-                        Last updated {LAST_UPDATED}
-                    </p>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.2 }}
-                    className="lg:col-span-5"
-                >
-                    <LiveCallMockup />
-                </motion.div>
                 </div>
             </section>
 
-            {/* Stats */}
+                        {/* Stats */}
             <section className="py-16 border-y border-zinc-900/5 bg-zinc-900/[0.02]">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
                     {[
@@ -599,6 +565,6 @@ export default function AICallingAgentsClient() {
                     </Link>
                 </div>
             </section>
-        </div>
+        </main>
     );
 }

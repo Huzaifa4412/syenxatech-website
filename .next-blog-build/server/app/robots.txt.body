@@ -1,0 +1,17 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: OAI-SearchBot
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Google-Extended
+User-Agent: Bingbot
+Allow: /
+
+Host: https://www.syenxatech.com
+Sitemap: https://www.syenxatech.com/sitemap.xml

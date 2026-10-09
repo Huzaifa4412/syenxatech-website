@@ -1,0 +1,366 @@
+{
+  "date": "2026-10-09",
+  "lint": "passed",
+  "productionBuild": "passed; 29 prerendered routes",
+  "layoutChecks": [
+    {
+      "route": "/services",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Less busywork.More business."
+    },
+    {
+      "route": "/ai-calling-agents",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "A helpful voice.Every time they call."
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Good answers.Wherever they ask."
+    },
+    {
+      "route": "/website-development",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "A website that feelslike your business."
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Help the right peoplefind your business."
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Built by people.For people."
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "A good conversation.A clear next step."
+    },
+    {
+      "route": "/use-cases",
+      "width": 390,
+      "brokenVisibleImages": [],
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Different businesses.The right fit for yours."
+    },
+    {
+      "route": "/use-cases/doctor",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "photo": "A patient checking in with a receptionist at a bright medical clinic",
+      "photoLoaded": true,
+      "title": "A calmer front desk.More time for patients."
+    },
+    {
+      "route": "/use-cases/real-estate",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "photo": "A real estate agent discussing a house model and floor plan with prospective buyers",
+      "photoLoaded": true,
+      "title": "More viewings.Fewer missed leads."
+    },
+    {
+      "route": "/use-cases/gym",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "photo": "A gym staff member welcoming a member at reception with fitness equipment behind them",
+      "photoLoaded": true,
+      "title": "Focus on the floor.We'll handle the phone."
+    },
+    {
+      "route": "/use-cases/beauty-salon",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "photo": "A hair stylist attending to a client in a sunlit salon with mirrors and styling chairs",
+      "photoLoaded": true,
+      "title": "Keep the chair booked.Stay with your client."
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "AI calling agents, chatbots and automation, explained."
+    },
+    {
+      "route": "/blog/ai-calling-agent-cost-2026",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "How Much Do AI Calling Agents Cost in 2026? US Pricing Guide"
+    },
+    {
+      "route": "/blog/small-business-website-cost-usa-2026",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "How Much Does a Small Business Website Cost in the USA? (2026)"
+    },
+    {
+      "route": "/blog/how-ai-calling-agents-are-transforming-sales",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "How AI Calling Agents Are Transforming Sales Worldwide"
+    },
+    {
+      "route": "/blog/top-benefits-of-ai-chatbots",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "Top Benefits of AI Chatbots for Customer Support"
+    },
+    {
+      "route": "/blog/ai-automation-solutions-reduce-costs",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "AI Automation Solutions That Reduce Costs for Businesses"
+    },
+    {
+      "route": "/blog/syenxa-tech-leading-ai-solutions",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "Syenxa Tech: Leading AI Digital Solutions for Businesses Worldwide"
+    },
+    {
+      "route": "/privacy-policy",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "Privacy Policy"
+    },
+    {
+      "route": "/terms-of-service",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "Terms of Service"
+    },
+    {
+      "route": "/missing-page",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "404"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "hasTheme": true,
+      "overflow": false,
+      "title": "Every call.Answered."
+    },
+    {
+      "route": "/services",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Less busywork.More business."
+    },
+    {
+      "route": "/website-development",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "A website that feelslike your business."
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "A good conversation.A clear next step."
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "title": "Help the right peoplefind your business."
+    },
+    {
+      "route": "/services",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/website-development",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/blog",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/use-cases",
+      "width": 768,
+      "contentWidth": 753,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/ai-calling-agents",
+      "width": 360,
+      "callTabs": 4,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/ai-calling-agents",
+      "width": 390,
+      "callTabs": 4,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/ai-calling-agents",
+      "width": 768,
+      "callTabs": 4,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    },
+    {
+      "route": "/ai-calling-agents",
+      "width": 1440,
+      "callTabs": 4,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false
+    }
+  ],
+  "interactions": [
+    {
+      "check": "Contact validation",
+      "passed": true
+    },
+    {
+      "check": "Contact service selector",
+      "passed": true
+    },
+    {
+      "check": "Responsive navigation opens and closes",
+      "passed": true
+    },
+    {
+      "check": "Portfolio preview opens and zooms",
+      "passed": true
+    },
+    {
+      "check": "Portfolio preview closes with Escape",
+      "passed": true
+    },
+    {
+      "check": "Chatbot FAQ expands",
+      "passed": true
+    },
+    {
+      "check": "Chatbot FAQ collapses",
+      "passed": true
+    },
+    {
+      "check": "Calling page dental sample plays and pauses",
+      "passed": true
+    },
+    {
+      "check": "Calling page Home services audio",
+      "passed": true,
+      "details": {
+        "paused": false,
+        "src": "/audio/calls/home-services-v1.mp3",
+        "time": 1.151147
+      }
+    },
+    {
+      "check": "Calling page Real estate audio",
+      "passed": true,
+      "details": {
+        "paused": false,
+        "src": "/audio/calls/real-estate-v1.mp3",
+        "time": 0.931739
+      }
+    },
+    {
+      "check": "Calling page Salon audio",
+      "passed": true,
+      "details": {
+        "paused": false,
+        "src": "/audio/calls/salon-v1.mp3",
+        "time": 0.877058
+      }
+    },
+    {
+      "check": "Sample tabs keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "Sample mute control",
+      "passed": true
+    }
+  ],
+  "notes": [
+    "Browser extension adds hydration attributes in development; production screenshots used.",
+    "No WhatsApp message or booking was submitted."
+  ]
+}

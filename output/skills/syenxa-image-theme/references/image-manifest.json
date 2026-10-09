@@ -1,0 +1,118 @@
+{
+  "brand": "Syenxa Tech",
+  "theme": "Warm ivory, orange, sunlight, tangible editorial photography",
+  "images": [
+    {
+      "source": "public/images/voice-hero-wave-v1.webp",
+      "reference": "images/voice-hero-wave-v1.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 101862,
+      "sha256": "3002e2824a4d587042d96a43f18d5c349abfa2cdefd7adfea82be778283b8cb0"
+    },
+    {
+      "source": "public/images/home-reception-v1.webp",
+      "reference": "images/home-reception-v1.webp",
+      "width": 1448,
+      "height": 1086,
+      "bytes": 108228,
+      "sha256": "c9e758c642bd0f2880fb6aead02b6eb2b0dc8ed2cacc13206393eb4486f3b3d0"
+    },
+    {
+      "source": "public/images/home-voice-service-v1.webp",
+      "reference": "images/home-voice-service-v1.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 150024,
+      "sha256": "07d4491f1c94672d31ef6942907aa7b87b63b55b28aee815a7f0b29c04e031f6"
+    },
+    {
+      "source": "public/images/home-chat-service-v1.webp",
+      "reference": "images/home-chat-service-v1.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 144782,
+      "sha256": "09c9bfc2203c6e2506251d02df33e2640326618fccde20238bc45a3338cd796a"
+    },
+    {
+      "source": "public/images/about-studio-v1.webp",
+      "reference": "images/about-studio-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 158156,
+      "sha256": "afc4b0c46a051a4fc54df7ce2cf8453b65f726ec9f1bf4f0b462cb8ae0fb0f60"
+    },
+    {
+      "source": "public/images/home-industry-clinic-v1.webp",
+      "reference": "images/home-industry-clinic-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 115222,
+      "sha256": "56a16fa518f3a83349954903c7ea966253fc2f03a6dc84cb01288741c0fbb291"
+    },
+    {
+      "source": "public/images/home-industry-real-estate-v1.webp",
+      "reference": "images/home-industry-real-estate-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 159880,
+      "sha256": "e3abbf4f4b7e35517efddad1f5465901501582454da4ebc6a81a753ce3b34fa4"
+    },
+    {
+      "source": "public/images/home-industry-gym-v1.webp",
+      "reference": "images/home-industry-gym-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 126558,
+      "sha256": "24e9774df5051a95113f523828675675e8a5789bd3fd21dc0ac18496f32574bb"
+    },
+    {
+      "source": "public/images/home-industry-salon-v1.webp",
+      "reference": "images/home-industry-salon-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 135466,
+      "sha256": "3b6499ae64567fddf7f06d907ad126880c5ca7e8986d614bca82e9fdb13c572c"
+    },
+    {
+      "source": "public/images/blog/voice-ai-v1.webp",
+      "reference": "images/blog/voice-ai-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 104858,
+      "sha256": "c0cd0f63e5f6fd8ccd255de74b39d0e6a3bd00eee792556888fea4667f1ac874"
+    },
+    {
+      "source": "public/images/blog/website-design-v1.webp",
+      "reference": "images/blog/website-design-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 125640,
+      "sha256": "3727e67cbb57677020ec510ce6bf017123295074995301c1d7a27a72e55bfdbf"
+    },
+    {
+      "source": "public/images/blog/automation-v1.webp",
+      "reference": "images/blog/automation-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 60050,
+      "sha256": "65f9b8574fcdaa7a863ec169efffdc84d8f5b6cfad863df8f7946f36fa7db07a"
+    },
+    {
+      "source": "public/images/blog/chatbots-v1.webp",
+      "reference": "images/blog/chatbots-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 136118,
+      "sha256": "7cbd2dcda57b139aa31bbe29c7cd08b4bbe49d5129e2990edafc2dee580392bb"
+    },
+    {
+      "source": "public/images/blog/studio-v1.webp",
+      "reference": "images/blog/studio-v1.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 219476,
+      "sha256": "08b9e3a56faf3d0f152434e79df9b3c7686788939e21ddbcd52dc49170f7ebff"
+    }
+  ]
+}

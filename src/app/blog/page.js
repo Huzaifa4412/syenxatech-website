@@ -30,6 +30,7 @@ export default async function BlogPage() {
         description: post.excerpt,
         publishedAt: post.publishedAt,
         keywords: post.keywords || [],
+        category: post.category?.title || null,
         readingTime: minutesFromWords(post.wordCount),
         coverImage: post.mainImage?.asset
             ? {
@@ -46,10 +47,11 @@ export default async function BlogPage() {
             slug: post.slug,
             title: post.title,
             description: post.description,
-            publishedAt: null,
+            publishedAt: post.datePublished || null,
             keywords: post.keywords || [],
-            readingTime: null,
-            coverImage: null,
+            category: post.category || null,
+            readingTime: post.readingTime || null,
+            coverImage: post.image ? { src: post.image, alt: post.imageAlt || post.title } : null,
         }));
 
     const allPosts = [...fromSanity, ...legacy];

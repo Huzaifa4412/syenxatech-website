@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import PageHero from "@/components/interior/PageHero";
+import WebsitePricing from "@/components/interior/WebsitePricing";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
     Smartphone,
@@ -29,12 +31,9 @@ import {
 
 import { webDevFaqs } from "@/lib/faqs";
 import ProjectScreenshot from "@/components/ProjectScreenshot";
-import SearchVisibilityMockup from "@/components/illustrations/SearchVisibilityMockup";
 import BeforeAfterVisual from "@/components/illustrations/BeforeAfterVisual";
 import { DeviceShowcase } from "@/components/illustrations/DeviceMockups";
 import { LocalSearchFunnel, ScoreRings, WebsiteCostChart, ZeroClickChart } from "@/components/illustrations/Charts";
-
-const LAST_UPDATED = "September 2026";
 
 const sources = {
     zeroClick: { label: "Search Engine Land / SparkToro, 2026", href: "https://searchengineland.com/google-zero-click-searches-2026-study-479717" },
@@ -194,61 +193,17 @@ export default function WebsiteDevelopmentClient() {
     });
 
     return (
-        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 selection:bg-[#ff541f]/30 selection:text-[#ff541f]">
-            <div
-                aria-hidden
-                className="fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-multiply"
-                style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
-                }}
-            />
+        <main className="site-page sp-web-page">
+            <PageHero eyebrow="Website development" title="A website that feels" accent="like your business."
+                description="Thoughtful design, fast pages and a clear path to an enquiry. We build custom Next.js websites with search, accessibility and customer experience considered from the start."
+                visual={<ProjectScreenshot src="/website-portfolio/knittypetit.png" title="Knitty Petit" alt="Knitty Petit storefront website built by Syenxa Tech" sizes="(max-width:767px) 90vw, 570px" />}
+                caption="Knitty Petit · An original storefront built by Syenxa Tech. Open the screenshot to explore."
+                primary={{ href: "#pricing", label: "Build your website estimate" }} secondary={{ href: "#portfolio", label: "See our work" }}
+                facts={[{value:"From $200",label:"Standard business websites"},{value:"5–7 working days",label:"Typical delivery"},{value:"300+",label:"Projects shipped"}]} />
 
-            {/* ============================ Hero ============================ */}
-            <section className="relative pt-36 md:pt-40 pb-16 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto z-10">
-                <div className="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[640px] h-[640px] bg-[#ff541f]/10 rounded-full blur-[140px] pointer-events-none" />
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-6 items-center">
-                    <motion.div initial={reduce ? false : { opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="lg:col-span-6">
-                        <span className="inline-block py-1 px-3 rounded-full border border-zinc-900/10 bg-white text-[#ff541f] text-xs font-mono tracking-widest uppercase mb-6">
-                            Website development + SEO, AEO &amp; GEO · USA
-                        </span>
-                        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.98] tracking-tight text-zinc-900 mb-7 text-balance">
-                            Websites that rank on Google{" "}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff541f] to-[#ff8a5f]">and get cited by AI.</span>
-                        </h1>
-                        <p className="font-body text-lg md:text-xl text-zinc-600 max-w-[52ch] leading-relaxed mb-10">
-                            Anyone can put up a website in a weekend. Most of them never
-                            appear in a Google result or an AI answer, so they never bring a
-                            customer. We build custom Next.js websites for US businesses
-                            with search, answer and generative engine optimization built in
-                            from the first line of code.
-                        </p>
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                            <Link href="/contact" className="px-8 py-4 bg-[#ff541f] text-white font-bold rounded-full hover:bg-zinc-900 transition-all duration-300 shadow-lg shadow-[#ff541f]/20 active:scale-[0.98]">
-                                Get a Free Website Quote
-                            </Link>
-                            <a href="#portfolio" className="flex items-center gap-2 px-8 py-4 bg-white border border-zinc-900/10 text-zinc-900 font-medium rounded-full hover:border-zinc-900/30 transition-all duration-300 group active:scale-[0.98]">
-                                See Our Work
-                                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                            </a>
-                        </div>
-                        <dl className="mt-10 grid grid-cols-3 gap-4 max-w-md">
-                            {[["From $200", "starting price"], ["5 to 7 days", "to launch"], ["300+", "projects shipped"]].map(([v, l]) => (
-                                <div key={l}>
-                                    <dt className="text-[11px] font-mono uppercase tracking-widest text-zinc-500 order-2">{l}</dt>
-                                    <dd className="font-display text-xl font-bold text-zinc-900 tabular-nums">{v}</dd>
-                                </div>
-                            ))}
-                        </dl>
-                        <p className="mt-6 text-[11px] font-mono uppercase tracking-widest text-zinc-400">Last updated {LAST_UPDATED}</p>
-                    </motion.div>
+            <WebsitePricing />
 
-                    <div className="lg:col-span-6">
-                        <SearchVisibilityMockup />
-                    </div>
-                </div>
-            </section>
-
-            {/* ============================ Problem ============================ */}
+                        {/* ============================ Problem ============================ */}
             <section className="relative py-20 md:py-28 px-6 md:px-12 border-y border-zinc-900/5 bg-white/60">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-14">
@@ -541,7 +496,7 @@ export default function WebsiteDevelopmentClient() {
             </section>
 
             {/* ============================ Pricing ============================ */}
-            <section id="pricing" className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto">
+            <section id="cost-comparison" className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto">
                 <motion.div {...fadeUp(0)} className="mb-10 max-w-3xl">
                     <p className={eyebrow}>Pricing</p>
                     <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold tracking-tight">Website development cost in the USA</h2>
@@ -647,6 +602,6 @@ export default function WebsiteDevelopmentClient() {
                     </Link>
                 </div>
             </section>
-        </div>
+        </main>
     );
 }

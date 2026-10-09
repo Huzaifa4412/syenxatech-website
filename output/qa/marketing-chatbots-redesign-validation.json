@@ -1,0 +1,256 @@
+{
+  "routes": [
+    "/digital-marketing",
+    "/ai-chatbots"
+  ],
+  "lint": "passed",
+  "productionBuild": "passed",
+  "layoutChecks": [
+    {
+      "route": "/digital-marketing",
+      "width": 360,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Be found. Be the next call.",
+      "overflow": false,
+      "sections": 8
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 360,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Good answers. Better conversations.",
+      "overflow": false,
+      "sections": 6
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Be found. Be the next call.",
+      "overflow": false,
+      "sections": 8
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 390,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Good answers. Better conversations.",
+      "overflow": false,
+      "sections": 6
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 768,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Be found. Be the next call.",
+      "overflow": false,
+      "sections": 8
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 768,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Good answers. Better conversations.",
+      "overflow": false,
+      "sections": 6
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 1024,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Be found. Be the next call.",
+      "overflow": false,
+      "sections": 8
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 1024,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Good answers. Better conversations.",
+      "overflow": false,
+      "sections": 6
+    },
+    {
+      "route": "/digital-marketing",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Be found. Be the next call.",
+      "overflow": false,
+      "sections": 8
+    },
+    {
+      "route": "/ai-chatbots",
+      "width": 1440,
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "heading": "Good answers. Better conversations.",
+      "overflow": false,
+      "sections": 6
+    }
+  ],
+  "interactionChecks": [
+    {
+      "check": "Chat scenario Answer a question",
+      "passed": true,
+      "outcome": "Question answered\n\nAnswers drawn from the business’s approved information"
+    },
+    {
+      "check": "Chat scenario Talk to a person",
+      "passed": true,
+      "outcome": "Human handoff requested\n\nThe team receives the conversation and its context"
+    },
+    {
+      "check": "Chat scenario Book a visit",
+      "passed": true,
+      "outcome": "Booking intent captured\n\nService: haircut · Preferred day: Friday"
+    },
+    {
+      "check": "Chat scenario keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "Channel Instagram",
+      "passed": true,
+      "media": {
+        "ready": 4,
+        "src": "/videos/instagram.webm"
+      }
+    },
+    {
+      "check": "Channel Messenger",
+      "passed": true,
+      "media": {
+        "ready": 4,
+        "src": "/videos/messanger.webm"
+      }
+    },
+    {
+      "check": "Channel TikTok",
+      "passed": true,
+      "media": {
+        "ready": 4,
+        "src": "/videos/tiktok.webm"
+      }
+    },
+    {
+      "check": "Channel Website",
+      "passed": true,
+      "media": {
+        "type": "website illustration"
+      }
+    },
+    {
+      "check": "Channel WhatsApp",
+      "passed": true,
+      "media": {
+        "ready": 4,
+        "src": "/videos/whatsapp.webm"
+      }
+    },
+    {
+      "check": "Marketing service Content that helps",
+      "passed": true,
+      "panel": "Give each page a reason to exist."
+    },
+    {
+      "check": "Marketing service Paid campaigns",
+      "passed": true,
+      "panel": "Make the click worth paying for."
+    },
+    {
+      "check": "Marketing service Lead follow-up",
+      "passed": true,
+      "panel": "Keep the conversation going."
+    },
+    {
+      "check": "Marketing service SEO & AI search",
+      "passed": true,
+      "panel": "Show up when the need is real."
+    },
+    {
+      "check": "Marketing tab keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "Marketing FAQ opens",
+      "passed": true
+    },
+    {
+      "check": "Audit form validates empty input",
+      "passed": true
+    },
+    {
+      "check": "Audit request service selector",
+      "passed": true
+    },
+    {
+      "check": "Mobile marketing panel Content that helps",
+      "passed": true
+    },
+    {
+      "check": "Mobile marketing panel Paid campaigns",
+      "passed": true
+    },
+    {
+      "check": "Mobile marketing panel Lead follow-up",
+      "passed": true
+    },
+    {
+      "check": "Mobile marketing panel SEO & AI search",
+      "passed": true
+    },
+    {
+      "check": "Mobile conversation Answer a question",
+      "passed": true
+    },
+    {
+      "check": "Mobile conversation Talk to a person",
+      "passed": true
+    },
+    {
+      "check": "Mobile conversation Book a visit",
+      "passed": true
+    },
+    {
+      "check": "Mobile channel Instagram",
+      "passed": true
+    },
+    {
+      "check": "Mobile channel Messenger",
+      "passed": true
+    },
+    {
+      "check": "Mobile channel TikTok",
+      "passed": true
+    },
+    {
+      "check": "Mobile channel Website",
+      "passed": true
+    },
+    {
+      "check": "Mobile channel WhatsApp",
+      "passed": true
+    },
+    {
+      "check": "Channel keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "Chatbot FAQ opens",
+      "passed": true
+    }
+  ],
+  "videoPlayback": {
+    "passed": true,
+    "observedTime": 0.443,
+    "duration": 7.95
+  },
+  "finalMobileCheck": {
+    "width": 390,
+    "overflow": false,
+    "headline": "Good answers. Less waiting."
+  },
+  "notes": [
+    "No external messages sent.",
+    "Changes verified locally; not deployed."
+  ]
+}

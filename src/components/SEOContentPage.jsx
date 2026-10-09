@@ -18,6 +18,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import Contact from "./form";
+import PageHero from "@/components/interior/PageHero";
 import { formatPostDate } from "@/lib/reading-time";
 
 const ease = [0.16, 1, 0.3, 1];
@@ -324,6 +325,7 @@ const SEOContentPage = ({
     readingTime,
     coverImage,
     heroMedia,
+    overviewHero,
     headings = [],
     keyTakeaways,
     faq,
@@ -340,15 +342,15 @@ const SEOContentPage = ({
     });
 
     const hasMeta = Boolean(date || readingTime);
-    const hasHero = Boolean(heroMedia || coverImage?.src);
+    const hasHero = Boolean(overviewHero || heroMedia || coverImage?.src);
 
     return (
-        <main className="relative bg-[#faf9f7] text-zinc-900 overflow-hidden">
-            <ReadingProgress />
+        <main className={`site-page relative overflow-hidden ${overviewHero ? "sp-overview" : "sp-article-page"}`}>
+            {!overviewHero && category !== "Legal" && <ReadingProgress />}
             <div className="absolute -top-40 right-[-12%] w-[520px] h-[520px] bg-[#ff541f]/[0.06] rounded-full blur-[130px] pointer-events-none" />
 
             {/* Header */}
-            <header className="relative max-w-7xl mx-auto px-6 pt-32 md:pt-40">
+            {overviewHero ? <PageHero {...overviewHero} back={{href:backHref,label:backLabel}} /> : <header className="sp-article-header relative max-w-7xl mx-auto px-6">
                 <motion.div {...fadeUp(0)}>
                     <Link
                         href={backHref}
@@ -427,10 +429,10 @@ const SEOContentPage = ({
                         )}
                     </motion.div>
                 )}
-            </header>
+            </header>}
 
             {/* Body */}
-            <section className={`relative max-w-7xl mx-auto px-6 pb-20 md:pb-28 ${hasHero ? "mt-14 md:mt-20" : "mt-12 md:mt-16 pt-12 border-t border-zinc-900/10"}`}>
+            <section className={`sp-reading-section relative max-w-7xl mx-auto px-6 pb-20 md:pb-28 ${hasHero ? "mt-14 md:mt-20" : "mt-12 md:mt-16 pt-12 border-t border-zinc-900/10"}`}>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
                     <aside className="lg:col-span-3 order-2 lg:order-1">
                         <div className="lg:sticky lg:top-28 flex flex-col gap-10">
@@ -487,7 +489,7 @@ const SEOContentPage = ({
 
             <RelatedPosts posts={related} />
 
-            <Contact />
+            {category !== "Legal" && <Contact />}
         </main>
     );
 };

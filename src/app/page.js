@@ -12,7 +12,6 @@ import ProcessTimeline from "@/components/home/ProcessTimeline";
 import ServicesBento from "@/components/home/ServicesBento";
 import WorkRail from "@/components/home/WorkRail";
 import { homeFaqs } from "@/lib/faqs";
-import "@/components/home/home-page.css";
 import {
     createMetadata,
     generateFaqSchema,

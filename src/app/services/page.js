@@ -1,6 +1,6 @@
 import React from "react";
-import ServicesHero from "@/components/services/ServicesHero";
-import ServiceList from "@/components/services/ServiceList";
+import { ServicesIntro as ServicesHero } from "@/components/interior/ServiceOverview";
+import ServiceList from "@/components/interior/ServiceOverview";
 import ProcessSection from "@/components/services/ProcessSection";
 import StatsBand from "@/components/services/StatsBand";
 import Contact from "@/components/form";
@@ -64,7 +64,7 @@ export default function ServicesPage() {
     ];
 
     return (
-        <main className="bg-[#faf9f7]">
+        <main className="site-page">
             <JsonLd data={schemas} />
             <ServicesHero />
             <ServiceList />

@@ -1,0 +1,85 @@
+{
+  "page": "/about",
+  "lint": "passed",
+  "build": "passed - 29 static pages",
+  "interactions": [
+    {
+      "check": "02 Map",
+      "passed": true
+    },
+    {
+      "check": "03 Build",
+      "passed": true
+    },
+    {
+      "check": "04 Refine",
+      "passed": true
+    },
+    {
+      "check": "01 Listen",
+      "passed": true
+    },
+    {
+      "check": "Keyboard End selects Refine",
+      "passed": true
+    },
+    {
+      "check": "Keyboard arrows wrap to Listen",
+      "passed": true
+    },
+    {
+      "check": "Original project opens in viewer",
+      "passed": true
+    },
+    {
+      "check": "Project zoom",
+      "passed": true
+    },
+    {
+      "check": "Escape closes viewer",
+      "passed": true
+    },
+    {
+      "check": "Mobile process selection",
+      "passed": true
+    }
+  ],
+  "layouts": [
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "processColumns": "140px 140px",
+      "width": 360
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "processColumns": "155px 155px",
+      "width": 390
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "processColumns": "163px 163px 163px 163px",
+      "width": 768
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "processColumns": "227px 227px 227px 227px",
+      "width": 1024
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "overflow": false,
+      "processColumns": "298.75px 298.75px 298.75px 298.75px",
+      "width": 1440
+    }
+  ],
+  "finalLocalPreview": "http://localhost:3000/about",
+  "screenshots": [
+    "about-redesign-desktop.jpg",
+    "about-redesign-mobile.jpg",
+    "about-redesign-process-desktop.jpg"
+  ]
+}

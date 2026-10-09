@@ -1,6 +1,6 @@
 # Pricing — Syenxa Tech
 
-Last updated: 2026-09-04. All prices in USD. Syenxa Tech is a US-based AI automation and web development agency serving businesses across the United States and worldwide. Every engagement starts with a free consultation. Quote: https://www.syenxatech.com/contact
+Last updated: 2026-10-09. All prices in USD. Syenxa Tech is a US-based AI automation and web development agency serving businesses across the United States and worldwide. Every engagement starts with a free consultation. Quote: https://www.syenxatech.com/contact
 
 ## AI Calling Agents (voice AI)
 - Model: one-time setup fee + per-minute usage
@@ -20,6 +20,10 @@ Last updated: 2026-09-04. All prices in USD. Syenxa Tech is a US-based AI automa
 
 ## Website Development (Next.js)
 - Standard business website: from $200
+- Business starting estimate: up to 5 standard pages from $200
+- Grow starting estimate: 8 standard pages plus blog/content editor from $400
+- Calculator rates: additional standard pages $35 each; blog/content editor $95; connection to an existing booking provider $95; website AI chatbot starting setup $150; agreed lead-to-CRM connection $125
+- Calculator amounts are indicative one-time estimates. Final scope, integrations and fixed price are agreed before work starts. Provider subscriptions, complex integrations and ongoing care are quoted separately.
 - Delivery: 5 to 7 working days for a standard business website
 - Web applications, e-commerce stores, multi-language sites: custom quote after a free discovery call (typically 2 to 8 weeks)
 - Included: custom design, mobile-first build, technical SEO (metadata, sitemap, JSON-LD schema, image optimization), analytics setup, launch, post-launch fixes

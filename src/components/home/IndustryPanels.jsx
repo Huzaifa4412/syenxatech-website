@@ -9,6 +9,7 @@ const ICONS = { doctor: Stethoscope, "real-estate": Building2, gym: Dumbbell, "b
 
 export default function IndustryPanels({ industries }) {
     const [active, setActive] = useState(0);
+    const activeIndustry = industries[active];
     const tabRefs = useRef([]);
     const onKeyDown = (event) => {
         let next;
@@ -39,7 +40,7 @@ export default function IndustryPanels({ industries }) {
             </div>
             <div className="hp-industry-layout">
                 <div className="hp-industry-photo">
-                    <Image src="/images/home-reception-v1.webp" alt="A welcoming sunlit business reception, with an orange telephone on the counter" fill sizes="(max-width: 767px) 100vw, 650px" />
+                    <Image key={activeIndustry.slug} src={activeIndustry.image} alt={activeIndustry.imageAlt} fill sizes="(max-width: 767px) 100vw, 650px" />
                 </div>
                 <div className="hp-industry-panels">
                     {industries.map((industry, index) => (

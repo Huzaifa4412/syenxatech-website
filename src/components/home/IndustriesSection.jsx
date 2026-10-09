@@ -4,12 +4,7 @@ import { useCasesData } from "@/lib/use-cases-data";
 import IndustryPanels from "./IndustryPanels";
 import Reveal from "./Reveal";
 
-const LABELS = {
-    doctor: { name: "Clinics", headline: "A calmer front desk.", linkLabel: "AI receptionist for clinics", summary: "Help patients book, get answers and reach your team, including after hours." },
-    "real-estate": { name: "Real estate", headline: "More viewings. Fewer missed leads.", linkLabel: "AI voice agent for real estate", summary: "Answer property enquiries, qualify buyers and arrange viewings while your agents are out showing homes." },
-    gym: { name: "Gyms", headline: "Focus on the floor.", linkLabel: "AI automation for gyms", summary: "Handle membership questions, trial bookings and class enquiries while your trainers focus on their members." },
-    "beauty-salon": { name: "Salons", headline: "Keep the chair booked.", linkLabel: "AI booking assistant for salons", summary: "Make bookings, answer service questions and follow up without interrupting the appointment in front of you." },
-};
+import { industryPresentation as LABELS } from "@/lib/industry-presentation";
 
 const industries = Object.values(useCasesData)
     .filter((useCase) => LABELS[useCase.slug])

@@ -1,6 +1,8 @@
 import { Poppins, Urbanist, DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "@/app/globals.css";
+import "@/components/home/home-page.css";
+import "@/components/interior/interior.css";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";

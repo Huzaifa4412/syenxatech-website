@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-09",
+  "route": "/website-development",
+  "lint": "passed",
+  "productionBuild": "passed",
+  "priceModelChecks": "base, extra pages, add-ons, presets, clamps, custom quote and brief passed",
+  "interactionChecks": [
+    {
+      "check": "Grow preset",
+      "passed": true
+    },
+    {
+      "check": "Ten pages + CMS + booking",
+      "passed": true
+    },
+    {
+      "check": "Quote includes configuration and notes",
+      "passed": true
+    },
+    {
+      "check": "Contact details preserved while changing build",
+      "passed": true
+    },
+    {
+      "check": "Custom option does not claim a fixed total",
+      "passed": true
+    },
+    {
+      "check": "Store scope",
+      "passed": true
+    },
+    {
+      "check": "Keyboard slider maximum",
+      "passed": true
+    },
+    {
+      "check": "Keyboard slider minimum",
+      "passed": true
+    },
+    {
+      "check": "Copy brief confirmation",
+      "passed": true
+    },
+    {
+      "check": "Invalid form blocks handoff",
+      "passed": true
+    },
+    {
+      "check": "Mobile live total with chatbot",
+      "passed": true
+    }
+  ],
+  "layoutChecks": [
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "mobileEstimateVisible": true,
+      "overflow": false,
+      "scrollWidth": 345,
+      "width": 360
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "mobileEstimateVisible": true,
+      "overflow": false,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "mobileEstimateVisible": true,
+      "overflow": false,
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "mobileEstimateVisible": false,
+      "overflow": false,
+      "scrollWidth": 1009,
+      "width": 1024
+    },
+    {
+      "font": "\"DM Sans\", \"DM Sans Fallback\", sans-serif",
+      "mobileEstimateVisible": false,
+      "overflow": false,
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "noExternalMessageSent": true
+}

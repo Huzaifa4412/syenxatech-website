@@ -49,9 +49,9 @@ function Field({ id, label, optional, error, children }) {
  * Contact form that hands the enquiry off to WhatsApp with a prefilled
  * message. Field names (name, email, phone, message) are kept stable.
  */
-export default function ContactForm({ fallbackEmail }) {
+export default function ContactForm({ fallbackEmail, serviceOptions, messageLabel = "What would you like to automate?", messagePlaceholder, inquiryContext }) {
     const baseId = useId();
-    const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+    const [form, setForm] = useState({ name: "", email: "", phone: "", message: "", service: serviceOptions?.[0] || "" });
     const [errors, setErrors] = useState({});
     const [status, setStatus] = useState(null);
 
@@ -77,9 +77,11 @@ export default function ContactForm({ fallbackEmail }) {
             `Name: ${form.name.trim()}`,
             `Email: ${form.email.trim()}`,
             `Phone: ${form.phone.trim() || "Not provided"}`,
+            ...(serviceOptions ? [`Service: ${form.service}`] : []),
             "",
             "Message:",
             form.message.trim(),
+            ...(inquiryContext ? ["", "Project details:", inquiryContext] : []),
         ];
         const url = whatsappNumber ? buildWhatsAppUrl(whatsappNumber, lines.join("\n")) : null;
 
@@ -103,6 +105,7 @@ export default function ContactForm({ fallbackEmail }) {
         email: `${baseId}-email`,
         phone: `${baseId}-phone`,
         message: `${baseId}-message`,
+        service: `${baseId}-service`,
     };
     const describedBy = (key) => (errors[key] ? `${ids[key]}-error` : undefined);
 
@@ -148,11 +151,17 @@ export default function ContactForm({ fallbackEmail }) {
                     className={inputClass}
                 />
             </Field>
-            <Field id={ids.message} label="What would you like to automate?" error={errors.message}>
+            {serviceOptions && <Field id={ids.service} label="What can we help with?">
+                <select id={ids.service} name="service" value={form.service} onChange={handleChange} className={inputClass}>
+                    {serviceOptions.map(service => <option key={service} value={service}>{service}</option>)}
+                </select>
+            </Field>}
+            <Field id={ids.message} label={messageLabel} error={errors.message}>
                 <textarea
                     id={ids.message}
                     name="message"
                     rows={5}
+                    placeholder={messagePlaceholder}
                     value={form.message}
                     onChange={handleChange}
                     aria-invalid={Boolean(errors.message)}

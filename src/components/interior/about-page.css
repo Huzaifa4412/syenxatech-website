@@ -1,0 +1,107 @@
+/* About: the homepage's warm paper, oak and terracotta, with an editorial rhythm. */
+.ap-page .sx-section { padding-block: 76px; scroll-margin-top: 105px; }
+.ap-page h2 { font-size: clamp(34px,3.8vw,52px); margin: 0; line-height: 1.1; }
+.ap-page h2 span { color: #8b8174; }
+.ap-page .ap-hero { padding: 154px 0 72px; }
+.ap-hero-top { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: end; margin-bottom: 44px; }
+.ap-hero h1 { font-size: clamp(44px,5.15vw,72px); letter-spacing: -0.06em; line-height: 1.04; margin: 0; }
+.ap-hero h1 span { color: #8b8174; }
+.ap-hero-intro > p { font-size: 16px; line-height: 1.75; color: #6d665d; margin: 0; max-width: 43ch; }
+.ap-hero-intro .sp-actions { gap: 14px 22px; margin-top: 23px; }
+.ap-hero-intro .sp-button { font-size: 12px; gap: 15px; }
+.ap-hero-intro .sp-link { font-size: 12px; }
+.ap-hero-scene { position: relative; }
+.ap-hero-scene figure { position: relative; height: clamp(360px,35vw,490px); margin: 0; border-radius: 20px; overflow: hidden; background: #e7dbcb; }
+.ap-hero-scene figure > img { object-fit: cover; object-position: 50% 55%; }
+.ap-hero-scene figcaption { display: flex; justify-content: space-between; align-items: end; gap: 20px; position: absolute; inset: auto 0 0; padding: 70px 30px 26px; color: #fff7ec; background: linear-gradient(transparent,#3d2d1e80); font-size: 12px; }
+.ap-hero-scene figcaption > span:last-child { font-size: 10px; }
+.ap-photo-note { position: absolute; top: 25px; right: 25px; background: #fffaf0ee; border: 1px solid #e3d4bc; border-radius: 12px; padding: 20px 24px; box-shadow: 0 10px 30px -18px #5b402b66; }
+.ap-photo-note > span { font-size: 10px; color: #9d5837; }
+.ap-photo-note > p { font-size: 18px; letter-spacing: -0.025em; line-height: 1.3; margin: 10px 0 0; }
+.ap-story { background: #f1ede6; }
+.ap-story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 86px; align-items: start; }
+.ap-story-grid h2 { max-width: 18ch; }
+.ap-team-disciplines { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; }
+.ap-team-disciplines > span { padding: 9px 13px; border: 1px solid #d7cbbb; border-radius: 7px; font-size: 12px; color: #786a59; }
+.ap-story-copy > p { font-size: 14px; line-height: 1.85; color: #71685c; margin: 19px 0 0; max-width: 51ch; }
+.ap-story-copy > .ap-lead { color: #38332d; font-size: 21px; line-height: 1.55; letter-spacing: -0.025em; margin: 0; }
+.ap-company-facts { display: flex; flex-wrap: wrap; gap: 30px 55px; border-top: 1px solid #d9d0c3; margin: 31px 0 0; padding-top: 24px; }
+.ap-company-facts > div { display: flex; flex-direction: column-reverse; gap: 8px; }
+.ap-company-facts dt { font-size: 11px; color: #7e7364; }
+.ap-company-facts dd { font-size: 31px; margin: 0; font-weight: 500; letter-spacing: -0.035em; font-variant-numeric: tabular-nums; }
+.ap-page .ap-mission { padding-bottom: 36px; }
+.ap-mission-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; padding: 48px; background: #e8d9c6; border-radius: 20px; }
+.ap-mission-inner h2 { font-size: clamp(38px,4.4vw,60px); line-height: 1.04; }
+.ap-mission-inner h2 span { color: #a4502b; }
+.ap-mission-copy { align-self: center; }
+.ap-mission-copy > p { font-size: 19px; color: #564536; line-height: 1.65; margin: 0; letter-spacing: -0.015em; }
+.ap-mission-copy > p + p { font-size: 13px; color: #7e6954; margin-top: 19px; line-height: 1.8; }
+.ap-outcomes { display: grid; gap: 11px; margin-top: 24px; padding-top: 22px; border-top: 1px solid #cdb79a; }
+.ap-outcomes > span { display: flex; gap: 9px; align-items: center; color: #8a5f3f; font-size: 11px; }
+.ap-outcomes > span::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #ac512c; }
+.ap-section-header { display: flex; justify-content: space-between; align-items: end; gap: 60px; margin-bottom: 40px; }
+.ap-section-header > p { color: #71685c; font-size: 15px; line-height: 1.8; margin: 0; max-width: 39ch; }
+.ap-service-list { border-top: 1px solid #ded5c8; }
+.ap-service-row { display: grid; grid-template-columns: 45px minmax(0,1fr) minmax(0,.9fr) 25px; align-items: center; gap: 28px; border-bottom: 1px solid #ded5c8; padding: 31px 0; }
+.ap-service-index { color: #b08e65; font-size: 12px; align-self: start; margin-top: 7px; font-variant-numeric: tabular-nums; }
+.ap-service-title > span { display: block; font-size: 11px; color: #ac4c25; margin-bottom: 12px; }
+.ap-service-title h3 { font-size: clamp(23px,2.7vw,34px); line-height: 1.15; margin: 0; max-width: 19ch; }
+.ap-service-description p { color: #71685c; font-size: 13px; line-height: 1.8; margin: 0; max-width: 44ch; }
+.ap-service-description > span { display: block; font-size: 10px; color: #a38c6f; margin-top: 12px; }
+.ap-service-row > svg { color: #aa5a32; transition: transform 250ms; }
+.ap-service-row:hover h3 { color: #9b4926; }
+.ap-service-row:hover > svg { transform: translate(3px,-3px); }
+.ap-principles { background: #f1ede6; }
+.ap-principles-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 90px; align-items: start; }
+.ap-principles-intro { position: sticky; top: 125px; }
+.ap-principles-intro > p:not(.sp-eyebrow) { font-size: 15px; color: #71685c; line-height: 1.8; margin: 24px 0; max-width: 34ch; }
+.ap-principles-list > article { display: flex; gap: 24px; padding: 26px 0; border-top: 1px solid #d8cfc2; }
+.ap-principles-list > article:last-child { border-bottom: 1px solid #d8cfc2; }
+.ap-principle-number { font-size: 11px; color: #ac875c; margin-top: 5px; }
+.ap-principles-list h3 { font-size: 24px; margin: 0; }
+.ap-principles-list p { font-size: 13px; line-height: 1.8; color: #71685c; margin: 14px 0 17px; max-width: 44ch; }
+.ap-principle-note { display: flex; align-items: center; gap: 7px; color: #a44a24; font-size: 10px; }
+.ap-process-tabs { display: grid; grid-template-columns: repeat(4,1fr); gap: 7px; background: #ece6dd; border: 1px solid #ded5c8; padding: 7px; border-radius: 14px; }
+.ap-process-tabs button { display: flex; align-items: center; gap: 13px; padding: 16px 18px; border-radius: 9px; cursor: pointer; background: none; font-size: 14px; font-weight: 500; text-align: left; }
+.ap-process-tabs button > span { font-size: 11px; color: #a88b68; font-weight: 400; }
+.ap-process-tabs button > svg { margin-left: auto; color: #ac7850; }
+.ap-process-tabs button:hover { background: #f7f2eb; }
+.ap-process-tabs button[aria-selected="true"] { background: #fffdfa; color: #a44925; box-shadow: 0 3px 10px #6651380a; }
+.ap-process-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; background: #fffdfa; border: 1px solid #ded5c8; border-radius: 20px; padding: 42px; margin-top: 18px; min-height: 402px; }
+.ap-process-copy h3 { font-size: clamp(28px,3.1vw,40px); line-height: 1.13; margin: 0; max-width: 19ch; }
+.ap-process-copy > p:not(.sp-eyebrow) { font-size: 14px; line-height: 1.85; color: #71685c; margin: 20px 0 0; max-width: 45ch; }
+.ap-process-deliverable { border-top: 1px solid #e2d9cc; margin-top: 24px; padding-top: 19px; }
+.ap-process-deliverable > span { display: block; color: #aa7450; font-size: 10px; margin-bottom: 8px; }
+.ap-process-deliverable strong { font-size: 13px; line-height: 1.6; font-weight: 500; }
+.ap-workboard { border: 1px solid #dacbb7; padding: 27px; border-radius: 13px; background: #eee5d8; box-shadow: 0 15px 26px -25px #77563a66; transform: rotate(1deg); }
+.ap-workboard-top { display: flex; justify-content: space-between; gap: 15px; font-size: 10px; color: #9c7d5a; border-bottom: 1px solid #d8c9b4; padding-bottom: 17px; }
+.ap-workboard-top > span:last-child { letter-spacing: 3px; font-size: 8px; }
+.ap-workboard h4 { font-size: 24px; line-height: 1.2; font-weight: 500; margin: 23px 0 17px; max-width: 18ch; }
+.ap-workboard ul { list-style: none; margin: 0; padding: 0; }
+.ap-workboard li { display: flex; align-items: start; gap: 12px; font-size: 12px; line-height: 1.7; padding: 16px 0; border-bottom: 1px solid #d8c9b4; color: #655646; }
+.ap-workboard li > span { font-size: 10px; color: #ac7c50; margin-top: 2px; }
+.ap-workboard li > svg { color: #a45b31; margin: 3px 0 0 auto; flex-shrink: 0; }
+.ap-workboard > p { font-size: 10px; color: #8e7559; line-height: 1.7; margin: 20px 0 0; }
+.ap-work { background: #f1ede6; }
+.ap-projects { display: grid; grid-template-columns: 1.45fr 1fr; align-items: start; gap: 26px; }
+.ap-project { min-width: 0; padding: 20px; background: #e7dfd3; border: 1px solid #d9cdbc; border-radius: 18px; }
+.ap-project-small { margin-top: 66px; }
+.ap-project-browser { display: flex; align-items: center; gap: 14px; font-size: 10px; color: #91795c; padding-bottom: 17px; }
+.ap-project-browser > span:first-child { font-size: 9px; letter-spacing: 3px; color: #b29470; }
+.ap-project .project-screenshot-trigger { width: 100%; }
+.ap-project-caption { padding: 22px 5px 4px; }
+.ap-project-caption span { font-size: 10px; color: #ab6942; }
+.ap-project-caption h3 { font-size: 25px; margin: 6px 0 0; }
+.ap-project-caption p { font-size: 12px; color: #7e6c57; line-height: 1.7; margin: 12px 0 0; }
+.ap-work-note { font-size: 11px; color: #8b7a64; line-height: 1.7; margin-top: 20px; }
+.ap-industry-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 19px; }
+.ap-industry-image { position: relative; aspect-ratio: 1.24; overflow: hidden; border-radius: 14px; background: #eee5d8; }
+.ap-industry-image img { object-fit: cover; transition: transform 550ms; }
+.ap-industry-link > span { display: flex; justify-content: space-between; gap: 15px; align-items: center; margin-top: 16px; font-size: 15px; font-weight: 500; }
+.ap-industry-link > span svg { color: #ac6941; }
+.ap-industry-link:hover img { transform: scale(1.04); }
+.ap-industry-link:hover > span { color: #a34720; }
+@media (max-width:1100px) { .ap-hero-top { gap: 38px; grid-template-columns: 1.2fr 1fr; } .ap-hero-intro > p { font-size: 14px; } .ap-story-grid,.ap-principles-grid { gap: 48px; } .ap-section-header { gap: 38px; } .ap-mission-inner { padding: 38px; gap: 44px; } .ap-service-row { gap: 22px; grid-template-columns: 32px minmax(0,1fr) minmax(0,1fr) 25px; } .ap-process-panel { gap: 36px; padding: 32px; } .ap-process-tabs button { padding-inline: 13px; } .ap-industry-grid { gap: 14px; } }
+@media (max-width:900px) { .ap-hero-top { grid-template-columns: 1fr; gap: 26px; } .ap-hero-intro { max-width: 570px; } .ap-hero-intro > p { font-size: 16px; max-width: 55ch; } .ap-story-grid { grid-template-columns: 1fr; gap: 32px; } .ap-story-copy > p { max-width: 65ch; } .ap-mission-inner { gap: 35px; } .ap-mission-copy > p { font-size: 16px; } .ap-section-header { align-items: start; } .ap-section-header > p { font-size: 13px; max-width: 30ch; } .ap-principles-grid { grid-template-columns: 1fr; gap: 35px; } .ap-principles-intro { position: static; } .ap-principles-intro h2 br { display: none; } .ap-principles-intro > p:not(.sp-eyebrow) { max-width: 57ch; margin-bottom: 15px; } .ap-process-panel { grid-template-columns: 1fr; gap: 30px; min-height: 0; } .ap-process-copy > p:not(.sp-eyebrow) { max-width: 62ch; } .ap-process-copy h3 { max-width: 25ch; } .ap-workboard { transform: none; } .ap-workboard h4 { max-width: 27ch; } .ap-industry-grid { grid-template-columns: 1fr 1fr; gap: 25px; } .ap-projects { gap: 20px; } .ap-project { padding: 16px; } }
+@media (max-width:767px) { .ap-page .sx-section { padding-block: 50px; } .ap-page .ap-hero { padding: 124px 0 45px; } .ap-hero-top { gap: 24px; margin-bottom: 28px; } .ap-hero h1 { font-size: clamp(39px,10.5vw,59px); } .ap-hero-intro > p { font-size: 14px; } .ap-hero-scene figure { height: 320px; border-radius: 15px; } .ap-hero-scene figure > img { object-position: 48% 55%; } .ap-photo-note { top: 15px; right: 15px; padding: 14px 16px; border-radius: 9px; } .ap-photo-note > p { font-size: 15px; margin-top: 7px; } .ap-photo-note > span { font-size: 9px; } .ap-hero-scene figcaption { flex-direction: column; align-items: start; gap: 7px; padding: 60px 20px 20px; font-size: 11px; } .ap-hero-scene figcaption > span:last-child { font-size: 9px; } .ap-team-disciplines { margin-top: 23px; } .ap-story-copy > .ap-lead { font-size: 20px; } .ap-story-copy > p { font-size: 13px; } .ap-company-facts { gap: 28px; } .ap-company-facts dd { font-size: 28px; } .ap-company-facts dt { font-size: 10px; } .ap-page .ap-mission { padding-bottom: 20px; } .ap-mission-inner { grid-template-columns: 1fr; gap: 27px; padding: 28px 24px; border-radius: 15px; } .ap-mission-inner h2 { font-size: 42px; } .ap-section-header { flex-direction: column; gap: 20px; margin-bottom: 28px; } .ap-section-header > p { max-width: 45ch; font-size: 14px; } .ap-service-row { grid-template-columns: 22px minmax(0,1fr) 22px; gap: 13px; padding: 25px 0; } .ap-service-description { grid-column: 2; grid-row: 2; } .ap-service-title h3 { font-size: 26px; } .ap-service-row > svg { grid-column: 3; grid-row: 1; width: 22px; } .ap-service-title > span { margin-bottom: 9px; } .ap-service-description > span { margin-top: 8px; } .ap-principles-list h3 { font-size: 23px; } .ap-principles-list > article { gap: 16px; padding-block: 23px; } .ap-process-tabs { grid-template-columns: 1fr 1fr; gap: 5px; padding: 5px; } .ap-process-tabs button { font-size: 12px; padding: 14px 12px; gap: 9px; } .ap-process-tabs button > span { font-size: 10px; } .ap-process-panel { padding: 25px 20px; border-radius: 15px; gap: 24px; margin-top: 13px; } .ap-process-copy h3 { font-size: 29px; } .ap-process-copy > p:not(.sp-eyebrow) { font-size: 13px; } .ap-workboard { padding: 20px; border-radius: 10px; } .ap-workboard h4 { font-size: 23px; } .ap-workboard li { font-size: 11px; gap: 9px; } .ap-projects { grid-template-columns: 1fr; gap: 22px; } .ap-project-small { margin-top: 0; } .ap-project-caption { padding-top: 18px; } .ap-project-caption h3 { font-size: 25px; } .ap-industry-grid { gap: 22px 14px; } .ap-industry-image { border-radius: 10px; aspect-ratio: .95; } .ap-industry-link > span { font-size: 13px; margin-top: 13px; } .ap-work-note { font-size: 10px; } }
+@media (prefers-reduced-motion:reduce) { .ap-industry-image img,.ap-service-row > svg { transition: none; } }

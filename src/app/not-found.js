@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function NotFound() {
     return (
-        <div className="min-h-screen bg-[#faf9f7] text-zinc-900 flex flex-col items-center justify-center text-center px-6">
+        <div className="site-page min-h-screen flex flex-col items-center justify-center text-center px-6">
             <h1 className="font-display text-8xl font-bold text-[#ff541f] mb-4">404</h1>
-            <h2 className="font-display text-3xl font-bold mb-6">Page Not Found</h2>
+            <h2 className="font-display text-3xl font-bold mb-6">We couldn't find that page.</h2>
             <p className="text-zinc-600 max-w-md mb-8">
                 The page you are looking for might have been moved, renamed, or does not exist.
             </p>
