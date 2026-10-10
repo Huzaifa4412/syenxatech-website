@@ -4,9 +4,10 @@ import {
     createMetadata,
     generateBreadcrumbSchema,
     generateWebPageSchema,
+    siteConfig,
 } from "@/lib/seo";
 
-const title = "About Syenxa Tech | AI Automation Agency Since 2014";
+const title = `About Syenxa Tech | AI Automation Agency Since ${siteConfig.foundingYear}`;
 const description =
     "Syenxa Tech is an AI automation agency building AI calling agents, chatbots, Next.js websites and marketing automation for small businesses worldwide.";
 

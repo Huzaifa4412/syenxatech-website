@@ -7,6 +7,8 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { homeFaqs } from "@/lib/faqs";
+import BlurText from "@/components/ui/blur-text";
+import BlurFade from "@/components/ui/blur-fade";
 
 /**
  * Site-wide FAQ accordion. Content lives in lib/faqs.js so the page can emit
@@ -26,7 +28,7 @@ const Faqs = ({ faqs = homeFaqs, title = "Frequently asked questions", intro }) 
                             id="faqs-heading"
                             className="text-4xl md:text-5xl font-bold text-zinc-900 tracking-tighter leading-[1.05] text-balance"
                         >
-                            {title}
+                            <BlurText text={title} delay={55} duration={0.6} />
                         </h2>
                         <p className="mt-6 max-w-[42ch] text-base lg:text-lg text-zinc-600 leading-relaxed">
                             {intro ||
@@ -41,7 +43,7 @@ const Faqs = ({ faqs = homeFaqs, title = "Frequently asked questions", intro }) 
                     </div>
                 </div>
 
-                <div className="lg:col-span-7 lg:col-start-6">
+                <BlurFade className="lg:col-span-7 lg:col-start-6" delay={0.1} offset={16}>
                     <Accordion
                         type="single"
                         collapsible
@@ -63,7 +65,7 @@ const Faqs = ({ faqs = homeFaqs, title = "Frequently asked questions", intro }) 
                             </AccordionItem>
                         ))}
                     </Accordion>
-                </div>
+                </BlurFade>
             </div>
         </section>
     );

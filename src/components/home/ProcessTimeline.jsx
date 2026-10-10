@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, CheckCheck, ClipboardList, Settings2, SlidersHorizontal } from "lucide-react";
 import Reveal from "./Reveal";
+import BlurText from "@/components/ui/blur-text";
 
 const STEPS = [
     { icon: ClipboardList, title: "Talk it through", time: "Free 30-minute call", text: "We understand your business, map the customer journey and send a fixed quote." },
@@ -13,13 +14,21 @@ export default function ProcessTimeline() {
     return (
         <section id="process" aria-labelledby="process-heading" className="hp-section hp-process">
             <div className="hp-container">
-                <Reveal className="hp-section-heading hp-centered">
-                    <h2 id="process-heading">From first call<br /><span>to go-live.</span></h2>
+                <Reveal className="hp-section-heading hp-centered" blur={6}>
+                    <h2 id="process-heading">
+                        <span style={{ color: "var(--hp-ink)" }}>
+                            <BlurText text="From first call" delay={60} duration={0.6} />
+                        </span>
+                        <br />
+                        <span>
+                            <BlurText text="to go-live." delay={60} duration={0.65} />
+                        </span>
+                    </h2>
                     <p>A clear plan, one team and a chance to try it before it becomes part of your business.</p>
                 </Reveal>
                 <ol className="hp-process-steps">
                     {STEPS.map((step, index) => (
-                        <Reveal key={step.title} as="li" className="hp-process-step" delay={index * 0.06} amount={0.15}>
+                        <Reveal key={step.title} as="li" className="hp-process-step" delay={index * 0.08} amount={0.15} blur={6}>
                             <div className="hp-process-marker"><step.icon size={24} strokeWidth={1.5} /><span>0{index + 1}</span></div>
                             <h3>{step.title}</h3>
                             <p className="hp-process-time">{step.time}</p>

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-10",
+  "tool": "Built-in image_gen",
+  "useCase": "ui-mockup",
+  "source": "C:/Users/HUZAIFA/.codex/generated_images/01a126b0-2b72-7060-88ea-ada691c90658/exec-499970db-9af0-447d-b5ff-002f8f1265f8.png",
+  "image": "/images/website-design/forma-website-concept-v1.webp",
+  "themeReference": "C:/Users/HUZAIFA/.codex/skills/syenxa-image-theme/references/images/blog/website-design-v1.webp",
+  "prompt": "Use case: ui-mockup.\nAsset type: a finished professional website UI/UX design image to replace a basic mockup inside a website-development pricing panel.\nCreate a flat, crisp, high-fidelity desktop homepage screenshot for a fictional premium architecture and interiors studio named FORMA. Landscape 4:3 image. The entire canvas IS the designed website, no laptop, no desk, no outer browser chrome, no tilted perspective, no floating UI cards.\nArt direction: exceptional editorial digital design, warm ivory background #faf9f7, near-black #292824 typography, restrained burnt-orange #bd4119 buttons, fine rules, sophisticated spacing. Large elegant serif headline balanced with clean precise sans-serif navigation. Realistic architecture photography with travertine, pale oak and warm directional daylight.\nLayout: slim sophisticated top navigation with FORMA at left, small links \"Projects\", \"Studio\", \"Contact\" at right. A generous asymmetric hero: left column has small eyebrow \"ARCHITECTURE & INTERIORS\", large beautifully typeset headline \"Spaces for a better everyday.\", a short two-line description, and burnt-orange pill \"Explore our work\" with an arrow. Right two-thirds is a striking premium photograph of a sunlit contemporary interior: sculptural cream sofa, pale stone, oak joinery, olive tree, thoughtful geometry. Hero image uses a deliberate architectural crop and rounded upper-right corner, not an all-rounded generic card. Small refined vertical project label.\nBelow the hero, a professionally aligned section with headline \"Selected spaces\", small \"View all projects\" link, then three distinct architectural project photographs in a clean 3-column grid with tiny tasteful project names: \"Oak Residence\", \"The Courtyard\", \"Studio House\". Show the complete hero and all three project thumbnails in the image. Strong hierarchy, generous margins, precise baseline alignment, impeccable intentional visual composition. Clearly looks like a complete website designed by a premium agency, rich image-led content, polished and realistic.\nText must be spelled correctly, limited to the exact quoted labels and headline, no nonsense microcopy, no fictional testimonials or metrics, no gradients or wireframes, no placeholder shapes, no watermarks. This is an illustrative design concept, not an existing real client's website.",
+  "purpose": "Illustrative fictional design concept for website pricing panel; not client portfolio evidence",
+  "width": 1448,
+  "height": 1086,
+  "bytes": 239200,
+  "sha256": "fd66e0cd66c46af0906f0a721d5e2117353e4c5a93e55a7434d2c7117cfe87c4"
+}

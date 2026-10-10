@@ -1,6 +1,6 @@
 import DigitalMarketingPage from "@/components/interior/DigitalMarketingPage";
 import JsonLd from "@/components/JsonLd";
-import { digitalMarketingFaqs } from "@/lib/faqs";
+import { marketingPageFaqs } from "@/lib/marketing-page-content";
 import {
     createMetadata,
     generateBreadcrumbSchema,
@@ -44,7 +44,7 @@ export default function DigitalMarketing() {
             url: "/digital-marketing",
             audience: "Small and mid-sized businesses",
         }),
-        generateFaqSchema(digitalMarketingFaqs),
+        generateFaqSchema(marketingPageFaqs),
     ];
 
     return (

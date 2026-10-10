@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ArrowUpRight, Check, Globe, MessageCircle, PhoneCall, Search } from "lucide-react";
 import ProjectScreenshot from "@/components/ProjectScreenshot";
 import Reveal from "./Reveal";
+import BlurText from "@/components/ui/blur-text";
+import ShinyText from "@/components/ui/shiny-text";
 
 const SERVICES = [
     {
@@ -25,14 +27,24 @@ export default function ServicesBento() {
     return (
         <section id="services" aria-labelledby="services-heading" className="hp-section hp-services">
             <div className="hp-container">
-                <Reveal className="hp-section-heading">
-                    <p className="hp-eyebrow">Made to work together</p>
-                    <h2 id="services-heading">More conversations.<br /><span>Less busywork.</span></h2>
+                <Reveal className="hp-section-heading" blur={6}>
+                    <p className="hp-eyebrow">
+                        <ShinyText speed={3.2}>Made to work together</ShinyText>
+                    </p>
+                    <h2 id="services-heading">
+                        <span style={{ color: "var(--hp-ink)" }}>
+                            <BlurText text="More conversations." delay={60} duration={0.6} />
+                        </span>
+                        <br />
+                        <span>
+                            <BlurText text="Less busywork." delay={60} duration={0.65} />
+                        </span>
+                    </h2>
                     <p>Voice agents, chatbots, websites and marketing. One team connecting the whole customer journey.</p>
                 </Reveal>
                 <div className="hp-service-grid">
                     {SERVICES.map((service, index) => (
-                        <Reveal key={service.href} className={service.className} delay={index * 0.08}>
+                        <Reveal key={service.href} className={service.className} delay={index * 0.08} blur={6}>
                             <article className="hp-service-card">
                                 <div className="hp-service-visual">
                                     <Image src={service.image} alt={service.imageAlt} fill sizes="(max-width: 767px) 100vw, 650px" />
@@ -47,7 +59,7 @@ export default function ServicesBento() {
                             </article>
                         </Reveal>
                     ))}
-                    <Reveal className="hp-service-web">
+                    <Reveal className="hp-service-web" blur={6}>
                         <article className="hp-service-card hp-service-horizontal">
                             <div className="hp-service-content">
                                 <p className="hp-service-name"><Globe size={16} />Website development</p>
@@ -60,7 +72,7 @@ export default function ServicesBento() {
                             </div>
                         </article>
                     </Reveal>
-                    <Reveal className="hp-service-marketing" delay={0.08}>
+                    <Reveal className="hp-service-marketing" delay={0.08} blur={6}>
                         <article className="hp-service-card hp-marketing-card">
                             <div className="hp-service-content">
                                 <p className="hp-service-name"><Search size={16} />Marketing & SEO</p>

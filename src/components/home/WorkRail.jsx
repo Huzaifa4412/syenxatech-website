@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import ProjectScreenshot from "@/components/ProjectScreenshot";
 import Reveal from "./Reveal";
+import BlurText from "@/components/ui/blur-text";
+import ShinyText from "@/components/ui/shiny-text";
 
 const WORK = [
     { title: "Knitty Petit", category: "E-commerce store", image: "/website-portfolio/knittypetit.png", href: "https://www.knittypetit.shop/" },
@@ -16,14 +18,24 @@ export default function WorkRail() {
     return (
         <section id="work" aria-labelledby="work-heading" className="hp-section hp-work">
             <div className="hp-container">
-                <Reveal className="hp-section-heading">
-                    <p className="hp-eyebrow">A few things we've built</p>
-                    <h2 id="work-heading">Different businesses.<br /><span>Distinctive websites.</span></h2>
+                <Reveal className="hp-section-heading" blur={6}>
+                    <p className="hp-eyebrow">
+                        <ShinyText speed={3.2}>A few things we've built</ShinyText>
+                    </p>
+                    <h2 id="work-heading">
+                        <span style={{ color: "var(--hp-ink)" }}>
+                            <BlurText text="Different businesses." delay={60} duration={0.6} />
+                        </span>
+                        <br />
+                        <span>
+                            <BlurText text="Distinctive websites." delay={60} duration={0.65} />
+                        </span>
+                    </h2>
                     <p>Thoughtful design, useful details and a clear next step. Explore our website portfolio.</p>
                 </Reveal>
                 <div className="hp-work-grid">
                     {WORK.map((item, index) => (
-                        <Reveal key={item.href} as="article" className={`hp-work-item hp-work-item-${index + 1}`} delay={(index % 2) * 0.07} amount={0.1}>
+                        <Reveal key={item.href} as="article" className={`hp-work-item hp-work-item-${index + 1}`} delay={(index % 2) * 0.07} amount={0.1} blur={6}>
                             <div className="hp-work-image">
                                 <ProjectScreenshot src={item.image} title={item.title} alt={`${item.title} website built by Syenxa Tech`}
                                     sizes="(max-width: 767px) calc(100vw - 72px), (max-width: 1328px) 45vw, 590px" />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
+import BlurText from "@/components/ui/blur-text";
 
 /* Indicative figures retained from the linked 2026 pricing guide. */
 const OPTIONS = [
@@ -17,9 +18,17 @@ export default function CoverageComparison() {
     return (
         <section id="compare" aria-labelledby="compare-heading" className="hp-section hp-comparison">
             <div className="hp-container">
-                <Reveal className="hp-comparison-layout">
+                <Reveal className="hp-comparison-layout" blur={6}>
                     <div className="hp-comparison-intro">
-                        <h2 id="compare-heading">More coverage.<br /><span>A different cost.</span></h2>
+                        <h2 id="compare-heading">
+                            <span style={{ color: "var(--hp-ink)" }}>
+                                <BlurText text="More coverage." delay={60} duration={0.6} />
+                            </span>
+                            <br />
+                            <span>
+                                <BlurText text="A different cost." delay={60} duration={0.65} />
+                            </span>
+                        </h2>
                         <p>Compare three ways to cover the phone, using indicative US costs for about 200 calls a month.</p>
                         <Link href="/blog/ai-calling-agent-cost-2026" className="hp-text-link">See the pricing breakdown<ArrowUpRight size={17} /></Link>
                     </div>

@@ -12,7 +12,7 @@ export const siteConfig = {
     email: "syenxatech@gmail.com",
     phone: "+1 289 796-3492",
     phoneHref: "tel:+12897963492",
-    foundingYear: "2014",
+    foundingYear: "2022",
     socials: {
         linkedin: "https://www.linkedin.com/company/syenxatech",
         instagram: "https://www.instagram.com/syenxatech/",

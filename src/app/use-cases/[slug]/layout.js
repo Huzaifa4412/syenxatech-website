@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
-import { useCasesData } from "@/lib/use-cases-data";
+import { useCasesData, useCaseServices } from "@/lib/use-cases-data";
 import {
     createMetadata,
     generateBreadcrumbSchema,
@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
     const { slug } = await params;
     const data = useCasesData[slug];
 
-    if (!data) {
+    if (!Object.hasOwn(useCasesData, slug)) {
         notFound();
     }
 
@@ -32,11 +32,12 @@ export default async function UseCaseDetailLayout({ children, params }) {
     const { slug } = await params;
     const data = useCasesData[slug];
 
-    if (!data) {
+    if (!Object.hasOwn(useCasesData, slug)) {
         notFound();
     }
 
     const path = `/use-cases/${slug}`;
+    const service = useCaseServices.find(item => item.id === data.service);
     const schemas = [
         generateWebPageSchema({
             name: data.seo.title,
@@ -45,12 +46,12 @@ export default async function UseCaseDetailLayout({ children, params }) {
         }),
         generateBreadcrumbSchema([
             { name: "Use Cases", path: "/use-cases" },
-            { name: data.seo.industry, path },
+            { name: `${data.title} ${data.accent}`, path },
         ]),
         generateServiceSchema({
-            name: `AI Calling Agents & Chatbots for ${data.seo.industry}`,
+            name: `${service.name} for ${data.seo.industry}`,
             description: data.seo.description,
-            serviceType: "AI Voice Agent and Chatbot Automation",
+            serviceType: service.name,
             url: path,
             audience: data.seo.industry,
         }),

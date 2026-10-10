@@ -2,7 +2,7 @@ import Link from "next/link";
 import SEOContentPage from "@/components/SEOContentPage";
 import JsonLd from "@/components/JsonLd";
 import { formatPostDate } from "@/lib/reading-time";
-import { getLegacyPost, legacyPostMetadata, legacyPostSchemas } from "@/lib/seo";
+import { getLegacyPost, legacyPostMetadata, legacyPostSchemas, siteConfig } from "@/lib/seo";
 
 const SLUG = "syenxa-tech-leading-ai-solutions";
 
@@ -32,7 +32,7 @@ export default function Blog4() {
                 keywords={post.keywords}
                 coverImage={{ src: post.image, alt: post.imageAlt }}
                 keyTakeaways={[
-                    "Syenxa Tech is a US-based AI automation agency serving small and mid-sized businesses worldwide since 2014.",
+                    `Syenxa Tech is a US-based AI automation agency serving small and mid-sized businesses worldwide since ${siteConfig.foundingYear}.`,
                     "Core services: AI calling agents, AI chatbots, Next.js website development and digital marketing with SEO.",
                     "Projects run in short cycles with fixed quotes: chatbots in about 3 days, standard websites in 5 to 7.",
                 ]}
@@ -123,7 +123,7 @@ export default function Blog4() {
                         <section>
                             <h2 id="why-trust">Why businesses trust Syenxa Tech</h2>
                             <p>
-                                Since 2014 we have delivered more than 300
+                                Since {siteConfig.foundingYear} we have delivered more than 300
                                 projects. We publish our pricing signals, offer a
                                 free chatbot trial, and measure success in booked
                                 appointments and hours returned to your team

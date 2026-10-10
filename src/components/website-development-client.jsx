@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import PageHero from "@/components/interior/PageHero";
 import WebsitePricing from "@/components/interior/WebsitePricing";
+import WebsiteServicesShowcase from "@/components/interior/WebsiteServicesShowcase";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
     Smartphone,
@@ -32,7 +33,6 @@ import {
 import { webDevFaqs } from "@/lib/faqs";
 import ProjectScreenshot from "@/components/ProjectScreenshot";
 import BeforeAfterVisual from "@/components/illustrations/BeforeAfterVisual";
-import { DeviceShowcase } from "@/components/illustrations/DeviceMockups";
 import { LocalSearchFunnel, ScoreRings, WebsiteCostChart, ZeroClickChart } from "@/components/illustrations/Charts";
 
 const sources = {
@@ -374,13 +374,10 @@ export default function WebsiteDevelopmentClient() {
             </section>
 
             {/* ============================ What we build ============================ */}
-            <section className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto">
+            <section id="website-services" className="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto scroll-mt-24">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div className="lg:col-span-6 order-2 lg:order-1">
-                        <DeviceShowcase
-                            desktop={{ src: "/website-portfolio/home-services1.png", alt: "Home services company website on a laptop, built by Syenxa Tech" }}
-                            mobile={{ src: "/website-portfolio/aurora-beauty.png", alt: "Aurora Beauty Salon website on a phone, built by Syenxa Tech" }}
-                        />
+                        <WebsiteServicesShowcase />
                     </div>
                     <motion.div {...fadeUp(0)} className="lg:col-span-6 order-1 lg:order-2">
                         <p className={eyebrow}>Website development services</p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
+import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Check, Copy, Minus, Plus, RotateCcw } from "lucide-react";
 import ContactForm from "@/components/contact-form";
 import { siteConfig } from "@/lib/seo";
@@ -88,7 +89,14 @@ export default function WebsitePricing() {
 
                 <div className="wp-summary-rail"><aside id="website-estimate" className="wp-summary" aria-label="Your website estimate">
                     <div className="wp-summary-top"><span>Syenxa Tech / Your build</span><span className="wp-live"><span aria-hidden="true" />Live estimate</span></div>
-                    <div className="wp-mini-browser" aria-hidden="true"><div className="wp-browser-bar"><span>● ● ●</span><span>your-business.com</span></div><div className="wp-browser-content"><div className="wp-browser-copy"><span>A place to make</span><strong>your business<br />feel at home.</strong><span className="wp-browser-cta">Let’s talk ↗</span></div><div className="wp-browser-art"><span /><span /><span /></div></div><div className="wp-browser-footer"><span>{estimate.pages} {estimate.pages === 1 ? "page" : "pages"}</span><span>{estimate.selectedAddOns.length} {estimate.selectedAddOns.length === 1 ? "extra" : "extras"}</span><span>Built for you</span></div></div>
+                    <figure className="wp-design-preview">
+                        <a className="wp-design-image" href="/images/website-design/forma-website-concept-v1.webp" target="_blank" rel="noopener noreferrer" aria-label="View the full-size illustrative website design in a new tab">
+                            <Image src="/images/website-design/forma-website-concept-v1.webp" alt="Illustrative FORMA architecture website design with an editorial hero, sunlit interior photography and a three-project gallery" width={1448} height={1086} sizes="(max-width: 767px) calc(100vw - 88px), (max-width: 900px) 40vw, 430px" />
+                            <span className="wp-design-expand" aria-hidden="true"><ArrowUpRight size={16} /></span>
+                        </a>
+                        <figcaption><span>Illustrative UI/UX concept</span><a href="/images/website-design/forma-website-concept-v1.webp" target="_blank" rel="noopener noreferrer">View design<ArrowUpRight size={12} aria-hidden="true" /></a></figcaption>
+                        <div className="wp-design-scope"><span>{estimate.pages} {estimate.pages === 1 ? "page" : "pages"}</span><span>{estimate.selectedAddOns.length} {estimate.selectedAddOns.length === 1 ? "extra" : "extras"}</span><span>Your planned scope</span></div>
+                    </figure>
                     <div className="wp-total" aria-live="polite" aria-atomic="true"><p>{estimate.needsCustomQuote ? "A project with its own plan" : "Your estimated investment"}</p><strong>{estimate.needsCustomQuote ? "Let’s scope it." : formatWebsitePrice(estimate.total)}</strong><span>{estimate.needsCustomQuote ? "Custom quote after a free discovery call" : "USD · One-time website build"}</span></div>
                     {estimate.needsCustomQuote ? <div className="wp-custom-summary"><p>Stores, portals and bespoke workflows need a closer look. We’ll review your brief and agree a fixed price before work begins.</p><ul><li>{websiteProjectTypes.find(type => type.id === config.projectType)?.label}</li><li>{estimate.pages} planned pages</li>{estimate.selectedAddOns.map(item => <li key={item.id}>{item.label}</li>)}</ul></div> : <dl className="wp-breakdown">{estimate.lines.map(line => <div key={line.label}><dt>{line.label}</dt><dd>{formatWebsitePrice(line.price)}</dd></div>)}<div className="wp-breakdown-total"><dt>Estimated total</dt><dd>{formatWebsitePrice(estimate.total)}</dd></div></dl>}
                     <div className="wp-included"><strong>Good foundations come as standard.</strong><p>Custom design, mobile layouts, technical SEO, an enquiry form and launch setup.</p></div>

@@ -116,9 +116,23 @@ body {
     animation-play-state: paused;
 }
 
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 3.5s linear infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .blog-wave-bar,
-    .blog-marquee {
+    .blog-marquee,
+    .animate-shimmer {
         animation: none;
     }
 }

@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "created": "2026-10-10",
+  "tool": "Built-in image_gen.imagegen",
+  "purpose": "Distinct conceptual photographs for every additional use case; original four industry photographs retained.",
+  "references": [
+    "C:/Users/HUZAIFA/.codex/skills/syenxa-image-theme/SKILL.md",
+    "public/images/home-industry-clinic-v1.webp"
+  ],
+  "export": {
+    "format": "webp",
+    "width": 1200,
+    "height": 800,
+    "quality": 83
+  },
+  "assets": [
+    {
+      "slug": "ai-search-visibility",
+      "alt": "Conceptual reference books and magnifying glass illustrating search discovery",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Tactile editorial still-life symbolising knowledge discovery: open cream reference books, a clear magnifying glass over an unmarked page, three neatly indexed charcoal and amber tab dividers, pale stone desk; precise overhead crop, no words or fake search screens.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-b88f8c1d-28c4-41a9-8d7b-73bfba22de41.png",
+      "image": "/images/use-cases/ai-search-visibility-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 113086,
+      "sha256": "9acea511c0859f8f8f5e36f783bcad3db744efcd873a26d446227731ba08e3b4"
+    },
+    {
+      "slug": "automotive-service-calls",
+      "alt": "Conceptual automotive service advisor handling a workshop booking",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A professional service advisor in a clean modern auto workshop checking a vehicle inspection sheet while holding a compact phone; bonnet of a silver car raised in soft focus, neatly arranged tools, ivory industrial walls; medium close side angle.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-c06b2c13-820c-4564-942f-3f18716b21f8.png",
+      "image": "/images/use-cases/automotive-service-calls-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 87916,
+      "sha256": "7b78f01c651771fdf3f39d8f680f988f8d672009e10c9bda1b28a015ad78a50c"
+    },
+    {
+      "slug": "b2b-content-seo",
+      "alt": "Conceptual B2B expert preparing useful educational content",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A subject expert in a warm studio recording an explanation with a compact microphone and plain notes, a colleague reviewing research papers with no readable text, oak shelves and ivory walls; candid diagonal view, authentic professional knowledge work.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-5d2d770f-7e8c-41d2-a637-24391b6ae9f5.png",
+      "image": "/images/use-cases/b2b-content-seo-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 99934,
+      "sha256": "d2f1fc6203674e9336fc2fad63d062d190319008a7e8b37b93a423f7c8cecd1a"
+    },
+    {
+      "slug": "b2b-ordering-portal",
+      "alt": "Conceptual wholesale buyer reviewing a catalogue and product samples",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A wholesale buyer and supplier representative reviewing product samples of unbranded ceramic cups on a long pale oak showroom table, open cream catalogue without text, orderly stock shelves behind; wide three-quarter business meeting, natural realistic people.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-c2ca6a9d-736b-4f24-bc0e-4f40af0c6df0.png",
+      "image": "/images/use-cases/b2b-ordering-portal-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 110480,
+      "sha256": "d32114f96a2b0d28fbe5ada1e1ec9fd5a092ebeb65e17003b81709e1dda8dd5f"
+    },
+    {
+      "slug": "booking-management-app",
+      "alt": "Conceptual studio coordinator and instructor reviewing session scheduling",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A fitness studio coordinator reviewing a tablet with an instructor beside an empty sunlit yoga studio, neatly aligned rolled cream mats and orange towels, oak lockers; candid doorway perspective, distinct from gym reception.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-99cfa5ec-604b-4e28-b83e-131b3c929c7f.png",
+      "image": "/images/use-cases/booking-management-app-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 58168,
+      "sha256": "72d23d69cf65340b23d3484e74e44281e1bb2bb5581eb790b9cc740f6de66cbc"
+    },
+    {
+      "slug": "booking-reminder-automation",
+      "alt": "Conceptual hourglass and appointment card illustrating booking reminders",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: An amber glass hourglass next to a small unmarked cream appointment card and an orange pencil, a soft salon treatment room in the background; close still-life with strong physical time-and-booking metaphor, no text or numerals.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-bb998c6a-4a42-4921-b412-c25fd74b6468.png",
+      "image": "/images/use-cases/booking-reminder-automation-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 92502,
+      "sha256": "c99f7ef8895123f24c2621c1b232620773673cea4ddbfe72c48862ecdf0ab69f"
+    },
+    {
+      "slug": "campaign-landing-pages",
+      "alt": "Conceptual campaign design with a focused offer and creative materials",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Editorial creative campaign planning scene: overhead view of a designer's hands arranging a single large blank cream poster, terracotta photo swatches and an unbranded product box on a broad oak table; clear focused composition, no written text.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-c4419763-acf7-4468-b67f-fb7b3971b887.png",
+      "image": "/images/use-cases/campaign-landing-pages-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 141246,
+      "sha256": "13144989d75c5cee497dde06c01b55ed2e4bfc101abaf1c3718cd37b7ee17345"
+    },
+    {
+      "slug": "client-onboarding-automation",
+      "alt": "Conceptual coordinator preparing an organised client welcome kit",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A project coordinator preparing a new client welcome kit on an oak table: unmarked cream folder, neatly stacked plain documents, simple keycard, small rust notebook, hands arranging the package; overhead close view, tactile and purposeful.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-5e49339c-8948-40e0-9ee4-f1a4676a4851.png",
+      "image": "/images/use-cases/client-onboarding-automation-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 87500,
+      "sha256": "5e718b185b2ac969de308a094c96bdeafe60bbdbc91154dd91618bee36a5203e"
+    },
+    {
+      "slug": "client-portal",
+      "alt": "Conceptual client reviewing project materials with a consultant",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A consultant and client sharing a tablet and comparing a cream design sample board in an airy project studio, rust material swatches and organised document folder, viewed from slightly behind the client; screens out of focus, no invented lettering.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-6ad2e12f-668a-405a-a1dc-b613fa6788b2.png",
+      "image": "/images/use-cases/client-portal-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 88744,
+      "sha256": "65838b4bc09fc4c001279982f3546cfca0fbe0d136e72b1b26263c4353120068"
+    },
+    {
+      "slug": "clinic-information-chatbot",
+      "alt": "Conceptual clinic visitors checking practical visit information",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A patient and companion at a bright clinic entrance checking directions on a phone, discreet medical corridor and cream waiting area visible, no signage or text; wide candid arrival scene with natural faces and hands.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-ad7be925-b1f8-4a0b-be9d-7b7bff3c6410.png",
+      "image": "/images/use-cases/clinic-information-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 98270,
+      "sha256": "050c762a4f6467f0ce66afbd930ed778c52bb3dc718f6013bb0649d411f837d5"
+    },
+    {
+      "slug": "clinic-patient-acquisition",
+      "alt": "Conceptual clinic team explaining an appointment process to a visitor",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A medical practice team member discussing an illustrated appointment leaflet with a prospective patient in a quiet clinic consultation corner, no medical procedure, cream chairs, natural window light; medium view unlike reception check-in.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-626c5971-a178-4ceb-8c3c-3ca495313cd2.png",
+      "image": "/images/use-cases/clinic-patient-acquisition-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 97644,
+      "sha256": "5b3033a2d52d65432c36d4deb903b62aa3ced5bb0811114e5567d20f3b45d5be"
+    },
+    {
+      "slug": "clinic-website",
+      "alt": "Conceptual patient using a phone in a welcoming clinic waiting room",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A calm modern medical clinic waiting room, clean cream seating and pale oak finishes, a patient seated consulting a smartphone before a visit, consultation room door visible; wide architectural perspective, no reception desk or medical procedures.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-003d14cf-30ea-429c-bd86-83d5f6243b24.png",
+      "image": "/images/use-cases/clinic-website-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 125872,
+      "sha256": "26a6858838b9f07dc50440db02e772232f19220458f64969c825023d579b7491"
+    },
+    {
+      "slug": "ecommerce-order-automation",
+      "alt": "Conceptual fulfilment team preparing ecommerce orders",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A small ecommerce fulfilment team scanning an unlabelled parcel at an orderly packing station, paper-wrapped goods and grouped shipping boxes behind them, cream industrial studio with oak workbench; candid side view, no readable barcode or lettering.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-ab3e7c62-1927-4b25-a9dd-f8de32aac063.png",
+      "image": "/images/use-cases/ecommerce-order-automation-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 93420,
+      "sha256": "9e013b690ba6e84d070533dde3d62dce56b143f9dfbb254322ef1c5e2df551a8"
+    },
+    {
+      "slug": "ecommerce-paid-campaigns",
+      "alt": "Conceptual ecommerce campaign product photography setup",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Premium product advertising shoot for an unbranded rust-orange leather pouch on a pale travertine plinth, camera lens and photographer's hand near the edge, warm paper backdrop and one cream reflector; still-life close composition.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-f97a5cf0-0648-4d6b-b100-61c51e86cbd8.png",
+      "image": "/images/use-cases/ecommerce-paid-campaigns-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 89112,
+      "sha256": "a02ad75dcbf223f08b06494bbb4ef4601b0422ae35180362f6ab47fac9e7a441"
+    },
+    {
+      "slug": "ecommerce-support-chatbot",
+      "alt": "Conceptual shopper asking a product question beside an online order",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A shopper sitting beside an open online order parcel with folded cream and rust clothing, checking a smartphone while comparing a garment; warm home interior, central parcel and phone, medium close view from across the table.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-dd85d7c1-bda2-4d33-865c-727a6842f4e1.png",
+      "image": "/images/use-cases/ecommerce-support-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 106096,
+      "sha256": "60511a702168c2deddae5dacdc3077574bd39bc90d3f8ff2e10bbde05743c4d5"
+    },
+    {
+      "slug": "ecommerce-website",
+      "prompt": "Generate one standalone landscape 3:2 editorial photograph for an ecommerce website use case. A small independent fashion and accessories store owner carefully arranging an unbranded cream tote bag and folded rust-orange knitwear for an online product shoot on a pale oak packing table; a compact camera on a tripod and neatly stacked parcel boxes establish ecommerce, bright boutique stockroom beyond. Camera: low three-quarter close view, objects and action within central 75%, composition unlike a generic laptop on a desk. Premium Syenxa art direction: warm ivory walls, pale oak, restrained burnt-orange focal accent, charcoal details, believable directional window sunlight, natural skin and fabric texture, realistic hands, calm balanced asymmetry. Photorealistic, premium commercial editorial quality, no heavy yellow tint. No readable text, logos, watermarks, generated website UI, robots, neon or circuitry. This is a conceptual scene, not a photo of actual Syenxa clients.",
+      "alt": "Conceptual ecommerce owner preparing products for an online shop",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-2b24a03d-6c58-4e0d-882a-85d8ff141a2a.png",
+      "image": "/images/use-cases/ecommerce-website-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 95508,
+      "sha256": "cd5dd68faad65371c37314760a51619e9e4bf6dfb943f7cab1831a8b17ad7b6c"
+    },
+    {
+      "slug": "education-admissions-chatbot",
+      "alt": "Conceptual learner discussing course admissions with an advisor",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: An adult learner and course advisor at a light oak table in a sunlit training centre, learner holding a tablet, cream course folders and a notebook nearby, classroom visible through glass; candid three-quarter view.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-11771c02-06f4-498d-aadf-3ef6bfb3ec87.png",
+      "image": "/images/use-cases/education-admissions-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 93774,
+      "sha256": "a918af1994f85e891ac7411b7364c09dcd74b972cf159b97a4f77273f5dcc27b"
+    },
+    {
+      "slug": "home-services-calls",
+      "alt": "Conceptual scene of an electrician taking a job enquiry in a residential kitchen",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: An electrician in charcoal workwear standing at an open tidy toolbox in a sunlit residential kitchen, taking a call on an unbranded phone, with a coil of cable and small tools visible; wide candid side view.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-37519da2-a692-4e8b-b44b-9185412db603.png",
+      "image": "/images/use-cases/home-services-calls-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 104608,
+      "sha256": "b58f093aad32cc889522023eb82157cee7705c7855af6cd4a04eef436ebae9c5"
+    },
+    {
+      "slug": "hospitality-concierge-chatbot",
+      "alt": "Conceptual hotel guest reviewing arrival information on a phone",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A traveller beside a small tan suitcase in a warmly lit boutique hotel lobby reading arrival instructions on a phone, oak staircase, cream walls and an amber lamp; relaxed full scene from near the staircase, no generic reception interaction.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-082c4263-ae71-4a49-a81b-49c72016707f.png",
+      "image": "/images/use-cases/hospitality-concierge-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 137600,
+      "sha256": "66f4e2562397fca95609d19a7b8758ef415cb9c8b09d1c5b4aefe5cc926427a6"
+    },
+    {
+      "slug": "lead-to-crm-automation",
+      "alt": "Conceptual envelope routed through branching channels to organised trays",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Physical metaphor for lead routing: a small cream envelope entering a branching set of clean charcoal channels on a pale travertine surface, three distinct oak trays at the end, one restrained amber glass marker; low sculptural macro view, credible shadows, no text or symbols.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-92374e24-c2e8-4573-a81d-4ec3df61c4db.png",
+      "image": "/images/use-cases/lead-to-crm-automation-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 108982,
+      "sha256": "479c52794db00109468b96d9b68d11f3f144ba3a1cdf10d6389d73c94ed8c7ee"
+    },
+    {
+      "slug": "local-service-seo",
+      "alt": "Conceptual homeowner welcoming a local service professional",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A homeowner at a sunlit porch greeting a plumber carrying an orderly tool bag, cream house wall, oak doorway, terracotta planter; wide low angle showing genuine neighbourhood service context and the moment of arrival.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-388d23b9-9a5b-44d0-a268-654e1fc274d6.png",
+      "image": "/images/use-cases/local-service-seo-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 147480,
+      "sha256": "bcde6c20e890d7916afe15f7db3f347e87e2891b9478d8dcb84feeaea9de07ac"
+    },
+    {
+      "slug": "marketing-reporting-automation",
+      "alt": "Conceptual analysts reviewing a consolidated marketing report",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Two marketing analysts reviewing a large cream sheet with simple unlabelled charcoal and burnt-orange bar shapes at an oak table, a small calculator and plain source folders nearby; overhead angled close view with hands and data sheet central, no text or numerals.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-959e3b81-123a-4906-aa44-4c10dc30b982.png",
+      "image": "/images/use-cases/marketing-reporting-automation-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 104310,
+      "sha256": "47c43174c2427a51c86dd2bc057427c65b91eae9c35a788eaf56c5b8b358b6be"
+    },
+    {
+      "slug": "operations-dashboard",
+      "alt": "Conceptual operations manager overseeing team workload with a tablet",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: An operations lead surveying a tidy small warehouse from a mezzanine with a tablet, colleagues preparing jobs below, ivory space, oak workstations and a few terracotta storage bins; elevated architectural view, operational environment dominates.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-379aadba-6d05-4ef3-9d53-ae5f8fe7ecb2.png",
+      "image": "/images/use-cases/operations-dashboard-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 137292,
+      "sha256": "3f89c64ff3945f2fdc496cf805bcc6c94e05814c62e665dee9210c9ffa85e5c2"
+    },
+    {
+      "slug": "professional-services-website",
+      "alt": "Conceptual professional services consultation around a project portfolio",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: Two business consultants sharing a project portfolio of unmarked architectural-style sketches with a client around a pale oak meeting table, ivory office and soft greenery; candid over-the-shoulder consultation view without computers as the focal point.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-abbfe9a8-f5ea-4340-bbff-7a106cfec70b.png",
+      "image": "/images/use-cases/professional-services-website-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 92184,
+      "sha256": "060dc29ebd868c28187f6e2c5bbde6b4dcc1edb315411e1de872d472691a40e1"
+    },
+    {
+      "slug": "property-enquiry-chatbot",
+      "alt": "Conceptual homebuyer enquiring about a property on a phone",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A prospective homebuyer seated on a window bench browsing a phone, house keys and a rolled floor plan beside them, a distinctive residential neighbourhood visible through the window; relaxed profile view, ivory and pale oak interior.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-ae6121be-185b-4d17-a4e2-d5365b054212.png",
+      "image": "/images/use-cases/property-enquiry-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 125546,
+      "sha256": "65b3de43d9af1f35e19d49321896caf37821b8c33ac1dff906292df689df9b7e"
+    },
+    {
+      "slug": "property-listing-website",
+      "alt": "Conceptual property viewing at an ivory contemporary home",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A beautiful contemporary home with warm ivory facade, oak front door, restrained terracotta planter, a property agent welcoming prospective buyers along the garden path; architectural wide view from the garden, no signs.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-597573f2-218d-48fa-adfd-d0b26479d66a.png",
+      "image": "/images/use-cases/property-listing-website-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 217862,
+      "sha256": "0abea67c56b5ee434e66916f3b77a8bcaf86dc5af751b1ca4f259ce3e6071c9b"
+    },
+    {
+      "slug": "restaurant-social-marketing",
+      "alt": "Conceptual restaurant owner creating social content for a menu",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A restaurant owner photographing a freshly prepared dessert on a phone at a sunny dining table, terracotta plate, cream linen, warm wood, the phone held realistically with both hands; close three-quarter food composition.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-fb2c6266-3e83-4a4e-9c70-4fd4d7bf611d.png",
+      "image": "/images/use-cases/restaurant-social-marketing-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 97072,
+      "sha256": "d6bd02b71c8c0acdbdaead1df51e63aa646222ff9e6296ce659ed3b296565b80"
+    },
+    {
+      "slug": "restaurant-website",
+      "alt": "Conceptual restaurant scene with a chef presenting a meal",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: An inviting sunlit neighbourhood restaurant dining area with a chef setting a beautifully plated seasonal dish onto an oak table, crisp cream linen and terracotta ceramics, dining guests softly out of focus; low eye-level food-led composition.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-435c4392-5f6c-462b-a9fb-13d8486e58f8.png",
+      "image": "/images/use-cases/restaurant-website-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 78548,
+      "sha256": "4c8f21673568c127bf4cbea4c90ce4522b1328dc03c4eace2f9618d00bac64ec"
+    },
+    {
+      "slug": "social-messaging-chatbot",
+      "alt": "Conceptual spa therapist responding to a booking enquiry",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A beauty therapist at a calm spa treatment room side table reading an enquiry on a phone, folded cream towels, unbranded amber skincare jars, a softly visible empty treatment bed; close candid profile, distinct from a hair salon.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-89549ae6-2154-4c45-9170-dfa3f5d9b4ab.png",
+      "image": "/images/use-cases/social-messaging-chatbot-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 75314,
+      "sha256": "9b04f4ff852023c6991893c7b2bf6865bd9e07f7f2e48d6202befc03eb4f1e0f"
+    },
+    {
+      "slug": "support-ticket-routing",
+      "alt": "Conceptual support specialist organising incoming customer requests",
+      "prompt": "One standalone landscape 3:2 photorealistic editorial photograph for Syenxa Tech's use-case library. Premium warm ivory and cream environment, pale oak and travertine where appropriate, restrained burnt-orange accent, subtle charcoal details, realistic directional window sunlight and soft architectural shadows. Natural colour, authentic material texture and believable people and hands. Calm balanced asymmetry; keep the important subject and action within the central 75% for responsive crops. This is a conceptual illustration, not actual clients or premises. No readable text, logos, watermark, fake website UI, robots, neon, circuitry, or blue-purple tech gradients. Avoid repeating a generic laptop-on-desk scene.\nSpecific subject and action: A support specialist in a charcoal headset sorting unmarked cream enquiry cards into three shallow oak trays, ivory workspace and a restrained orange task lamp; candid side view with trays and purposeful sorting prominent.",
+      "source": "C:\\Users\\HUZAIFA\\.codex\\generated_images\\01a126b0-2b72-7060-88ea-ada691c90658\\exec-6b747300-625b-46eb-acdb-690ebb32af92.png",
+      "image": "/images/use-cases/support-ticket-routing-v1.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 82384,
+      "sha256": "304a1f71d514c58b00fccdfac710e1ae03466a2984b4bbfef8e1f25e44f0edc3"
+    }
+  ]
+}

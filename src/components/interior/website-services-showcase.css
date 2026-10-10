@@ -1,0 +1,20 @@
+.ws-showcase { min-width: 0; padding: 24px; border: 1px solid #ded8ce; border-radius: 22px; background: #f0ece4; }
+.ws-showcase-heading { display: flex; justify-content: space-between; gap: 12px; color: #756656; font-size: 11px; margin-bottom: 18px; }
+.ws-showcase-heading > span:last-child { font-variant-numeric: tabular-nums; color: #a34722; }
+.ws-design-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 18px; }
+.ws-design-tabs button { border: 1px solid #ded8ce; background: #faf9f7; padding: 12px 10px; border-radius: 8px; font-size: 11px; color: #6d665d; text-align: left; cursor: pointer; transition: color 180ms, background 180ms, border-color 180ms; }
+.ws-design-tabs button:hover { color: #292824; border-color: #af947a; }
+.ws-design-tabs button[aria-selected="true"] { background: #292824; color: #fffdfa; border-color: #292824; }
+.ws-design-panel { background: #faf9f7; border: 1px solid #ded8ce; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 32px -24px #29282440; }
+.ws-design-image { display: block; position: relative; padding: 8px; }
+.ws-design-image img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 5px; }
+.ws-design-expand { display: grid; place-items: center; position: absolute; right: 18px; bottom: 18px; width: 34px; height: 34px; border: 1px solid #ded8ce; border-radius: 50%; background: #fffdfa; color: #292824; box-shadow: 0 4px 14px #29282415; }
+.ws-design-image:hover .ws-design-expand { color: #bd4119; }
+.ws-design-caption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding: 16px; border-top: 1px solid #e7e1d7; }
+.ws-design-caption strong { display: block; font-size: 12px; font-weight: 600; color: #292824; }
+.ws-design-caption span { display: block; margin-top: 5px; font-size: 10px; color: #756656; }
+.ws-design-caption a { display: inline-flex; align-items: center; gap: 5px; padding-block: 6px; font-size: 11px; color: #a34722; }
+.ws-showcase-note { margin: 16px 0 0; font-size: 11px; line-height: 1.6; color: #756656; }
+.ws-showcase :is(button,a,[role="tabpanel"]):focus-visible { outline: 2px solid #bd4119; outline-offset: 3px; }
+@media (max-width: 767px) { .ws-showcase { padding: 16px; border-radius: 16px; } .ws-design-caption { padding: 13px; } .ws-design-tabs button { font-size: 10px; } }
+@media (prefers-reduced-motion: reduce) { .ws-design-tabs button { transition: none; } }

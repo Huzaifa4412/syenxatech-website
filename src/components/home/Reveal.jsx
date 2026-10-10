@@ -10,8 +10,9 @@ const EASE_OUT = [0.16, 1, 0.3, 1];
 export default function Reveal({
     as = "div",
     delay = 0,
-    y = 24,
-    amount = 0.25,
+    y = 20,
+    blur = 0,
+    amount = 0.2,
     className = "",
     children,
     ...rest
@@ -19,10 +20,20 @@ export default function Reveal({
     const reduce = useReducedMotion();
     const Tag = motion[as] || motion.div;
 
+    const initial = reduce
+        ? false
+        : blur
+        ? { opacity: 0, y, filter: `blur(${blur}px)` }
+        : { opacity: 0, y };
+
+    const animateIn = blur
+        ? { opacity: 1, y: 0, filter: "blur(0px)" }
+        : { opacity: 1, y: 0 };
+
     return (
         <Tag
-            initial={reduce ? false : { opacity: 0, y }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={initial}
+            whileInView={animateIn}
             viewport={{ once: true, amount }}
             transition={{ duration: 0.7, delay, ease: EASE_OUT }}
             className={className}

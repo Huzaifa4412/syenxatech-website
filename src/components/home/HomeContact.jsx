@@ -4,16 +4,24 @@ import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import ContactForm from "@/components/contact-form";
 import { siteConfig } from "@/lib/seo";
 import Reveal from "./Reveal";
+import BlurText from "@/components/ui/blur-text";
+import ShinyText from "@/components/ui/shiny-text";
 
 export default function HomeContact() {
     return (
         <section id="contact" aria-labelledby="contact-heading" className="hp-section hp-contact">
             <div className="hp-container">
-                <Reveal className="hp-contact-layout" amount={0.1}>
+                <Reveal className="hp-contact-layout" amount={0.1} blur={6}>
                     <div className="hp-contact-copy">
                         <div aria-hidden="true" className="hp-contact-art"><Image src="/images/voice-hero-wave-v1.webp" alt="" fill sizes="(max-width: 767px) 100vw, 650px" /></div>
-                        <p className="hp-eyebrow">Your next chapter</p>
-                        <h2 id="contact-heading">Make room<br />for your customers.</h2>
+                        <p className="hp-eyebrow">
+                            <ShinyText speed={3.2}>Your next chapter</ShinyText>
+                        </p>
+                        <h2 id="contact-heading">
+                            <BlurText text="Make room" delay={60} duration={0.6} />
+                            <br />
+                            <BlurText text="for your customers." delay={60} duration={0.65} />
+                        </h2>
                         <p>Tell us where the busywork is. We'll come back with a practical plan and a fixed quote.</p>
                         <Link href="/contact" className="hp-button">Book a free demo <ArrowUpRight size={18} /></Link>
                         <address>

@@ -9,9 +9,9 @@ import {
     generateWebPageSchema,
 } from "@/lib/seo";
 
-const title = "AI Voice Agent & Chatbot Use Cases by Industry | Syenxa Tech";
+const title = "Website, AI & Digital Marketing Use Cases | Syenxa Tech";
 const description =
-    "See how Syenxa Tech AI calling agents and chatbots handle bookings, lead qualification and support for healthcare clinics, real estate agencies, gyms and salons.";
+    "Explore 34 practical use cases for websites, AI calling agents, chatbots, digital marketing, workflow automation and web apps across your industry.";
 
 export const metadata = createMetadata({
     title,
@@ -24,6 +24,10 @@ export const metadata = createMetadata({
         "Gym Membership AI Automation",
         "Salon Appointment AI Chatbot",
         "AI Calling Agent Industry Applications",
+        "Website Development Use Cases",
+        "Digital Marketing Use Cases",
+        "Workflow Automation Use Cases",
+        "Client Portals and Web Apps",
     ],
 });
 
@@ -39,11 +43,11 @@ export default function UseCasesPage() {
         {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "AI automation use cases by industry",
+            name: "Websites, AI, marketing and automation use cases",
             itemListElement: Object.values(useCasesData).map((data, index) => ({
                 "@type": "ListItem",
                 position: index + 1,
-                name: data.seo.industry,
+                name: `${data.title} ${data.accent}`,
                 url: canonicalUrl(`/use-cases/${data.slug}`),
             })),
         },
