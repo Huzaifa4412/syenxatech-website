@@ -259,3 +259,38 @@ export function ZeroClickChart() {
         </Frame>
     );
 }
+
+/** Voice latency comparison (milliseconds) between voice systems. Lower is better. */
+export function VoiceLatencyChart() {
+    const rows = [
+        { label: "Human conversational pause", value: 300, display: "250-350 ms", note: "Natural speech benchmark" },
+        { label: "Syenxa custom voice AI agent", value: 480, display: "450-520 ms", note: "Sub-second real-time response", accent: true },
+        { label: "Generic SaaS DIY voice bot", value: 1400, display: "1,200-1,800 ms", note: "Noticeable awkward pause" },
+        { label: "Legacy phone IVR tree", value: 3500, display: "3,000+ ms", note: "Robotic touch-tone menus" },
+    ];
+    const max = 3600;
+    const w = 640;
+    const labelW = 230;
+    const barW = w - labelW - 130;
+    return (
+        <Frame
+            title="Conversational voice latency comparison in milliseconds"
+            description="Syenxa custom voice AI responds in 450 to 520 milliseconds, closely approaching human conversational benchmarks (250-350ms) compared to 1,400ms for generic bots and 3,500ms for legacy IVR menus."
+            viewBox={`0 0 ${w} ${rows.length * 62 + 20}`}
+        >
+            {rows.map((r, i) => {
+                const y = 10 + i * 62;
+                const bw = Math.max(16, (r.value / max) * barW);
+                return (
+                    <g key={r.label}>
+                        <text x="0" y={y + 22} fontSize="14" fontWeight="600" fill={r.accent ? ORANGE : INK}>{r.label}</text>
+                        <text x="0" y={y + 40} fontSize="11" fill={MUTED}>{r.note}</text>
+                        <rect x={labelW} y={y + 10} width={barW} height={24} rx="12" fill={LINE} />
+                        <rect x={labelW} y={y + 10} width={bw} height={24} rx="12" fill={r.accent ? ORANGE : i === 0 ? "#16a34a" : "#a1a1aa"} />
+                        <text x={labelW + bw + 12} y={y + 27} fontSize="14" fontWeight="700" fill={r.accent ? ORANGE : i === 0 ? "#15803d" : INK}>{r.display}</text>
+                    </g>
+                );
+            })}
+        </Frame>
+    );
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Syenxa Image Theme"
+  short_description: "Warm editorial images matching the Syenxa website"
+  default_prompt: "Use $syenxa-image-theme to create a new image matching the Syenxa website theme."

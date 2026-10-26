@@ -21,13 +21,35 @@ export const siteConfig = {
 };
 
 /** Single date bumped whenever site-wide copy changes; per-route dates override it. */
-export const SITE_LAST_UPDATED = "2026-09-04";
+export const SITE_LAST_UPDATED = "2026-10-26";
 
 /**
  * Legacy blog posts that live as static routes under /blog/<slug>.
  * Posts published in Sanity take precedence when a slug collides.
  */
 export const blogPosts = [
+    {
+        title: "AI Receptionist for Small Business: The 2026 Implementation & Buyer's Guide",
+        metaTitle: "AI Receptionist for Small Business (2026 Guide) | Syenxa Tech",
+        slug: "ai-receptionist-for-small-business",
+        image: "/covers/ai-receptionist-for-small-business.jpg",
+        imageAlt: "Cover: AI receptionist for small business implementation and buyers guide 2026 by Syenxa Tech",
+        description:
+            "The complete 2026 guide to AI receptionists for small business: top platforms, real costs per month, HIPAA compliance, setup steps, and how to stop missing calls.",
+        excerpt:
+            "A comprehensive 2026 buyer and implementation guide for small businesses considering an AI phone receptionist, covering real costs, latency benchmarks, top platforms, and ROI.",
+        keywords: [
+            "AI Receptionist for Small Business",
+            "AI Voice Receptionist",
+            "AI Phone Answering Service",
+            "Best AI Receptionist",
+            "Virtual AI Receptionist",
+        ],
+        category: "AI Calling Agents",
+        datePublished: "2026-10-26",
+        dateModified: "2026-10-26",
+        readingTime: 9,
+    },
     {
         title: "How Much Do AI Calling Agents Cost in 2026? US Pricing Guide",
         metaTitle: "AI Calling Agent Cost in 2026: US Pricing Guide | Syenxa Tech",
