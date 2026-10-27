@@ -294,3 +294,97 @@ export function VoiceLatencyChart() {
         </Frame>
     );
 }
+
+/** Channel conversion rates: Inbound voice vs Live chat vs Web forms. */
+export function ChannelConversionChart() {
+    const rows = [
+        { label: "Inbound Phone Call (Voice AI)", value: 42, display: "35% - 50%", note: "Immediate high-intent buyer dialog", accent: true },
+        { label: "Interactive Web Chatbot", value: 16, display: "12% - 18%", note: "Assisted web self-service & intake", accent: false },
+        { label: "Static Website Form", value: 3.5, display: "2% - 4%", note: "Passive asynchronous contact form", accent: false },
+    ];
+    const max = 50;
+    const w = 640;
+    const labelW = 250;
+    const barW = w - labelW - 120;
+    return (
+        <Frame
+            title="Inbound lead conversion rates by customer engagement channel"
+            description="Inbound phone calls convert at 35 to 50 percent, compared to 12 to 18 percent for interactive chatbots and 2 to 4 percent for static contact forms."
+            viewBox={`0 0 ${w} ${rows.length * 64 + 20}`}
+        >
+            {rows.map((r, i) => {
+                const y = 10 + i * 64;
+                const bw = Math.max(16, (r.value / max) * barW);
+                return (
+                    <g key={r.label}>
+                        <text x="0" y={y + 22} fontSize="14" fontWeight="600" fill={r.accent ? ORANGE : INK}>{r.label}</text>
+                        <text x="0" y={y + 40} fontSize="11" fill={MUTED}>{r.note}</text>
+                        <rect x={labelW} y={y + 10} width={barW} height={24} rx="12" fill={LINE} />
+                        <rect x={labelW} y={y + 10} width={bw} height={24} rx="12" fill={r.accent ? ORANGE : "#fdba9b"} />
+                        <text x={labelW + bw + 12} y={y + 27} fontSize="14" fontWeight="700" fill={r.accent ? ORANGE : INK}>{r.display}</text>
+                    </g>
+                );
+            })}
+        </Frame>
+    );
+}
+
+/** Architectural latency pipeline breakdown: Voice AI vs Text Chatbot. */
+export function PipelineLatencyBreakdown() {
+    const w = 640;
+    return (
+        <Frame
+            title="Conversational Architecture: Voice AI Pipeline vs Chatbot Pipeline"
+            description="Voice AI streaming pipeline processes audio via ASR, LLM, and TTS in under 500ms, while text chatbots stream tokens asynchronously over 1,000 to 2,000ms."
+            viewBox="0 0 640 210"
+        >
+            {/* Voice Stream Pipeline */}
+            <g transform="translate(10, 15)">
+                <text x="0" y="16" fontSize="13" fontWeight="700" fill={ORANGE} letterSpacing="0.5">VOICE STREAM PIPELINE (~450ms Total)</text>
+                
+                <rect x="0" y="30" width="135" height="44" rx="10" fill="rgba(255,84,31,0.08)" stroke="rgba(255,84,31,0.3)" strokeWidth="1" />
+                <text x="67" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill={INK}>Streaming ASR</text>
+                <text x="67" y="66" textAnchor="middle" fontSize="10" fill={MUTED}>~120ms</text>
+
+                <text x="148" y="57" textAnchor="middle" fontSize="14" fill={MUTED}>➔</text>
+
+                <rect x="160" y="30" width="145" height="44" rx="10" fill="rgba(255,84,31,0.08)" stroke="rgba(255,84,31,0.3)" strokeWidth="1" />
+                <text x="232" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill={INK}>LLM First Token</text>
+                <text x="232" y="66" textAnchor="middle" fontSize="10" fill={MUTED}>~180ms TTFT</text>
+
+                <text x="318" y="57" textAnchor="middle" fontSize="14" fill={MUTED}>➔</text>
+
+                <rect x="330" y="30" width="135" height="44" rx="10" fill="rgba(255,84,31,0.08)" stroke="rgba(255,84,31,0.3)" strokeWidth="1" />
+                <text x="397" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill={INK}>Streaming TTS</text>
+                <text x="397" y="66" textAnchor="middle" fontSize="10" fill={MUTED}>~150ms</text>
+
+                <text x="478" y="57" textAnchor="middle" fontSize="14" fill={MUTED}>➔</text>
+
+                <rect x="490" y="30" width="125" height="44" rx="10" fill={ORANGE} />
+                <text x="552" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill="#ffffff">Audio Output</text>
+                <text x="552" y="66" textAnchor="middle" fontSize="10" fill="rgba(255,255,255,0.85)">Sub-500ms</text>
+            </g>
+
+            {/* Chatbot Pipeline */}
+            <g transform="translate(10, 115)">
+                <text x="0" y="16" fontSize="13" fontWeight="700" fill={INK} letterSpacing="0.5">CHATBOT STREAM PIPELINE (~1,200ms Total)</text>
+                
+                <rect x="0" y="30" width="180" height="44" rx="10" fill={LINE} />
+                <text x="90" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill={INK}>HTTP / WebSocket In</text>
+                <text x="90" y="66" textAnchor="middle" fontSize="10" fill={MUTED}>Instant payload</text>
+
+                <text x="195" y="57" textAnchor="middle" fontSize="14" fill={MUTED}>➔</text>
+
+                <rect x="210" y="30" width="220" height="44" rx="10" fill={LINE} />
+                <text x="320" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill={INK}>RAG + Prompt Reasoning</text>
+                <text x="320" y="66" textAnchor="middle" fontSize="10" fill={MUTED}>600ms - 1,200ms</text>
+
+                <text x="445" y="57" textAnchor="middle" fontSize="14" fill={MUTED}>➔</text>
+
+                <rect x="460" y="30" width="155" height="44" rx="10" fill="#27272a" />
+                <text x="537" y="52" textAnchor="middle" fontSize="11.5" fontWeight="700" fill="#ffffff">Token Stream UI</text>
+                <text x="537" y="66" textAnchor="middle" fontSize="10" fill="rgba(255,255,255,0.7)">Progressive typing</text>
+            </g>
+        </Frame>
+    );
+}

@@ -21,13 +21,36 @@ export const siteConfig = {
 };
 
 /** Single date bumped whenever site-wide copy changes; per-route dates override it. */
-export const SITE_LAST_UPDATED = "2026-10-26";
+export const SITE_LAST_UPDATED = "2026-10-27";
 
 /**
  * Legacy blog posts that live as static routes under /blog/<slug>.
  * Posts published in Sanity take precedence when a slug collides.
  */
 export const blogPosts = [
+    {
+        title: "AI Voice Agent vs. AI Chatbot: Which Does Your Business Need in 2026?",
+        metaTitle: "AI Voice Agent vs. AI Chatbot (2026 Comparison) | Syenxa Tech",
+        slug: "ai-voice-agent-vs-chatbot",
+        image: "/covers/ai-voice-agent-vs-chatbot.jpg",
+        imageAlt: "Cover: AI voice agent vs AI chatbot strategic comparison guide for 2026 by Syenxa Tech",
+        description:
+            "AI Voice Agent vs AI Chatbot: Understand the critical differences in latency, conversion rates, development costs, and operational channels to choose the right AI stack.",
+        excerpt:
+            "A definitive 2026 strategic guide comparing AI Voice Agents and AI Chatbots: architectural latency pipelines, real costs, conversion benchmarks, and when to deploy a hybrid stack.",
+        keywords: [
+            "AI Voice Agent vs Chatbot",
+            "Voice AI vs Chatbot",
+            "AI Voice Agent Customer Service",
+            "Conversational AI Phone vs Chat",
+            "AI Chatbot vs Voice Assistant",
+            "Voice Bot Latency",
+        ],
+        category: "AI Calling Agents",
+        datePublished: "2026-10-27",
+        dateModified: "2026-10-27",
+        readingTime: 10,
+    },
     {
         title: "AI Receptionist for Small Business: The 2026 Implementation & Buyer's Guide",
         metaTitle: "AI Receptionist for Small Business (2026 Guide) | Syenxa Tech",
