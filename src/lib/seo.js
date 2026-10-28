@@ -21,13 +21,36 @@ export const siteConfig = {
 };
 
 /** Single date bumped whenever site-wide copy changes; per-route dates override it. */
-export const SITE_LAST_UPDATED = "2026-10-27";
+export const SITE_LAST_UPDATED = "2026-10-28";
 
 /**
  * Legacy blog posts that live as static routes under /blog/<slug>.
  * Posts published in Sanity take precedence when a slug collides.
  */
 export const blogPosts = [
+    {
+        title: "AI Appointment Setter: The 2026 Complete Guide to Automated Booking & Voice SDRs",
+        metaTitle: "AI Appointment Setter: 2026 Guide to Voice SDRs & Booking | Syenxa Tech",
+        slug: "ai-appointment-setter",
+        image: "/covers/ai-appointment-setter.jpg",
+        imageAlt: "Cover: AI appointment setter guide to automated booking and voice SDRs by Syenxa Tech",
+        description:
+            "The complete 2026 guide to AI appointment setters: real speed-to-lead benchmarks, sub-450ms voice architecture, Cal.com API sync, TCPA compliance, and human SDR cost comparisons.",
+        excerpt:
+            "How real-time conversational voice agents eliminate phone tag, slash speed-to-lead under 30 seconds, and automate calendar bookings at a fraction of SDR costs.",
+        keywords: [
+            "AI Appointment Setter",
+            "AI Appointment Booking Agent",
+            "Voice AI Appointment Setter",
+            "Outbound AI Appointment Setter",
+            "AI Appointment Setter Cost",
+            "Automated Scheduling Voice Bot",
+        ],
+        category: "AI Calling Agents",
+        datePublished: "2026-10-28",
+        dateModified: "2026-10-28",
+        readingTime: 9,
+    },
     {
         title: "AI Voice Agent vs. AI Chatbot: Which Does Your Business Need in 2026?",
         metaTitle: "AI Voice Agent vs. AI Chatbot (2026 Comparison) | Syenxa Tech",
