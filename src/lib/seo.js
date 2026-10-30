@@ -21,13 +21,38 @@ export const siteConfig = {
 };
 
 /** Single date bumped whenever site-wide copy changes; per-route dates override it. */
-export const SITE_LAST_UPDATED = "2026-10-28";
+export const SITE_LAST_UPDATED = "2026-10-30";
 
 /**
  * Legacy blog posts that live as static routes under /blog/<slug>.
  * Posts published in Sanity take precedence when a slug collides.
  */
 export const blogPosts = [
+    {
+        title: "AI Cold Calling: The 2026 Complete Guide to Outbound Voice AI, Compliance & Costs",
+        metaTitle: "AI Cold Calling Guide 2026: Outbound Voice AI, TCPA & Costs | Syenxa Tech",
+        slug: "ai-cold-calling",
+        image: "/covers/ai-cold-calling.jpg",
+        imageAlt: "Cover: AI cold calling complete guide to outbound voice AI, compliance and costs by Syenxa Tech",
+        description:
+            "The definitive 2026 guide to AI cold calling: real conversion benchmarks, sub-450ms voice stack, TCPA/FCC legal rules, carrier spam prevention, and cost vs. human SDRs.",
+        excerpt:
+            "How sub-450ms conversational voice AI agents automate outbound prospecting, navigate objections in real time, and cut cost per booked meeting by 91% while staying 100% TCPA compliant.",
+        keywords: [
+            "AI Cold Calling",
+            "AI Cold Calling Agent",
+            "AI Cold Calling Software",
+            "Is AI Cold Calling Legal",
+            "AI Cold Calling Cost",
+            "Outbound Voice AI Dialing",
+            "AI Cold Calling for Real Estate",
+            "B2B AI Cold Calling",
+        ],
+        category: "AI Calling Agents",
+        datePublished: "2026-10-30",
+        dateModified: "2026-10-30",
+        readingTime: 10,
+    },
     {
         title: "AI Appointment Setter: The 2026 Complete Guide to Automated Booking & Voice SDRs",
         metaTitle: "AI Appointment Setter: 2026 Guide to Voice SDRs & Booking | Syenxa Tech",
